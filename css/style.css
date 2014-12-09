@@ -21,6 +21,69 @@
 
 */
 
+/* ==================== 00. Custom ==================== */
+
+.clients p {
+  margin-bottom: 48px !important;
+}
+.client-row {
+  overflow: hidden;
+  text-align: center;
+  line-height: 0;
+}
+.client-row .col-sm-3 {
+  display: inline-block;
+  min-height: 80px;
+  line-height: 80px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.client-row img {
+  max-height: 100px;
+  max-width: 180px;
+  opacity: 0.3;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-backface-visibility: none;
+}
+.client-row img:hover {
+  opacity: 1;
+}
+.client-row .row-wrapper {
+  display: inline-block;
+  width: 80%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.client-row:last-child .row-wrapper {
+  border-bottom: none;
+}
+
+.clients-2 {
+  text-align: center;
+  padding: 64px 0px 64px 0px;
+}
+.clients-2 .col-md-2 {
+  height: 80px;
+  line-height: 80px;
+}
+.clients-2 img {
+  max-height: 60px;
+  max-width: 140px;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+  opacity: 0.4;
+}
+.clients-2 img:hover {
+  opacity: 1;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+	.client-row img {
+    max-width: 100px;
+  }
+}
 
 /* ==================== 01. Basics ==================== */
 ::selection {
