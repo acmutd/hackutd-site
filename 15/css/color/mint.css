@@ -1,0 +1,65 @@
+.text-color,
+.text-color h1,
+.text-color h2,
+.text-color h3,
+.text-color h4,
+.text-color h5,
+.text-color h6,
+.text-color p {
+	color: #5dc4c8;
+}
+
+.bg-color {
+	background: #5dc4c8;
+}
+
+.btn.color {
+	background: #5dc4c8;
+}
+
+.btn.outline.color {
+	color: #5dc4c8;
+	border-color: #5dc4c8;
+}
+
+.no-touch .row-icons i:hover {
+	background: #5dc4c8;
+	border-color: #5dc4c8;
+}
+
+.no-touch .icon-list:hover i {
+	color: #5dc4c8;
+}
+
+.no-touch ul.points li:hover:before {
+	color: #5dc4c8;
+}
+
+.no-touch ul.circle li:hover i {
+	background: #5dc4c8;
+	border-color: #5dc4c8;
+}
+
+.no-touch .menu-wrap .logo a:hover {
+	color: #5dc4c8;
+}
+
+.no-touch .menu-wrap.menu-white .logo a:hover {
+	color: #5dc4c8;
+}
+
+.no-touch .mh-logo h1 a:hover {
+	color: #5dc4c8;
+}
+
+.no-touch .menu-white .mh-logo h1 a:hover {
+	color: #5dc4c8;
+}
+
+.no-touch .service-item:hover > i {
+	color: #5dc4c8;
+}
+
+.no-touch .c-links a:hover {
+	color: #5dc4c8;
+}
