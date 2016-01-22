@@ -145,8 +145,6 @@
 		z-index: 99999;
 	}
 
-
-
 /* 3. TYPOGRAPHY */
 
 	p {
@@ -1777,6 +1775,8 @@
     .lj-footer-menu ul li {
       text-align: center;
     }
+    
+    
 
   }
 
@@ -1811,8 +1811,11 @@
     .lj-team-member-mask a {
       font-size: 2.5em;
     }
-
-	}
+    
+    .btn-margin {
+      margin-top: 20px;
+    }
+}
 
 	@media (max-width: 480px) {
 
