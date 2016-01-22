@@ -1776,7 +1776,9 @@
       text-align: center;
     }
     
-    
+    .btn-margin {
+      margin-top: 20px;
+    }
 
   }
 
@@ -1810,10 +1812,6 @@
 
     .lj-team-member-mask a {
       font-size: 2.5em;
-    }
-    
-    .btn-margin {
-      margin-top: 20px;
     }
 }
 
