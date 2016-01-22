@@ -1525,6 +1525,7 @@
 
   .footer {
     padding: 100px 0;
+    background-color: white;
   }
 
   .lj-footer-name h4 {
@@ -1563,9 +1564,9 @@
 
   .panel {
     background: #222;
-    z-index: 9999;
+    z-index: -80 !important;
     position: fixed;
-    right: 300px; /*or width of your navigation panel*/
+    right: 0px; /*or width of your navigation panel*/
     width: 300px; /*should match the above value*/
     padding: 25px;
   }
