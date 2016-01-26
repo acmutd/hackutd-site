@@ -1810,9 +1810,13 @@
     .lj-team-member-mask a {
       font-size: 2.5em;
     }
+    
+    .btn-margin {
+      margin-top: 20px;
+    }
 }
 
-	@media (max-width: 480px) {
+@media (max-width: 480px) {
 
     /* 7. PRODUCT SHOWCASE CENTER */
 
@@ -1830,10 +1834,6 @@
     /* 11. CLIENTS */
 
     .lj-clients-texts a.lj-clients-texts-btnr {
-    }
-    
-    .btn-margin {
-      margin-top: 20px;
     }
 
 }
