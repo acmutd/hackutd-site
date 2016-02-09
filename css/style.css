@@ -374,9 +374,9 @@
 
   .lj-trialform {
     width: 650px;
-    height: 240px;
+    height: 310px;
     position: absolute;
-    bottom: -50px;
+    bottom: -110px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -1696,7 +1696,6 @@
     }
 
     .lj-icon-features-box p {
-      padding: 0 50px;
     }
 
     .lj-icon-features-item-icons {
