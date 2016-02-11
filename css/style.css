@@ -372,6 +372,24 @@
     color: #fff;
   }
 
+  .lj-social {
+    margin-top: 25px;
+  }
+
+  .lj-social a {
+    height: 50px;
+    line-height: 48px;
+    padding: 0 25px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    border: 0;
+    color: rgba(255,255,255,0.6);
+  }
+
+  .lj-social a:hover {
+    color: #fff;
+  }
+
   .lj-trialform {
     width: 650px;
     height: 310px;
@@ -539,7 +557,7 @@
 /* 6. ICON & FEATURES */
 
   .icon-features {
-    padding: 150px 0;
+    padding: 40px 0 80px;
     background-color: #f6f8fa;
   }
 
