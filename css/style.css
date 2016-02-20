@@ -1835,6 +1835,10 @@
 
 @media (max-width: 480px) {
 
+    .mobile-break {
+      display: initial !important;
+    }
+  
     /* 7. PRODUCT SHOWCASE CENTER */
 
     .lj-product-showcase-center-btn > a {
