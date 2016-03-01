@@ -1682,6 +1682,21 @@
     color: #f56c0a;
   }
 
+.time {
+  font-weight: 600;
+  padding-right: 20px;
+  width: 123px;
+  color: orange;
+}
+
+.schedule-detail {
+
+}
+
+.schedule-table {
+  font-size: 24px;
+  padding-left: 20px;
+}
 
 /* 22. BREAKPOINTS */
 
