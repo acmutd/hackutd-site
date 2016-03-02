@@ -1686,7 +1686,21 @@
   font-weight: 600;
   padding-right: 20px;
   width: 123px;
-  color: #000000;
+  color: white;
+}
+
+.schedule {
+  padding-top: 120px;
+  padding-bottom: 150px;
+  background-color: #f56c0a;
+}
+
+.schedule .row {
+  margin-top: 50px;
+}
+
+.schedule .row:first-child {
+  margin-top: 0;
 }
 
 .schedule-detail {
@@ -1696,6 +1710,18 @@
 .schedule-table {
   font-size: 24px;
   padding-left: 20px;
+  color: white;
+}
+
+.lj-schedule-title {
+  text-align: center;
+}
+
+.lj-schedule-title h3 {
+  font-size: 2em;
+  font-weight: 300;
+  color: white;
+  margin: 0;     
 }
 
 /* 22. BREAKPOINTS */
