@@ -1689,6 +1689,8 @@
   color: white;
 }
 
+/* SCHEDULE */
+
 .schedule {
   padding-top: 120px;
   padding-bottom: 150px;
@@ -1703,8 +1705,24 @@
   margin-top: 0;
 }
 
+.schedule-row {
+  vertical-align: baseline;
+}
+
 .schedule-detail {
 
+}
+
+.schedule-title {
+  margin-top: 0px;
+}
+
+.schedule-subtitle {
+  color: #bebebe;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: -25px;
+  margin-bottom: 0px;
 }
 
 .schedule-table {
@@ -1723,6 +1741,8 @@
   color: white;
   margin: 0;     
 }
+
+/* END SCHEDULE */
 
 /* 22. BREAKPOINTS */
 
