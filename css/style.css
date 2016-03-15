@@ -1264,6 +1264,7 @@
 
   .lj-team {
     margin-bottom: 30px;
+    height: 270px;
   }
 
   .lj-team-text h3 {
@@ -1921,6 +1922,10 @@
     /* 11. CLIENTS */
 
     .lj-clients-texts a.lj-clients-texts-btnr {
+    }
+  
+    .lj-team {
+      height: 220px;
     }
 
 }
