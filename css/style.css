@@ -1246,6 +1246,7 @@
     font-weight: 400;
     margin: 0 0 15px;
   }
+  }
 
   .lj-faq-item p {
     margin: 0;
@@ -1258,7 +1259,12 @@
 
   .team {
     padding: 150px 0;
-    background-color: #f6f8fa;
+    background-color: #ffffff;
+  }
+
+  .lj-team {
+    margin-bottom: 30px;
+    height: 270px;
   }
 
   .lj-team-text h3 {
@@ -1916,6 +1922,10 @@
     /* 11. CLIENTS */
 
     .lj-clients-texts a.lj-clients-texts-btnr {
+    }
+  
+    .lj-team {
+      height: 220px;
     }
 
 }
