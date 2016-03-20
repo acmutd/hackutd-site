@@ -1750,9 +1750,24 @@
 
 /* END SCHEDULE */
 
+.map-image-container {
+  overflow: auto;
+  position: relative;
+  height: 700px;
+}
+
+.map-image {
+  width: 100%;
+  position: relative;
+}
+
 /* 22. BREAKPOINTS */
 
   @media (max-width: 991px) {
+      
+    .map-image { 
+      width: 165%;
+    }
 
     /* 4. HEADER */
 
