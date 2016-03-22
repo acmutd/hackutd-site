@@ -118,7 +118,7 @@ $(document).ready(function () {
         maxZoom: 24,
         minZoom: 1,
         crs: L.CRS.Simple
-    }).setView([150, 100], 2);
+    }).setView([135, 110], 3);
   
     map.setMaxBounds(new L.LatLngBounds([0, 500], [500, 0]));
   
