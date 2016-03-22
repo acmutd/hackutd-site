@@ -112,3 +112,20 @@ particlesJS('particles-js',
 	}
 
 );
+
+$(document).ready(function () {
+    var map = L.map('map-box', {
+        maxZoom: 24,
+        minZoom: 1,
+        crs: L.CRS.Simple
+    }).setView([150, 100], 2);
+  
+    map.setMaxBounds(new L.LatLngBounds([0, 500], [500, 0]));
+  
+    var imageUrl = 'img/map.jpg';
+    var imageBounds = [[250, 0], [0, 250]];
+  
+    L.imageOverlay(imageUrl, imageBounds).addTo(map);
+    L.marker([130, 130]).bindLabel('Main Venue').addTo(map);
+    L.marker([117, 109]).bindLabel('Opening Ceremony').addTo(map);
+});

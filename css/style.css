@@ -1750,15 +1750,8 @@
 
 /* END SCHEDULE */
 
-.map-image-container {
-  overflow: auto;
-  position: relative;
-  height: 700px;
-}
-
-.map-image {
-  width: 100%;
-  position: relative;
+#map-box {
+  height: 500px;
 }
 
 /* 22. BREAKPOINTS */
