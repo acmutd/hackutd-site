@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <title>HackUTD 16</title>
 
@@ -20,6 +20,9 @@
 
     <!-- Main CSS file -->
     <link rel="stylesheet" href="css/style.css">
+    
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.css' rel='stylesheet' />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
 
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -100,6 +103,12 @@
                         <!--
                 -->
                         <li><a href="index.html#schedule">Schedule</a></li>
+                        <!--
+                -->
+                        <li><a href="index.html#sponsor">Sponsor</a></li>
+                        <!--
+                -->
+                        <li><a href="index.html#map">Map</a></li>
                         <!--
                 -->
                         <li><a href="index.html#team">Team</a></li>
@@ -207,7 +216,9 @@
                     <p>HackUTD is currently offering travel reimbursements to a limited number of participants. Those coming
                         from within Texas will be eligible to recieve up to $40 if coming from far-away locations such as
                         Brownsville, Corpus Christi, or El Paso. All other Texas participants are eligible to receive $20.
-                        Those coming from out-of-state locations will be eligible to recieve up to $100. We'll be updating
+                        Those coming from out-of-state locations will be eligible to recieve up to $100. In order to claim
+                        travel reimbursement, attendees will be required to turn in proof of their purchases (such as a gas
+                        receipt or plane ticket) along with additional documentation that will be sent to you. We'll be updating
                         this section with information on parking at UT Dallas soon.</p>
                 </div>
                 <div class="col-md-5 col-md-offset-2 col-sm-6 lj-faq-item">
@@ -301,7 +312,13 @@
                         </tr>
                         <tr class="schedule-row">
                             <td class="time">2:00 pm</td>
-                            <td class="schedule-detail">Lunch</td>
+                            <td class="schedule-detail">
+                                <div>
+                                    <p class="schedule-title">Lunch</p>
+                                    <p class="schedule-subtitle">Presented by <a href="http://wolterskluwer.com" target="_blank" style="color:#bebebe;text-decoration: underline;">Wolters Kluwer</a></p>
+                                </div>
+
+                            </td>
                         </tr>
                         <tr class="schedule-row">
                             <td class="time">3:00 pm</td>
@@ -317,6 +334,15 @@
                             <td class="schedule-detail">State Farm Tech Talk</td>
                         </tr>
                         <tr class="schedule-row">
+                            <td class="time">7:00 pm</td>
+                            <td class="schedule-detail">
+                                <div>
+                                    <p class="schedule-title">Laboratory for Telecommunication Sciences Tech Talk</p>
+                                    <p class="schedule-subtitle">SSH Tunneling</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="schedule-row">
                             <td class="time">8:00 pm</td>
                             <td class="schedule-detail">
                                 <div>
@@ -330,6 +356,15 @@
                             <td class="schedule-detail">
                                 <div>
                                     <p class="schedule-title">Halo Doubles Tournament</p>
+                                    <p class="schedule-subtitle">Presented by <a href="https://www.statefarm.com/" target="_blank" style="color:#bebebe;text-decoration: underline;">State Farm</a></p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="schedule-row">
+                            <td class="time">9:00 pm</td>
+                            <td class="schedule-detail">
+                                <div>
+                                    <p class="schedule-title">Smash Bros. Tournament</p>
                                     <p class="schedule-subtitle">Presented by <a href="https://www.statefarm.com/" target="_blank" style="color:#bebebe;text-decoration: underline;">State Farm</a></p>
                                 </div>
                             </td>
@@ -434,6 +469,12 @@
                         <!--<div class="col-xs-offset-3 col-sm-offset-5 col-xs-6 col-sm-3 lj-clients-item">
                 <img style="width: 200px;" src="png/sponsor-mlh.png" alt="">
               </div>-->
+<<<<<<< HEAD
+=======
+                        <div class="col-xs-6 col-sm-3 lj-clients-item">
+                            <img style="width: 200px;" src="png/sponsor-microsoft.png" alt="">
+                        </div>
+>>>>>>> 6b283079ba4b73238170004359d88d98479b8bc4
                         <div class="col-xs-6 col-sm-3 lj-clients-item" style="margin-bottom: 20px;">
                             <a href="https://zapier.com" target="_blank"><img style="width: 200px;" src="png/sponsor-zapier.png" alt=""></a>
                         </div>
@@ -463,7 +504,22 @@
     </div>
     <!-- /CLIENTS -->
 
-    <div class="team">
+    <div class="schedule" id="map">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 lj-schedule-title">
+                    <h3>Map</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div id="map-box"></div>                   
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="team" id="team">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 lj-team-text">
@@ -521,27 +577,27 @@
                     <p>Industry Co-Coordinator</p>
                 </div>
 
-                <!--<div class="col-xs-4 col-sm-3 col-md-2 lj-team">
-          <div class="lj-team-member">
-            <img title="" alt="" src="team/placeholder.jpg" />
-            <div class="lj-team-member-mask">
+              <div class="col-xs-4 col-sm-3 col-md-2 lj-team">
+                <div class="lj-team-member">
+                  <img title="" alt="" src="team/cathy.jpg" />
+                  <div class="lj-team-member-mask">
 
-            </div>
-          </div>
-          <h4>Cathy Tran</h4>
-          <p>Logistics Co-Coordinator</p>
-        </div>
+                  </div>
+                </div>
+                <h4>Cathy Tran</h4>
+                <p>Logistics Co-Coordinator</p>
+              </div>
           
-        <div class="col-xs-4 col-sm-3 col-md-2 lj-team">
-          <div class="lj-team-member">
-            <img title="" alt="" src="team/placeholder.jpg" />
-            <div class="lj-team-member-mask">
+              <div class="col-xs-4 col-sm-3 col-md-2 lj-team">
+                <div class="lj-team-member">
+                  <img title="" alt="" src="team/yorlynn.jpg" />
+                  <div class="lj-team-member-mask">
 
-            </div>
-          </div>
-          <h4>Yorlynn Engmann</h4>
-          <p>Logistics Co-Coordinator</p>
-        </div>-->
+                  </div>
+                </div>
+                <h4>Yorlynn Engmann</h4>
+                <p>Logistics Co-Coordinator</p>
+              </div>
 
                 <div class="col-xs-4 col-sm-3 col-md-2 lj-team">
                     <div class="lj-team-member">
@@ -571,12 +627,12 @@
 
                 <div class="col-xs-4 col-sm-3 col-md-2 lj-team">
                     <div class="lj-team-member">
-                        <img title="" alt="" src="team/santosh.jpg" />
+                        <img title="" alt="" src="team/santhosh.jpg" />
                         <div class="lj-team-member-mask">
 
                         </div>
                     </div>
-                    <h4>Santosh Paramasivan</h4>
+                    <h4>Santhosh Paramasivan</h4>
                     <p>Director of Finance</p>
                 </div>
 
@@ -600,19 +656,18 @@
           </div>
           <h4>Naeem Shaikh</h4>
           <p>Co-Director of Marketing</p>
-        </div>
-          
-        <div class="col-xs-4 col-sm-3 col-md-2 lj-team">
-          <div class="lj-team-member">
-            <img title="" alt="" src="team/placeholder.jpg" />
-            <div class="lj-team-member-mask">
-              
-            </div>
-          </div>
-          <h4>Tobi Oremade</h4>
-          <p>Volunteer Coordinator</p>
         </div>-->
+          
+              <div class="col-xs-4 col-sm-3 col-md-2 lj-team">
+                <div class="lj-team-member">
+                  <img title="" alt="" src="team/tobi.jpg" />
+                  <div class="lj-team-member-mask">
 
+                  </div>
+                </div>
+                <h4>Tobi Oremade</h4>
+                <p>Volunteer Coordinator</p>
+              </div>
             </div>
         </div>
     </div>
@@ -676,6 +731,10 @@
     <script src="js/lj-beard.js"></script>
     <!-- particles.js -->
     <script src="js/particles.js"></script>
+    <!-- leaflet.js -->
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.js'></script>
+    
     <script src="js/app.js"></script>
     <!-- typed.js -->
     <script src="js/typed.js"></script>
@@ -690,6 +749,7 @@
             });
         });
     </script>
+   
 </body>
 
 </html>

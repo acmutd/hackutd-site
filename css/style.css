@@ -1750,10 +1750,14 @@
 
 /* END SCHEDULE */
 
+#map-box {
+  height: 500px;
+}
+
 /* 22. BREAKPOINTS */
 
   @media (max-width: 991px) {
-
+    
     /* 4. HEADER */
 
     .lj-menu ul {
