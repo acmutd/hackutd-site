@@ -3,7 +3,7 @@
 h1,h2,h3,h4,h5,h6, section p, section span{ font-family: 'Avenir Next', 'Roboto', 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 section.cover .logo {
-  width: 100%;
+  width: 90%;
   position: relative;
   left: 40px;
   transform: scale(0.9);
@@ -15,4 +15,20 @@ section.cover .logo-side-text {
 
 section.cover .logo-side-text h1 {
   font-weight: 400;
+}
+
+@media (max-width: 991px) {
+  section.cover .logo {
+    left: 0;
+    width: 50%;
+    margin-bottom: 40px;
+  }
+
+  section.cover .logo-side-text {
+    padding-top: 0;
+  }
+
+  section.cover .logo-side-text h1 {
+    text-align: center;
+  }
 }
