@@ -1,6 +1,6 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
 
-h1,h2,h3,h4,h5,h6, section p, section span{ font-family: 'Avenir Next', 'Roboto', 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+/*h1,h2,h3,h4,h5,h6, section p, section span{ font-family: 'Avenir Next', 'Roboto', 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif; }*/
 
 section.cover .logo {
   width: 90%;
@@ -14,7 +14,7 @@ section.cover .logo-side-text {
 }
 
 section.cover .logo-side-text h1 {
-  font-weight: 400;
+  font-weight: 300;
 }
 
 @media (max-width: 991px) {
