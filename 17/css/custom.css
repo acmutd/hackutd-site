@@ -17,18 +17,11 @@ section.cover .logo-side-text h1 {
   font-weight: 300;
 }
 
+.brand {
+  margin-top: 10px;
+  font-weight: 700;
+}
+
 @media (max-width: 991px) {
-  section.cover .logo {
-    left: 0;
-    width: 50%;
-    margin-bottom: 40px;
-  }
 
-  section.cover .logo-side-text {
-    padding-top: 0;
-  }
-
-  section.cover .logo-side-text h1 {
-    text-align: center;
-  }
 }
