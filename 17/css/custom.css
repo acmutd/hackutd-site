@@ -22,6 +22,6 @@ section.cover .logo-side-text h1 {
   font-weight: 700;
 }
 
-@media (max-width: 991px) {
-
+.cover.fullscreen .slides li {
+  height: 100vh;
 }
