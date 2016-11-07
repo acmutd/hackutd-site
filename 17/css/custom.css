@@ -3,10 +3,15 @@
 /*h1,h2,h3,h4,h5,h6, section p, section span{ font-family: 'Avenir Next', 'Roboto', 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif; }*/
 
 section.cover .logo {
-  width: 90%;
+  /*width: 90%;*/
   position: relative;
-  left: 40px;
-  transform: scale(0.9);
+  /*left: 40px;*/
+  height: 175px;
+  /*transform: scale(0.9);*/
+}
+.muli-regular {
+  font-family: 'Muli';
+  font-weight: 400;
 }
 
 section.cover .logo-side-text {
@@ -19,7 +24,21 @@ section.cover .logo-side-text h1 {
 
 .brand {
   margin-top: 20px;
-  font-weight: 700;
+}
+h3.brand {
+  color: #5fc6c1;
+}
+.buttons {
+  margin-top: 25px;
+}
+.btn {
+  border-radius: 5px;
+}
+.btn-filled {
+  background-color: #8da1cd;
+}
+.image-bg .btn.btn-filled, .image-bg .btn-filled:visited {
+  border-color: #8da1cd;
 }
 
 .cover.fullscreen .slides li {
