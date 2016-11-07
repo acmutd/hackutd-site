@@ -54,7 +54,7 @@ h3.brand {
 .cover.fullscreen .slides li {
   height: 100vh;
 }
-@media (max-width: 463px) {
+@media only screen and (max-width: 463px) {
   .btn {
     margin: 10px auto;
   }
