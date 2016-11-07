@@ -7,6 +7,7 @@ section.cover .logo {
   position: relative;
   /*left: 40px;*/
   height: 175px;
+  width: 550.74px;
   /*transform: scale(0.9);*/
 }
 .muli-regular {
@@ -14,16 +15,15 @@ section.cover .logo {
   font-weight: 400;
 }
 
-section.cover .logo-side-text {
+/*section.cover .logo-side-text {
   padding-top: 140px;
 }
 
 section.cover .logo-side-text h1 {
   font-weight: 300;
-}
-
+}*/
 .brand {
-  margin-top: 20px;
+  padding-top: 20px;
 }
 h3.brand {
   color: #5fc6c1;
@@ -33,6 +33,7 @@ h3.brand {
 }
 .btn {
   border-radius: 5px;
+  /*margin: 10px auto;*/
 }
 .btn-filled {
   background-color: #8da1cd;
@@ -41,7 +42,7 @@ h3.brand {
   border-color: #8da1cd;
 }
 .acm, .footer {
-  margin-top: 25px;
+  padding-top: 25px;
 }
 .footer i {
   font-size: 24px;
@@ -52,4 +53,9 @@ h3.brand {
 
 .cover.fullscreen .slides li {
   height: 100vh;
+}
+@media (max-width: 463px) {
+  .btn {
+    margin: 10px auto;
+  }
 }
