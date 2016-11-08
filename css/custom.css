@@ -1,0 +1,64 @@
+/****** PLACE YOUR CUSTOM STYLES HERE ******/
+
+/*h1,h2,h3,h4,h5,h6, section p, section span{ font-family: 'Avenir Next', 'Roboto', 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif; }*/
+
+section.cover .logo {
+  position: relative;
+  width: 350px;
+  height: auto;
+}
+.muli-regular {
+  font-family: 'Muli';
+  font-weight: 400;
+}
+.brand {
+  padding-top: 20px;
+}
+h3.brand {
+  color: #5fc6c1;
+}
+.buttons {
+  margin-top: 10px;
+}
+.btn {
+  border-radius: 5px;
+  /*margin: 10px auto;*/
+}
+.btn-filled {
+  background-color: #8da1cd;
+}
+.image-bg .btn.btn-filled, .image-bg .btn-filled:visited {
+  border-color: #8da1cd;
+}
+.acm, .social_info {
+  padding-top: 25px;
+}
+.social_info i {
+  font-size: 24px;
+}
+.social_icon {
+  margin-right: 20px;
+}
+@media all and (max-width: 767px) {
+  .cover.fullscreen.image-slider {
+    padding: 80px 0;
+  }
+  .cover.fullscreen {
+    height: 100vh;
+  }
+}
+@media all and (max-width: 463px) {
+  .btn {
+    margin: 10px auto;
+  }
+  .buttons {
+    margin-top: 0;
+  }
+  .brand {
+    font-size: 20px;
+  }
+  section.cover .logo {
+    width: 250px;
+    height: auto;
+  }
+}
