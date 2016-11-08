@@ -3,25 +3,14 @@
 /*h1,h2,h3,h4,h5,h6, section p, section span{ font-family: 'Avenir Next', 'Roboto', 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif; }*/
 
 section.cover .logo {
-  /*width: 90%;*/
   position: relative;
-  /*left: 40px;*/
-  height: 175px;
-  width: 550.74px;
-  /*transform: scale(0.9);*/
+  width: 350px;
+  height: auto;
 }
 .muli-regular {
   font-family: 'Muli';
   font-weight: 400;
 }
-
-/*section.cover .logo-side-text {
-  padding-top: 140px;
-}
-
-section.cover .logo-side-text h1 {
-  font-weight: 300;
-}*/
 .brand {
   padding-top: 20px;
 }
@@ -29,7 +18,7 @@ h3.brand {
   color: #5fc6c1;
 }
 .buttons {
-  margin-top: 25px;
+  margin-top: 10px;
 }
 .btn {
   border-radius: 5px;
@@ -50,12 +39,26 @@ h3.brand {
 .social_icon {
   margin-right: 20px;
 }
-
-.cover.fullscreen .slides li {
-  height: 100vh;
+@media all and (max-width: 767px) {
+  .cover.fullscreen.image-slider {
+    padding: 80px 0;
+  }
+  .cover.fullscreen {
+    height: 100vh;
+  }
 }
-@media only screen and (max-width: 463px) {
+@media all and (max-width: 463px) {
   .btn {
     margin: 10px auto;
+  }
+  .buttons {
+    margin-top: 0;
+  }
+  .brand {
+    font-size: 20px;
+  }
+  section.cover .logo {
+    width: 250px;
+    height: auto;
   }
 }
