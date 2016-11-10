@@ -1,7 +1,9 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
 
 /*h1,h2,h3,h4,h5,h6, section p, section span{ font-family: 'Avenir Next', 'Roboto', 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif; }*/
-
+body {
+  background-color: #293247;
+}
 section.cover .logo {
   position: relative;
   width: 350px;
