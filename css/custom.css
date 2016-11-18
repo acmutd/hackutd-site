@@ -21,6 +21,20 @@ h3.brand {
   color: #5fc6c1;
 }
 
+.lead {
+  font-family: 'Open Sans';
+}
+
+.content p {
+  font-size: 16px;
+  font-family: 'Open Sans';
+}
+
+.right p {
+  font-size: 16px;
+  font-family: 'Open Sans';
+}
+
 .buttons {
   margin-top: 10px;
 }
@@ -50,32 +64,40 @@ h3.brand {
   margin-right: 20px;
 }
 
+.numbers-row {
+  margin-top: 30px;
+}
+
+.numbers-row h1, h2, h3, h4, h5, h6 {
+  color: #293247;
+}
+
 /**
  * Colors
  */
 
 .hackutd-teal {
-  color: #5ac6c9 !important;
+  color: #5fc6c1 !important;
 }
 
 .hackutd-teal-bg {
-  background-color: #5ac6c9 !important;
+  background-color: #5fc6c1 !important;
 }
 
-.hackutd-blue {
-  color: #8ca0d2 !important;
+.hackutd-purple {
+  color: #8da1cd !important;
 }
 
-.hackutd-blue-bg {
-  background-color: #8ca0d2 !important;
+.hackutd-purple-bg {
+  background-color: #8da1cd !important;
 }
 
 .hackutd-navy {
-  color: #293148 !important;
+  color: #293247 !important;
 }
 
 .hackutd-navy-bg {
-  background-color: #293148 !important;
+  background-color: #293247 !important;
 }
 
 .tracks-description {
