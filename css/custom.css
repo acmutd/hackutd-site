@@ -21,6 +21,16 @@ h3.brand {
   color: #5fc6c1;
 }
 
+.btn-teal {
+  border-color: #5fc6c1;
+  color: #5fc6c1 !important;
+}
+
+.btn-teal:hover {
+  background-color: #5fc6c1 !important;
+  color: white !important;
+}
+
 .lead {
   font-family: 'Open Sans';
 }
@@ -72,6 +82,14 @@ h3.brand {
   color: #293247;
 }
 
+.v-align {
+  position: relative !important;
+  transform: translate3d(0, -50%, 0) !important;
+  -webkit-transform: translate3d(0, -50%, 0) !important;
+  top: 50% !important;
+  z-index: 2 !important;
+}
+
 /**
  * Colors
  */
@@ -114,6 +132,12 @@ h3.brand {
   .cover.fullscreen {
     height: 100vh;
   }
+
+  .footer-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+  }
 }
 
 @media all and (max-width: 463px) {
@@ -133,4 +157,14 @@ h3.brand {
     width: 250px;
     height: auto;
   }
+
+  .icon-sm {
+    font-size: 24px;
+  }
+
+  .lead {
+    font-size: 14px !important;
+  }
+
+  
 }
