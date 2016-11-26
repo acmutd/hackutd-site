@@ -31,18 +31,42 @@ h3.brand {
   color: white !important;
 }
 
+.btn-purple {
+  border-color: #8da1cd !important;
+  color: #8da1cd !important;
+}
+
+.btn-purple:hover {
+  background-color: #8da1cd !important;
+  color: white !important;
+}
+
 .lead {
   font-family: 'Open Sans';
+  color: #293247;
+}
+
+.bg-dark .lead {
+  color: white;
 }
 
 .content p {
   font-size: 16px;
   font-family: 'Open Sans';
+  color: #293247;
+}
+
+.bg-dark .content p {
+  color: white;
 }
 
 .right p {
   font-size: 16px;
   font-family: 'Open Sans';
+}
+
+.title h4 {
+  color: #293247 !important;
 }
 
 .buttons {
@@ -165,6 +189,4 @@ h3.brand {
   .lead {
     font-size: 14px !important;
   }
-
-  
 }
