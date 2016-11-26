@@ -41,6 +41,16 @@ h3.brand {
   color: white !important;
 }
 
+.btn-purple-filled {
+  border-color: #8da1cd !important;
+  color: white !important;
+}
+
+.btn-purple-filled:hover {
+  background-color: #8da1cd !important;
+  color: white !important;
+}
+
 .lead {
   font-family: 'Open Sans';
   color: #293247;
