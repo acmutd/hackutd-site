@@ -176,6 +176,18 @@ h3.brand {
   text-align: left;
 }
 
+.tracks-icon {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.tracks-text {
+  font-size: 24px;
+  text-align: center;
+}
+
 @media all and (max-width: 767px) {
   .cover.fullscreen.image-slider {
     padding: 80px 0;
