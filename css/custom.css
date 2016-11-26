@@ -168,6 +168,14 @@ h3.brand {
   font-weight: 300 !important;
 }
 
+.text-right-desktop {
+  text-align: right;
+}
+
+.text-left-desktop {
+  text-align: left;
+}
+
 @media all and (max-width: 767px) {
   .cover.fullscreen.image-slider {
     padding: 80px 0;
@@ -181,6 +189,14 @@ h3.brand {
     margin-top: 20px;
     margin-bottom: 20px;
     display: block;
+  }
+
+  .text-right-desktop {
+    text-align: center !important;
+  }
+
+  .text-left-desktop {
+    text-align: center !important;
   }
 }
 
