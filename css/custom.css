@@ -1,73 +1,242 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
 
 /*h1,h2,h3,h4,h5,h6, section p, section span{ font-family: 'Avenir Next', 'Roboto', 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif; }*/
-body {
-  background-color: #293247;
-}
+
 section.cover .logo {
   position: relative;
   width: 350px;
   height: auto;
 }
+
 .muli-regular {
   font-family: 'Muli';
   font-weight: 400;
 }
+
 .brand {
   padding-top: 20px;
 }
+
 h3.brand {
   color: #5fc6c1;
 }
+
+.btn-teal {
+  border-color: #5fc6c1;
+  color: #5fc6c1 !important;
+}
+
+.btn-teal:hover {
+  background-color: #5fc6c1 !important;
+  color: white !important;
+}
+
+.btn-purple {
+  border-color: #8da1cd !important;
+  color: #8da1cd !important;
+}
+
+.btn-purple:hover {
+  background-color: #8da1cd !important;
+  color: white !important;
+}
+
+.btn-purple-filled {
+  border-color: #8da1cd !important;
+  color: white !important;
+}
+
+.btn-purple-filled:hover {
+  background-color: #8da1cd !important;
+  color: white !important;
+}
+
+.lead {
+  font-family: 'Open Sans';
+  color: #293247;
+}
+
+.bg-dark .lead {
+  color: white;
+}
+
+.content p {
+  font-size: 16px;
+  font-family: 'Open Sans';
+  color: #293247;
+}
+
+.bg-dark .content p {
+  color: white;
+}
+
+.right p {
+  font-size: 16px;
+  font-family: 'Open Sans';
+}
+
+.title h4 {
+  color: #293247 !important;
+}
+
 .buttons {
   margin-top: 10px;
 }
-.buttons h4 {
-  color: #8da1cd;
-}
+
 .btn {
   border-radius: 5px;
   /*margin: 10px auto;*/
 }
+
 .btn-filled {
   background-color: #8da1cd;
 }
+
 .image-bg .btn.btn-filled, .image-bg .btn-filled:visited {
   border-color: #8da1cd;
 }
+
 .acm, .social_info {
   padding-top: 25px;
 }
+
 .social_info i {
   font-size: 24px;
 }
+
 .social_icon {
   margin-right: 20px;
 }
+
+.numbers-row {
+  margin-top: 30px;
+}
+
+.numbers-row h1, h2, h3, h4, h5, h6 {
+  color: #293247;
+}
+
+.v-align {
+  position: relative !important;
+  transform: translate3d(0, -50%, 0) !important;
+  -webkit-transform: translate3d(0, -50%, 0) !important;
+  top: 50% !important;
+  z-index: 2 !important;
+}
+
+/**
+ * Colors
+ */
+
+.hackutd-teal {
+  color: #5fc6c1 !important;
+}
+
+.hackutd-teal-bg {
+  background-color: #5fc6c1 !important;
+}
+
+.hackutd-purple {
+  color: #8da1cd !important;
+}
+
+.hackutd-purple-bg {
+  background-color: #8da1cd !important;
+}
+
+.hackutd-navy {
+  color: #293247 !important;
+}
+
+.hackutd-navy-bg {
+  background-color: #293247 !important;
+}
+
+.tracks-description {
+  margin-top: -25px !important;
+  margin-bottom: 50px;
+  display: block;
+}
+
+.cta-head {
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
+
+.cta-subhead {
+  font-size: 20px !important;
+  font-weight: 300 !important;
+}
+
+.text-right-desktop {
+  text-align: right;
+}
+
+.text-left-desktop {
+  text-align: left;
+}
+
+.tracks-icon {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.tracks-text {
+  display: block;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
 @media all and (max-width: 767px) {
   .cover.fullscreen.image-slider {
     padding: 80px 0;
   }
+
   .cover.fullscreen {
     height: 100vh;
   }
+
+  .footer-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .text-right-desktop {
+    text-align: center !important;
+  }
+
+  .text-left-desktop {
+    text-align: center !important;
+  }
 }
+
 @media all and (max-width: 463px) {
   .btn {
     margin: 10px auto;
   }
+
   .buttons {
     margin-top: 0;
   }
-  .buttons h4 {
-    margin-top: 10px;
-    font-size: 16px;
-  }
+  
   .brand {
     font-size: 20px;
   }
+
   section.cover .logo {
     width: 250px;
     height: auto;
+  }
+
+  .icon-sm {
+    font-size: 24px;
+  }
+
+  .lead {
+    font-size: 14px !important;
   }
 }
