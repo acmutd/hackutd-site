@@ -200,6 +200,10 @@ h3.brand {
   font-family: "themify";
 }
 
+.accordion-2 .title h4 {
+  display: inline;
+}
+
 @media all and (max-width: 767px) {
   .cover.fullscreen.image-slider {
     padding: 80px 0;
