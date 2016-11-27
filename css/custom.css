@@ -190,6 +190,16 @@ h3.brand {
   margin-bottom: 45px;
 }
 
+.accordion-2 .title::before {
+  content: "\e61a" !important;
+  font-family: "themify";
+}
+
+.accordion-2 .active .title::before {
+  content: "\e622" !important;
+  font-family: "themify";
+}
+
 @media all and (max-width: 767px) {
   .cover.fullscreen.image-slider {
     padding: 80px 0;
