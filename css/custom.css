@@ -204,6 +204,10 @@ h3.brand {
   display: inline;
 }
 
+.image-square {
+  background-color: whitesmoke;
+}
+
 @media all and (max-width: 767px) {
   .cover.fullscreen.image-slider {
     padding: 80px 0;
