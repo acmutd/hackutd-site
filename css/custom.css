@@ -152,6 +152,14 @@ h3.brand {
   background-color: #293247 !important;
 }
 
+.smoke-bg {
+  background-color: whitesmoke !important;
+}
+
+.white-bg {
+  background-color: white !important;
+}
+
 .tracks-description {
   margin-top: -25px !important;
   margin-bottom: 50px;
@@ -206,6 +214,10 @@ h3.brand {
 
 .image-square {
   background-color: whitesmoke;
+}
+
+.sponsor-buttons {
+  margin-top: 35px;
 }
 
 @media all and (max-width: 767px) {
