@@ -220,6 +220,21 @@ h3.brand {
   margin-top: 35px;
 }
 
+#particles-js{
+  width: 100%;
+  background-position: 50% 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: #2a3245;
+}
+
+.main-content {
+  z-index: 999 !important;
+}
+
 @media all and (max-width: 767px) {
   .cover.fullscreen.image-slider {
     padding: 80px 0;
