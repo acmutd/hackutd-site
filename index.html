@@ -12,12 +12,12 @@
   <link href="css/theme-orange.css" rel="stylesheet" type="text/css" media="all" />
   <link href="css/font-roboto.css" rel="stylesheet" type="text/css">
   <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
   <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet"> 
 </head>
 
 <body>
-
   <div class="main-container">
     <section class="cover fullscreen image-slider slider-arrow-controls controls-inside parallax overlay image-bg">
       <!-- <ul class="slides"> -->
@@ -154,19 +154,10 @@
                       </td>
                   </tr>
                   <tr class="schedule-row">
-                      <td class="time">2:00 pm</td>
-                      <td class="schedule-detail">
-                          <div>
-                              <p class="schedule-title">Quantopian Talk</p>
-                              <!--<p class="schedule-subtitle">Using <a href="https://azure.microsoft.com/en-us/services/service-fabric/" target="_blank" style="color:#bebebe;text-decoration: underline;">Azure Service Fabric </a>to power cloud computation </p>-->
-                          </div>
-                      </td>
-                  </tr>
-                  <tr class="schedule-row">
                       <td class="time">2:30 pm</td>
                       <td class="schedule-detail">
                           <div>
-                              <p class="schedule-title">Make School iOS Workshop</p>
+                              <p class="schedule-title">Quantopian Talk</p>
                               <!--<p class="schedule-subtitle">Using <a href="https://azure.microsoft.com/en-us/services/service-fabric/" target="_blank" style="color:#bebebe;text-decoration: underline;">Azure Service Fabric </a>to power cloud computation </p>-->
                           </div>
                       </td>
@@ -199,6 +190,15 @@
                           <div>
                               <p class="schedule-title">State Farm Workshop</p>
                               <!--<p class="schedule-subtitle">SSH Tunneling</p>-->
+                          </div>
+                      </td>
+                  </tr>
+                  <tr class="schedule-row">
+                      <td class="time">6:00 pm</td>
+                      <td class="schedule-detail">
+                          <div>
+                              <p class="schedule-title">Make School iOS Workshop</p>
+                              <!--<p class="schedule-subtitle">Using <a href="https://azure.microsoft.com/en-us/services/service-fabric/" target="_blank" style="color:#bebebe;text-decoration: underline;">Azure Service Fabric </a>to power cloud computation </p>-->
                           </div>
                       </td>
                   </tr>
@@ -262,19 +262,6 @@
                   </tr>
               </table>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-dark hackutd-navy-bg">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-10 col-sm-offset-1 text-center">
-            <h3 class="hackutd-teal mb40 mb-xs-24 muli-regular">Map</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div id="map-box"></div>
         </div>
       </div>
     </section>
@@ -455,7 +442,21 @@
           </div>
 
         </div>
+      </section>
 
+      <section class="bg-dark hackutd-navy-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 text-center">
+              <h3 class="hackutd-teal mb40 mb-xs-24 muli-regular">Map</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <div id="map-box"></div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="smoke-bg">
@@ -601,15 +602,15 @@
         </footer>
       </div>
 
-
       <script src="js/jquery.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/masonry.min.js"></script>
       <script src="js/flexslider.min.js"></script>
       <script src="js/parallax.js"></script>
       <script src="js/particles.js"></script>
+      <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
       <script src="js/scripts.js"></script>
       <script src="js/app.js"></script>
       <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&utm_medium=TrustBadge&utm_campaign=na-2017&utm_content=black" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/black.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
     </body>
-    </html>
+</html>
