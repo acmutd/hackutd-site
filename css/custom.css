@@ -270,11 +270,12 @@ h3.brand {
 }
 
 .schedule-subtitle {
+  font-family: 'Open Sans';
   color: gray;
   font-weight: 400;
-  font-size: 14px;
-  margin-top: -25px;
-  margin-bottom: 0px;
+  font-size: 16px;
+  margin-top: -20px;
+  margin-bottom: 15px;
 }
 
 .schedule-table {

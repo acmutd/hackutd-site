@@ -112,7 +112,8 @@ $(document).ready(function () {
 	var map = L.map('map-box', {
 		maxZoom: 24,
 		minZoom: 1,
-		crs: L.CRS.Simple
+		crs: L.CRS.Simple,
+		scrollWheelZoom: false
 	}).setView([120, 170], 3);
 
 	map.setMaxBounds(new L.LatLngBounds([0, 250], [250, 0]));
