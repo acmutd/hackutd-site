@@ -79,7 +79,7 @@
                 timer();
                 function timer() {
                     var date = new Date();
-                    var movieDate = new Date("March 4, 2017 12:00:00");
+                    var movieDate = new Date("March 4, 2017 11:00:00");
                     var diff = Math.abs(movieDate - date);
                     var duration = moment.duration(diff);
                     $('.countdown').text(duration.humanize());
