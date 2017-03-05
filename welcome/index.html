@@ -53,10 +53,10 @@
         </style>
     </head>
     <body class="background">
-        <h5 id="welcome" class="animation-welcome center-welcome">WELCOME TO THE</h5>
-        <h3 id="text" class="animation center">CLOSING CEREMONY</h3>
-        <h5 id="countdown-header" class="animation-header center-countdown">STARTSUp</h5>
-        <h1 class="countdown">reallyyy soon</h1>
+        <h5 id="welcome" class="animation-welcome center-welcome">WELCOME TO</h5>
+        <h3 id="text" class="animation center">HACKUTD 17</h3>
+        <h5 id="countdown-header" class="animation-header center-countdown">CEREMONY STARTS IN</h5>
+        <h1 class="countdown"></h1>
         <script>
             $(document).ready(function() {
                 $('#text').addClass("animated");
@@ -82,7 +82,7 @@
                     var movieDate = new Date("March 5, 2017 14:30:00");
                     var diff = Math.abs(movieDate - date);
                     var duration = moment.duration(diff);
-                    //$('.countdown').text(duration.humanize());
+                    $('.countdown').text(duration.humanize());
                 }
                 setInterval(timer, 60000);
             });
