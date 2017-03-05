@@ -56,7 +56,7 @@
         <h5 id="welcome" class="animation-welcome center-welcome">WELCOME TO THE</h5>
         <h3 id="text" class="animation center">CLOSING CEREMONY</h3>
         <h5 id="countdown-header" class="animation-header center-countdown">STARTS IN</h5>
-        <h1 class="countdown"></h1>
+        <h1 class="countdown">reallyyy soon</h1>
         <script>
             $(document).ready(function() {
                 $('#text').addClass("animated");
@@ -82,7 +82,7 @@
                     var movieDate = new Date("March 5, 2017 14:30:00");
                     var diff = Math.abs(movieDate - date);
                     var duration = moment.duration(diff);
-                    $('.countdown').text(duration.humanize());
+                    //$('.countdown').text(duration.humanize());
                 }
                 setInterval(timer, 60000);
             });
