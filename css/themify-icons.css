@@ -988,6 +988,7 @@
 }
 .ti-facebook:before {
 	content: "\e741";
+	color: #ef626c;
 }
 .ti-dropbox:before {
 	content: "\e742";
@@ -1018,6 +1019,7 @@
 }
 .ti-twitter-alt:before {
 	content: "\e74b";
+	color: #ef626c;
 }
 .ti-tumblr-alt:before {
 	content: "\e74c";
