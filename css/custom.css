@@ -56,6 +56,11 @@ h3.brand {
   color: #335c81;
 }
 
+.lead-white {
+  font-family: 'Open Sans';
+  color: white !important;
+}
+
 .bg-dark .lead {
   /* color: white; */
   color: #293247;
