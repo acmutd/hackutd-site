@@ -114,7 +114,7 @@ $(document).ready(function () {
 		minZoom: 1,
 		crs: L.CRS.Simple,
 		scrollWheelZoom: false
-	}).setView([120, 170], 3);
+	}).setView([105, 197], 3);
 
 	map.setMaxBounds(new L.LatLngBounds([0, 250], [250, 0]));
 
@@ -125,5 +125,5 @@ $(document).ready(function () {
 	L.marker([140, 215]).bindPopup('Parking').addTo(map);
 	L.marker([130, 225]).bindPopup('Parking').addTo(map);
 	L.marker([150, 230]).bindPopup('Parking').addTo(map);
-	L.marker([120, 175]).bindPopup('Main Venue').addTo(map);
+	L.marker([105, 197]).bindPopup('Main Venue').addTo(map);
 });
