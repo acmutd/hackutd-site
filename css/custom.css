@@ -136,6 +136,10 @@ h3.brand {
   z-index: 2 !important;
 }
 
+.text-move-down {
+  padding: 25px 0px 0px 0px;
+}
+
 #map-box {
   height: 500px;
 }
@@ -171,6 +175,10 @@ h3.brand {
 .white-t {
   font-family: 'Open Sans';
   color: white;
+}
+
+.white-texts {
+  color: white !important;
 }
 
 .hackutd-off-white {
@@ -232,11 +240,17 @@ h3.brand {
   text-align: center;
 }
 
+
+
 .tracks-text {
   display: block;
   font-size: 24px;
   text-align: center;
   margin-bottom: 45px;
+}
+
+.teams-text {
+  font-size: 24px;
 }
 
 .accordion-2 .title::before {
@@ -261,7 +275,7 @@ h3.brand {
   margin-top: 35px;
 }
 
-#particles-js{
+#particles-js {
   width: 100%;
   background-position: 50% 50%;
   position: absolute;
@@ -270,6 +284,39 @@ h3.brand {
   bottom: 0;
   z-index: 999;
   background-color: #fff4e8;
+}
+
+/* #particles-live-js {
+  width: 100%;
+  background-position: 50% 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: #ffff48;
+}
+
+#particles-teams-js {
+  width: 100%;
+  background-position: 50% 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: #48ffff;
+} */
+
+#particles-info-js {
+  width: 100%;
+  background-position: 50% 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: #ffaa48;
 }
 
 .main-content {
