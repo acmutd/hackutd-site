@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HackUTD 18</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The largest university hackathon in North Texas. Join us for 24 hours as we build apps, hardware and more at the beautiful UT Dallas campus. Whether you're a seasoned hackathon goer or just getting started, we'd love to see you there.">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"/ >
+  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+  <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/theme-orange.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/font-roboto.css" rel="stylesheet" type="text/css">
+  <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet"> 
+</head>
+
+<body>
+  <div class="main-container">
+    <section class="cover fullscreen image-slider slider-arrow-controls controls-inside parallax overlay image-bg">
+      <!-- <ul class="slides"> -->
+      <!-- <li class="overlay image-bg"> -->
+      <div id="particles-js"></div>
+      <div class="background-image-holder">
+        <img alt="image" class="background-image" src="img/dot_bg.jpg">
+      </div>
+      <div class="container v-align main-content">
+        <div class="row text-center">
+          <img alt="Logo" class="logo" src="img/LogoRedHorizontal.svg">
+        </div>
+        <div class="row text-center">
+          <div class="col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2">
+            <!-- <h3 class="brand muli-regular">Stay tuned for HackUTD 2018</h3> -->
+            <h3 class="brand muli-regular">Thanks for coming!</h3>
+          </div>
+        </div>
+        <div class="row text-center buttons">
+          <!-- <a class="btn btn-lg btn-filled" href="https://acmutd.typeform.com/to/nl6FyU">Officer Application</a> -->
+          <a class="btn btn-lg btn-filled" href="mailto:sponsor@hackutd.co?subject=Partnership%20Inquiry">Company Sponsorship</a>
+          <!-- <a class="btn btn-lg btn-filled" href="https://goo.gl/forms/lDySc6HpaqSEytAE2">Volunteer Sign-Up</a> -->
+        </div>
+        <div class="row social_info text-center">
+          <a href="https://www.facebook.com/hackutd" target="_blank" class="social_icon"><i class="ti-facebook"></i></a>
+          <a href="https://twitter.com/hackutd" target="_blank" class="social_icon"><i class="ti-twitter-alt"></i></a>
+          <h6 class="muli-regular mb32 acm hackutd-red">Hosted by the <a href="http://acmutd.co" target="_blank" class="hackutd-red">ACM at UTD</a></h6>
+        </div>
+      </div>
+      <!-- </li> -->
+      <!-- </ul> -->
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1 text-center">
+            <h3 class="hackutd-red mb40 mb-xs-24 muli-regular">The largest university hackathon in North Texas</h3>
+            <p class="lead">
+              Join us for 24 hours as we build apps, hardware and more at the beautiful UT Dallas campus. Whether you're a seasoned hackathon goer or just getting started, we'd love to see you there.
+            </p>
+          </div>
+        </div>
+        <div class="row numbers-row">
+          <div class="col-sm-2 col-sm-offset-3 col-md-2 col-md-offset-1 text-right text-center-xs">
+            <h1 class="large mb8">24</h1>
+            <h6 class="uppercase text-right-desktop">hours</h6>
+          </div>
+          <div class="col-md-2 text-center hidden-sm hidden-xs">
+            <i class="ti-infinite icon icon-lg hackutd-blue mt8 mt-xs-0"></i>
+          </div>
+          <div class="col-sm-2 col-md-2 text-center-xs">
+            <h1 class="large mb8 text-center">550</h1>
+            <h6 class="uppercase text-center">hackers</h6>
+          </div>
+          <div class="col-md-2 text-center hidden-sm hidden-xs">
+            <i class="ti-infinite icon icon-lg hackutd-blue mt8 mt-xs-0"></i>
+          </div>
+          <div class="col-sm-2 col-md-2 text-center-xs">
+            <h1 class="large mb8">8</h1>
+            <h6 class="uppercase text-left-desktop">tracks</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-dark hackutd-off-white-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1 text-center">
+            <h3 class="hackutd-red mb40 mb-xs-24 muli-regular">Tracks</h3>
+            <p class="lead tracks-description hackutd-blue">
+              Have a specific idea in mind? At HackUTD 18, you can compete in tracks for specific categories of projects. Best of all, if your project fits into multiple categories, you can get judged in multiple tracks!
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <i class="tracks-icon hackutd-blue ti-cup icon-sm"></i>
+            <h5 class="tracks-text hackutd-red uppercase mb16 muli-regular">Overall</h5>
+          </div>
+
+          <div class="col-md-3">
+            <i class="tracks-icon hackutd-blue ti-mobile icon-sm"></i>
+            <h5 class="tracks-text hackutd-red uppercase mb16 muli-regular">Mobile</h5>
+          </div>
+
+          <div class="col-md-3">
+            <i class="tracks-icon hackutd-blue ti-layout icon-sm"></i>
+            <h5 class="tracks-text hackutd-red uppercase mb16 muli-regular">Design</h5>
+          </div>
+
+          <div class="col-md-3">
+            <i class="tracks-icon hackutd-blue ti-panel icon-sm"></i>
+            <h5 class="tracks-text hackutd-red uppercase mb16 muli-regular">Hardware</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <i class="tracks-icon hackutd-blue ti-money icon-sm"></i>
+            <h5 class="tracks-text hackutd-red uppercase mb16 muli-regular">Finance</h5>
+          </div>
+
+          <div class="col-md-3">
+            <i class="tracks-icon hackutd-blue ti-world icon-sm"></i>
+            <h5 class="tracks-text hackutd-red uppercase mb16 muli-regular">Blockchain</h5>
+          </div>
+
+          <div class="col-md-3">
+            <i class="tracks-icon hackutd-blue ti-stats-up icon-sm"></i>
+            <h5 class="tracks-text hackutd-red uppercase mb16 muli-regular">Startup</h5>
+          </div>
+
+          <div class="col-md-3">
+            <i class="tracks-icon hackutd-blue ti-basketball icon-sm"></i>
+            <h5 class="tracks-text hackutd-red uppercase mb16 muli-regular">Sports</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hackutd-blue-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 col-sm-offset-4 text-center">
+            <h3 class="hackutd-red mb40 mb-xs-24 muli-regular">Schedule</h3>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+              <table class="schedule-table">
+                  <tr class="schedule-row">
+                      <td class="time">9:00 am</td>
+                      <td class="schedule-detail">Registration</td>
+                  </tr>
+                  <tr class="schedule-row">
+                      <td class="time">11:00 am</td>
+                      <td class="schedule-detail">
+                          <div>
+                              <p class="schedule-title">Opening Ceremony</p>
+                              <!--<p class="schedule-subtitle">Presented by <a href="https://jeremyvickers.wordpress.com/" target="_blank" style="color:#bebebe;text-decoration: underline;">Jeremy Vickers</a></p>-->
+                          </div>
+                      </td>
+                  </tr>
+                  <tr class="schedule-row">
+                      <td class="time">12:00 pm</td>
+                      <td class="schedule-detail">Hacking Begins</td>
+                  </tr>
+                  <tr class="schedule-row">
+                      <td class="time">1:00 pm</td>
+                      <td class="schedule-detail">
+                          <div>
+                              <p class="schedule-title">Lunch</p>
+                              <!--<p class="schedule-subtitle">Presented by <a href="http://wolterskluwer.com" target="_blank" style="color:#bebebe;text-decoration: underline;">Wolters Kluwer</a></p>-->
+                          </div>
+
+                      </td>
+                  </tr>
+                  <tr class="schedule-row">
+                      <td class="time">6:00 pm</td>
+                      <td class="schedule-detail">
+                          <div>
+                              <p class="schedule-title">Dinner</p>
+                              <!--<p class="schedule-subtitle">Presented by <a href="https://www.statefarm.com/" target="_blank" style="color:#bebebe;text-decoration: underline;">State Farm</a></p>-->
+                          </div>
+                      </td>
+                  </tr>                
+                  <tr class="schedule-row">
+                      <td class="time">12:00 am</td>
+                      <td class="schedule-detail">
+                          <div>
+                              <p class="schedule-title">Midnight Event</p>
+                              <!--<p class="schedule-subtitle">Presented by <a href="https://www.statefarm.com/" target="_blank" style="color:#bebebe;text-decoration: underline;">State Farm</a></p>-->
+                          </div>
+                      </td>
+                  </tr>
+                  <tr class="schedule-row">
+                      <td class="time">8:00 am</td>
+                      <td class="schedule-detail">
+                          <div>
+                              <p class="schedule-title">Breakfast</p>
+                              <!--<p class="schedule-subtitle">Presented by <a href="http://www.funimation.com/welcome" target="_blank" style="color:#bebebe;text-decoration: underline;">Funimation</a></p>-->
+                          </div>
+                      </td>
+                  </tr>
+                  <tr class="schedule-row">
+                    <td class="time">9:00 am</td>
+                    <td class="schedule-detail">Submission Opens</td>
+                </tr>
+                  <tr class="schedule-row">
+                      <td class="time">12:00 pm</td>
+                      <td class="schedule-detail">Hacking Ends</td>
+                  </tr>
+                  <tr class="schedule-row">
+                      <td class="time">12:30 pm</td>
+                      <td class="schedule-detail">
+                          <div>
+                              <p class="schedule-title">Submission Closes</p>
+                              <!--<p class="schedule-subtitle">Presented by <a href="http://wolterskluwer.com" target="_blank" style="color:#bebebe;text-decoration: underline;">Wolters Kluwer</a></p>-->
+                          </div>
+                      </td>
+                  </tr>
+                  <tr class="schedule-row">
+                      <td class="time">1:00 pm</td>
+                      <td class="schedule-detail">Judging</td>
+                  </tr>
+                  <tr class="schedule-row">
+                      <td class="time">3:00 pm</td>
+                      <td class="schedule-detail">Closing Ceremony</td>
+                  </tr>
+              </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="white-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h3 class="hackutd-red mb40 mb-xs-24 muli-regular">FAQ</h4>
+              <p class="lead mb64">
+                Got questions about HackUTD? Read on.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+              <ul class="accordion accordion-2 one-open">
+                <li>
+                  <div class="title">
+                    <h4 class="mb0 muli-regular">Who, When, &amp; Where?</h4>
+                  </div>
+                  <div class="content">
+                    <p>
+                      HackUTD 18 will run for 24 hours on February 24th &amp; 25th at the University of Texas at Dallas, open to all college students 18+ (16+ if you're from UTD).
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <h4 class="mb0 muli-regular">How do I sign up?</h4>
+                  </div>
+                  <div class="content">
+                    <p>
+                      HackUTD 18 has ended. Thanks for coming!
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <h4 class="mb0 muli-regular">How's parking &amp; travel reimbursement?</h4>
+                  </div>
+                  <div class="content">
+                    <p>
+                      HackUTD is currently offering travel reimbursements to a limited number of participants. Travel reimbursement amount will be determined based on travel distance and will be distributed during the event.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <h4 class="mb0 muli-regular">What kind of project can I work on?</h4>
+                  </div>
+                  <div class="content">
+                    <p>
+                      Whatever you'd like. Software, hardware, design, music, art, animation — take your pick. In addition to traditional prizing for top projects, we'll be awarding prizes to best projects in design, arts, and more.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <h4 class="mb0 muli-regular">Teams?</h4>
+                  </div>
+                  <div class="content">
+                    <p>
+                      Teams should be groups of up to 4 students. You can also work alone, but we encourage collaborating with the other great minds at HackUTD.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <h4 class="mb0 muli-regular">Can I work on something I've already started?</h4>
+                  </div>
+                  <div class="content">
+                    <p>
+                      Not if you'd like to be judged. Previously developed libraries &amp; using Open-Source code are all clear, however.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <h4 class="mb0 muli-regular">I haven't been to a hackthon before...?</h4>
+                  </div>
+                  <div class="content">
+                    <p>
+                      Awesome! We love newcomers as much as veterans. <a class="hackutd-blue" href="mailto:contact@hackutd.co" target="_blank">Hit us up</a> if you've got any questions not answered here.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <h4 class="mb0 muli-regular">What should I bring?</h4>
+                  </div>
+                  <div class="content">
+                    <p>
+                      Whatever you need to create. Hardware, computers, machines, and whatever else. Don't forget hygiene. We'll be providing some hardware first-come, first-served.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <h4 class="mb0 muli-regular">What shouldn't I bring?</h4>
+                  </div>
+                  <div class="content">
+                    <p>
+                      A bad attitude. Come with an open mind &amp; get ready to build.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <h4 class="mb0 muli-regular">I'm not a college student. Can I participate?</h4>
+                  </div>
+                  <div class="content">
+                    <p>
+                      We're open to high school students 18 years of age or older.
+
+                      In the industry? If you're interested in being a mentor, <a class="hackutd-blue" href="mailto:mentorship@hackutd.co">drop us a line</a>.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <h4 class="mb0 muli-regular">How can I get in touch?</h4>
+                  </div>
+                  <div class="content">
+                    <p>
+                      Have a question not answered here? Shoot us an <a class="hackutd-blue" href="mailto:contact@hackutd.co" target="_blank">email</a>, a message on <a class="hackutd-blue" href="http://facebook.com/hackutd" target="_blank">Facebook</a>, or a <a class="hackutd-blue" href="http://twitter.com/hackutd" target="_blank">DM</a>.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <h4 class="inline-block mb0 muli-regular">What is your code of conduct?</h4>
+                  </div>
+                  <div class="content">
+                    <p>
+                      View our Code of Conduct, set forth by Major League Hacking, <a class="hackutd-blue" target="_blank" href="/code">here</a>.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="hackutd-off-white-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 text-center">
+              <h3 class="hackutd-red mb40 mb-xs-24 muli-regular">Map</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <div id="map-box"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="white-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 text-center">
+              <h3 class="hackutd-red mb40 mb-xs-24 muli-regular">Sponsors</h3>
+              <p class="lead">
+                HackUTD wouldn't be possible without the incredible support of our sponsors and partners.
+              </p>
+              <div class="row text-center buttons sponsor-buttons">
+                <a href="mailto:sponsor@hackutd.co?subject=Partnership%20Inquiry" target="_blank" class="btn btn-lg btn-filled">Sponsor Us</a>
+<!--                 <a href="sponsorship.pdf" class="btn btn-lg btn-purple">Learn More</a> -->
+              </div>
+              
+              <!--<div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                  <a href="https://www.statefarm.com/" target="_blank"><img style="width: 200px;" src="img/sponsor-statefarm.png" alt=""></a>
+                </div>
+              </div>-->
+
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3" style="padding-top: 40px; padding-bottom: 40px;">
+                    <a href="https://www.elevate.com/" target="_blank"><img style="width: 275px;" src="18-sponsors/sponsor-elevate.png" alt=""></a>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-lg-12" style="padding-bottom: 20px; padding-top: 20px;">
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <a href="https://statefarm.com/" target="_blank"><img style="width: 200px;" src="18-sponsors/sponsor-statefarm.png" alt=""></a>
+                    </div>
+                    <div class="col-xs-6">
+                      <a href="https://www.lwolf.com/" target="_blank"><img style="width: 200px;" src="18-sponsors/sponsor-lonewolf.png" alt=""></a>
+                    </div>                
+                  </div>
+                </div>
+                <div class="col-sm-12" style="padding-bottom: 10px; padding-top: 20px;">
+                  <div class="row">
+                    <div class="text-center col-xs-4" style="margin-bottom: 40px;">
+                      <a href="https://www.match.com/" target="_blank"><img style="width: 150px;" src="18-sponsors/sponsor-match.png" alt=""></a>
+                    </div>
+                    <div class="text-center col-xs-4" style="margin-bottom: 40px;">
+                      <a href="https://www.cisco.com/" target="_blank"><img style="width: 150px;" src="18-sponsors/sponsor-cisco.png" alt=""></a>
+                    </div>
+                    <div class="text-center col-xs-4" style="margin-bottom: 40px;">
+                      <a href="http://bigdesignevents.com/" target="_blank"><img style="width: 200px;" src="18-sponsors/sponsor-bigdesign.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" style="padding-bottom: 40px; padding-top: 10px;">
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <a href="https://wolterskluwer.com/" target="_blank"><img style="width: 250px;" src="18-sponsors/sponsor-wk.png" alt=""></a>
+                    </div>
+                    <div class="col-xs-6">
+                      <a href="http://cs.utdallas.edu/" target="_blank"><img style="width: 200px;" src="18-sponsors/sponsor-utdcs.png" alt=""></a>
+                    </div>                
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 text-center">
+              <h3 class="hackutd-red mb40 mb-xs-24 muli-regular">Partners</h3>    
+                <div class="row">
+                  <div class="col-sm-12" style="padding-bottom: 20px;">
+                    <div class="row">
+                      <div class="text-center col-xs-6" style="padding-top: 10px;">
+                        <a href="https://mlh.io/" target="_blank"><img style="width: 150px;" src="18-sponsors/partner-mlh.png" alt=""></a>                  
+                      </div>
+                      <div class="text-center col-xs-6" style="padding-top: 10px;">
+                        <a href="https://localhost.mlh.io/" target="_blank"><img style="width: 250px;" src="18-sponsors/partner-mlh-localhost.svg" alt=""></a>
+                      </div>
+                      <!-- <div class="text-center col-xs-4" style="padding-top: 20px;">
+                        <a href="http://dev.utdmaker.space/" target="_blank"><img style="width: 125px;" src="18-sponsors/partner-makerspace.jpg" alt=""></a>
+                      </div>
+                      <div class="text-center col-xs-4" style="padding-top: 10px;">
+                        <a href="http://utdcrypto.com/" target="_blank"><img style="width: 150px;" src="18-sponsors/partner-utdcrypto.png" alt=""></a>
+                      </div>                      -->
+                    </div>
+                    
+                    <div class="row">
+                      <div class="text-center col-xs-4" style="padding-top: 50px;">
+                        <a href="http://vrsutd.org/" target="_blank"><img style="width: 175px;" src="18-sponsors/partner-vrs.png" alt=""></a>                  
+                      </div>
+                      <div class="text-center col-xs-4" style="padding-top: 70px;">
+                        <a href="http://dev.utdmaker.space/" target="_blank"><img style="width: 125px;" src="18-sponsors/partner-makerspace.jpg" alt=""></a>
+                      </div>
+                      <div class="text-center col-xs-4" style="padding-top: 60px;">
+                        <a href="http://utdcrypto.com/" target="_blank"><img style="width: 145px;" src="18-sponsors/partner-utdcrypto.png" alt=""></a>
+                      </div>                     
+                    </div>
+                  </div>
+                </div>
+              <!-- <div class="row">
+                <div class="col-sm-12" style="padding-bottom: 20px;">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-3" style="padding-top: 30px;">
+                      <a href="https://mlh.io/" target="_blank"><img style="width: 200px;" src="png/sponsor-mlh.png" alt=""></a>
+                    </div>
+                    <div class="col-xs-6 col-sm-3" style="padding-top: 10px;">
+                      <a href="https://www.quantopian.com/" target="_blank"><img style="width: 200px;" src="png/sponsor-quantopian.png" alt=""></a>
+                    </div>
+                    <div class="col-xs-6 col-sm-3" style="padding-top: 50px;">
+                      <a href="https://www.namecheap.com/" target="_blank"><img style="width: 200px;" src="png/sponsor-namecheap.png" alt=""></a>
+                    </div>
+                    <div class="col-xs-6 col-sm-3" style="padding-top: 20px;">
+                      <a href="https://www.polyprinter.com/" target="_blank"><img style="width: 200px;" src="png/sponsor-polyprinter.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12" style="padding-bottom: 20px;">
+                  <div class="row">
+                    <div class="text-center col-xs-6 col-sm-3 col-sm-offset-3">
+                      <a href="http://vrsutd.org/" target="_blank"><img style="width: 200px;" src="png/sponsor-vrs.png" alt=""></a>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                      <a href="https://orgsync.com/84452/chapter" target="_blank"><img style="width: 200px;" src="png/sponsor-makerspace.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="image-square right hackutd-blue-bg">
+        <div class="col-md-6 image">
+          <div class="background-image-holder">
+            <img alt="image" class="background-image" src="img/som-overlay.jpg">
+          </div>
+        </div>
+        <div class="col-md-6 content">
+          <h3 class="muli-regular white-t">Get inspired</h3>
+          <p class="lead-white">
+            This is your weekend to innovate with a stage and we'll throw in swag, food, and epic events to keep you going. At UT Dallas's state-of-the-art <a class="hackutd-red" href="http://www.utdallas.edu/maps/" target="_blank">Naveen Jindal School of Management (JSOM) building</a>, you'll have the perfect environment to get inspired.
+          </p>
+        </div>
+      </section>
+
+      <section class="image-bg bg-dark parallax overlay pt120 pb120">
+        <div class="background-image-holder">
+          <img alt="Background Image" class="background-image" src="img/interior.jpg">
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <h3 class="muli-regular white-t">24 hours of innovation</h3>
+                <p class="cta-subhead white-t mb40">Food's on us, code's on you.</p>
+                <!-- <a class="btn btn-lg btn-filled" href="https://acmutd.typeform.com/to/tmwUcX">Apply</a> -->
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+        <footer class="footer-2 text-center-xs hackutd-off-white-bg">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <a href="http://www.hackutd.co"><img class="image-xxs copyright fade-half" alt="Pic" src="img/LogoRedHorizontal.svg"></a>
+              </div>
+
+              <div class="col-sm-4 text-center hackutd-red">
+                <span class="fade-half footer-text">
+                  <p>
+                    © Copyright 2018 HackUTD - All Rights Reserved<br><a class="hackutd-red" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">Code of Conduct</a>
+                  </p>
+                </span>
+              </div>
+
+              <div class="col-sm-4 text-right text-center-xs">
+                <ul class="list-inline social-list">
+                  <li><a href="http://facebook.com/hackutd"><i class="ti-facebook"></i></a></li>
+                  <li><a href="http://twitter.com/hackutd"><i class="ti-twitter-alt"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/masonry.min.js"></script>
+      <script src="js/flexslider.min.js"></script>
+      <script src="js/parallax.js"></script>
+      <script src="js/particles.js"></script>
+      <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+      <script src="js/scripts.js"></script>
+      <script src="js/app.js"></script>
+      <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=blue" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/blue.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
+    </body>
+</html>

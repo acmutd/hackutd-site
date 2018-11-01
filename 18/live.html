@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HackUTD Live</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+  <script src="js/init.js"></script>
+</head>
+<style>
+.slider .indicators .indicator-item.active {
+  background-color: #FFFFFF;
+}
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #e66465, #9198e5);
+    position: relative;
+    animation: pastelRainbow 15s ease infinite;
+    background-size: 500% 500%;
+    overflow-x: hidden;
+}
+@keyframes pastelRainbow {
+    0% {
+      background-position: 0% 50%; }
+    50% {
+      background-position: 100% 50%; }
+    100% {
+      background-position: 0% 50%;  }
+}
+a:link {
+    text-decoration: none;
+}
+.imgBlur {
+  -webkit-filter: blur(5px);
+  /* Safari 6.0 - 9.0 */
+  filter: blur(5px);
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+</style>
+<body class="">
+  <nav class="white pink-text">
+    <section class="container">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo pink-text center light italic">HackUTD 18</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse pink-text"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="schedule-live.html" class="pink-text">Schedule</a></li>
+          <li><a href="maps.html" class="pink-text">Maps</a></li>
+          <li><a href="prizes.html" class="pink-text">Prizes</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="schedule-live.html">Schedule</a></li>
+          <li><a href="maps.html">Maps</a></li>
+          <li><a href="prizes.html">Prizes</a></li>
+        </ul>
+      </div>
+    </section>
+  </nav>
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/live1.jpg" class="imgBlur">
+      </li>
+      <li>
+        <img src="img/jsom.jpg" class="imgBlur">
+      </li>
+      <li>
+        <img src="img/live2.jpg" class="imgBlur">
+      </li>
+      <li>
+        <img src="img/live3.jpg" class="imgBlur">
+      </li>
+    </ul>
+  </div>
+  <br>
+  <section class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <div class="content">
+              <h6 class="pink-text"><b>UT Dallas's JSOM</b></h6>
+              <hr color="black">
+              The University of Texas at Dallas's Naveen Jindal School of Management is the largest of UT Dallas’s eight schools, with a fall 2016 enrollment of more than 9,100, about half of whom are graduate students. The school provides outstanding tuition
+              value, a wide variety of classes on campus and online, flexible scheduling and a convenient location easily accessed from U.S. Highway 75 (Central Expressway), the President George Bush Turnpike and Dallas North Tollway.
+            </div>
+          </div>
+          <footer class="card-footer">
+            <a href="http://jindal.utdallas.edu/" target="_blank" class="card-footer-item">Learn More</a>
+          </footer>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <header class="card-content">
+            <div class="content">
+              <h6 class="pink-text"><b>Network Information & Code of Conduct</b></h6>
+              <hr color="black">
+          </header>
+          <div class="card-content">
+            <div class="content">
+              <aside class="menu">
+                <ul class="menu-list">
+                  <li><a><i class="material-icons">network_wifi</i> HACK UTD</a></li>
+                  <li><a><i class="material-icons ">lock_open</i> no password required...follow instructions</a></li>
+                  <li><a></a></li>
+                  <li><a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">Code of Conduct</a></li>
+                  <br><br><br><br><br><br><br>
+                </ul>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <header class="card-content">
+            <div class="content">
+            <h6 class="pink-text"><b>Contact Information</b></h6>
+            <hr color="black">
+          </div>
+          </header>
+          <div class="card-content">
+            <div class="content">
+              <aside class="menu">
+                <ul class="menu-list">
+                  <li><a href="https://hackutd18.devpost.com" target="_blank"><h3 class="indigo-text"><i class="material-icons ">code</i>  hackutd18.devpost.com</h3></a></li>
+                  <li><a href="https://web.ciscospark.com/rooms/8196ab40-1985-11e8-8682-7933922aba55/chat" target="_blank"><h3 class="orange-text"><i class="material-icons ">message</i>Cisco Spark</h3></a></li>
+                  <li><a><h3 class="red-text"><i class="material-icons ">email</i>  contact@hackutd.co</h3></a></li>
+                  <li><a><h3 class="teal-text"><i class="material-icons ">local_phone</i> 214-620-7114</h3></a></li>
+                  <br><br>
+                </ul>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
