@@ -18,7 +18,7 @@ section.cover .logo {
 }
 
 h3.brand {
-  color: #335c81;
+  color: #8f2e3e;
 }
 
 .btn-teal {
@@ -53,7 +53,7 @@ h3.brand {
 
 .lead {
   font-family: 'Open Sans';
-  color: #335c81;
+  color: #8f2e3e;
 }
 
 .lead-white {
@@ -69,7 +69,7 @@ h3.brand {
 .content p {
   font-size: 16px;
   font-family: 'Open Sans';
-  color: #335c81;
+  color: #7f84b9;
 }
 
 .bg-dark .content p {
@@ -83,7 +83,7 @@ h3.brand {
 }
 
 .title h4 {
-  color: #335c81 !important;
+  color: #7f84b9 !important;
 }
 
 .buttons {
@@ -96,19 +96,19 @@ h3.brand {
 }
 
 .btn-filled {
-  background-color: #ef626c !important;
-  border-color: #ef626c !important;
+  background-color: #8f2e3e !important;
+  border-color: #8f2e3e !important;
 }
 
 
 .image-bg .btn.btn-filled, .image-bg .btn-filled:visited {
-  border-color: #ef626c !important;
+  border-color: #8f2e3e !important;
   color: white;
 }
 
 .acm, .social_info {
   padding-top: 25px;
-  color: #335c81;
+  color: #b8a0c8;
 }
 
 .social_info i {
@@ -117,7 +117,7 @@ h3.brand {
 
 .social_icon {
   margin-right: 20px;
-  color: #335c81;
+  color: #b8a0c8;
 }
 
 .numbers-row {
@@ -125,7 +125,7 @@ h3.brand {
 }
 
 .numbers-row h1, h2, h3, h4, h5, h6 {
-  color: #335c81;
+  color: #8f2e3e;
 }
 
 .v-align {
@@ -157,19 +157,19 @@ h3.brand {
 }
 
 .hackutd-blue {
-  color: #335c81 !important;
+  color: #8f2e3e !important;
 }
 
 .hackutd-blue-bg {
-  background-color: #335c81 !important;
+  background-color: #b8a0c8 !important;
 }
 
 .hackutd-red {
-  color: #ef626c !important;
+  color: #8f2e3e !important;
 }
 
 .hackutd-red-bg {
-  background-color: #ef626c !important;
+  background-color: #8f2e3e !important;
 }
 
 .white-t {
@@ -182,11 +182,11 @@ h3.brand {
 }
 
 .hackutd-off-white {
-  color: #fff4e8 !important;
+  color: #f2bdd0 !important;
 }
 
 .hackutd-off-white-bg {
-  background-color: #fff4e8 !important;
+  background-color: #f2bdd0 !important;
 }
 
 .hackutd-baby-blue-bg {
@@ -316,7 +316,7 @@ h3.brand {
   left: 0;
   bottom: 0;
   z-index: 999;
-  background-color: #c04c65 !important;
+  background-color: #8f2e3e !important;
 }
 
 .main-content {
