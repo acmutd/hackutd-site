@@ -145,7 +145,7 @@ h3.brand {
 }
 
 /**
- * Colors
+ * HackUTD Colors
  */
 
 .hackutd-navy {
@@ -283,7 +283,7 @@ h3.brand {
   left: 0;
   bottom: 0;
   z-index: 999;
-  background-color: #fff4e8;
+  background-color: #f2bdd0 !important;
 }
 
 /* #particles-live-js {
@@ -316,7 +316,7 @@ h3.brand {
   left: 0;
   bottom: 0;
   z-index: 999;
-  background-color: #ffaa48;
+  background-color: #c04c65 !important;
 }
 
 .main-content {
