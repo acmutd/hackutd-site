@@ -83,7 +83,7 @@ h3.brand {
 }
 
 .title h4 {
-  color: #7f84b9 !important;
+  color: #8f2e3e !important;
 }
 
 .buttons {
@@ -240,7 +240,9 @@ h3.brand {
   text-align: center;
 }
 
-
+.black-outline {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 
 .tracks-text {
   display: block;
@@ -316,7 +318,7 @@ h3.brand {
   left: 0;
   bottom: 0;
   z-index: 999;
-  background-color: #8f2e3e !important;
+  background-color: #b8a0c8 !important;
 }
 
 .main-content {
