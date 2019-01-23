@@ -342,7 +342,7 @@ h3.brand {
 
 .schedule-row {
   vertical-align: baseline;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .schedule-detail {
@@ -353,6 +353,7 @@ h3.brand {
   margin-top: 0px;
   font-family: 'Open Sans';
   font-size: 24px;
+  padding-bottom: 30px;
 }
 
 .schedule-subtitle {
