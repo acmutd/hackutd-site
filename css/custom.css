@@ -342,6 +342,7 @@ h3.brand {
 
 .schedule-row {
   vertical-align: baseline;
+  padding-bottom: 20px;
 }
 
 .schedule-detail {
@@ -372,8 +373,7 @@ h3.brand {
 .time {
   text-align: right;
   padding-right: 35px;
-  padding-bottom: 20px;
-
+  padding-bottom: 30px;
 
 /* END SCHEDULE */
 
