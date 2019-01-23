@@ -334,6 +334,7 @@ h3.brand {
 
 .schedule .row {
   margin-top: 50px;
+  text-align: center;
 }
 
 .schedule .row:first-child {
@@ -342,37 +343,52 @@ h3.brand {
 
 .schedule-row {
   vertical-align: baseline;
+  margin-top: 10px;
+  width: 600px;
 }
 
 .schedule-detail {
-  font-size: 24px;
+  font-size: 18px;
+  padding-left: 160px;
+
+}
+
+.schedule-day {
+  margin-bottom: 15px;
+  font-family: 'Open Sans';
+  font-size: 28px;
+  display: inline-block;
+  text-align: center;
 }
 
 .schedule-title {
-  margin-top: 0px;
+  margin-top: 10px;
   font-family: 'Open Sans';
   font-size: 24px;
-}
-
-.schedule-subtitle {
-  font-family: 'Open Sans';
-  color: gray;
-  font-weight: 400;
-  font-size: 16px;
-  margin-top: -20px;
-  margin-bottom: 15px;
+  display: inline-block;
 }
 
 .schedule-table {
   font-size: 24px;
-  padding-left: 20px;
+  padding-left: 100px;
   color: white;
+  margin-left: 15px; 
+  margin-right: 15px;
+  width: 50%;
 }
 
 .time {
-  padding-right: 35px;
-  padding-bottom: 20px;
+  width: 130px;
+  padding-right: 10px;
+  display: inline-block;
+  text-align: right;
 }
+
+.schedule-left {padding-left: 10%; width: 50%; float: left;}
+
+.schedule-center {width: 0%; float: left;}
+
+.schedule-right {padding-right: 10%; width: 50%; float: left;}
 
 /* END SCHEDULE */
 
