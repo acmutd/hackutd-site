@@ -415,6 +415,7 @@ h3.brand {
     font-size: 20px;
   }
 
+  /*Missing Logo on Mobile?*/
   section.cover .logo {
     position: relative;
     width: 250px;
