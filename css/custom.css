@@ -4,7 +4,7 @@
 
 .logo {
   position: relative;
-  width: 350px;
+  width: 25%;
   height: auto;
 }
 
@@ -379,11 +379,11 @@ h3.brand {
 /* END SCHEDULE */
 
 @media all and (max-width: 767px) {
-  .cover.fullscreen.image-slider {
+  .fullscreen.image-slider {
     padding: 80px 0;
   }
 
-  .cover.fullscreen {
+  .fullscreen {
     height: 100vh;
   }
 
@@ -416,9 +416,9 @@ h3.brand {
   }
 
   /*Missing Logo on Mobile?*/
-  section.cover .logo {
+  .logo {
     position: relative;
-    width: 250px;
+    width: 25%;
     height: auto;
   }
 
