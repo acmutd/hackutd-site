@@ -415,11 +415,10 @@ h3.brand {
     font-size: 20px;
   }
 
-  /*Missing Logo on Mobile?*/
   .logo {
     position: relative;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: auto;
   }
 
   .icon-sm {
