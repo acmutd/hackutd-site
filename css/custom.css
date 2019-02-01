@@ -418,7 +418,7 @@ h3.brand {
   .logo {
     position: relative;
     width: 300px;
-    height: auto;
+    /*height: auto;*/
   }
 
   .icon-sm {
