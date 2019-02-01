@@ -417,7 +417,7 @@ h3.brand {
 
   .logo {
     position: relative;
-    width: 300px;
+    width: 100%;
     /*height: auto;*/
   }
 
