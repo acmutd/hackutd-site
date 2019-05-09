@@ -18,7 +18,7 @@
 }
 
 h3.brand {
-  color: #8f2e3e;
+  color: #5e4858;
 }
 
 .btn-teal {
@@ -53,7 +53,7 @@ h3.brand {
 
 .lead {
   font-family: 'Open Sans';
-  color: #8f2e3e;
+  color: #5e4858;
 }
 
 .lead-white {
@@ -69,7 +69,7 @@ h3.brand {
 .content p {
   font-size: 16px;
   font-family: 'Open Sans';
-  color: #7f84b9;
+  color: #41ba98;
 }
 
 .bg-dark .content p {
@@ -96,19 +96,19 @@ h3.brand {
 }
 
 .btn-filled {
-  background-color: #8f2e3e !important;
-  border-color: #8f2e3e !important;
+  background-color: #5e4858 !important;
+  border-color: #5e4858 !important;
 }
 
 
 .image-bg .btn.btn-filled, .image-bg .btn-filled:visited {
-  border-color: #8f2e3e !important;
+  border-color: #5e4858 !important;
   color: white;
 }
 
 .acm, .social_info {
   padding-top: 25px;
-  color: #b8a0c8;
+  color: #ffad59;
 }
 
 .social_info i {
@@ -117,7 +117,7 @@ h3.brand {
 
 .social_icon {
   margin-right: 20px;
-  color: #b8a0c8;
+  color: #ffad59;
 }
 
 .numbers-row {
@@ -125,7 +125,7 @@ h3.brand {
 }
 
 .numbers-row h1, h2, h3, h4, h5, h6 {
-  color: #8f2e3e;
+  color: #5e4858;
 }
 
 .v-align {
@@ -157,19 +157,19 @@ h3.brand {
 }
 
 .hackutd-blue {
-  color: #8f2e3e !important;
+  color: #5e4858 !important;
 }
 
 .hackutd-blue-bg {
-  background-color: #b8a0c8 !important;
+  background-color: #ffad59 !important;
 }
 
 .hackutd-red {
-  color: #8f2e3e !important;
+  color: #5e4858 !important;
 }
 
 .hackutd-red-bg {
-  background-color: #8f2e3e !important;
+  background-color: #5e4858 !important;
 }
 
 .white-t {
@@ -182,11 +182,11 @@ h3.brand {
 }
 
 .hackutd-off-white {
-  color: #f2bdd0 !important;
+  color: #ff7059 !important;
 }
 
 .hackutd-off-white-bg {
-  background-color: #f2bdd0 !important;
+  background-color: #ff7059 !important;
 }
 
 .hackutd-baby-blue-bg {
@@ -285,7 +285,7 @@ h3.brand {
   left: 0;
   bottom: 0;
   z-index: 999;
-  background-color: #f2bdd0 !important;
+  background-color: #ff7059 !important;
 }
 
 /* #particles-live-js {
@@ -318,7 +318,7 @@ h3.brand {
   left: 0;
   bottom: 0;
   z-index: 999;
-  background-color: #7f84b9 !important;
+  background-color: #41ba98 !important;
 }
 
 .main-content {
