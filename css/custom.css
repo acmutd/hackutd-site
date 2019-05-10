@@ -108,7 +108,7 @@ h3.brand {
 
 .acm, .social_info {
   padding-top: 25px;
-  color: #ffad59;
+  color: #ff7059;
 }
 
 .social_info i {
@@ -117,7 +117,7 @@ h3.brand {
 
 .social_icon {
   margin-right: 20px;
-  color: #ffad59;
+  color: #ff7059;
 }
 
 .numbers-row {
@@ -161,7 +161,7 @@ h3.brand {
 }
 
 .hackutd-blue-bg {
-  background-color: #ffad59 !important;
+  background-color: #ff7059 !important;
 }
 
 .hackutd-red {
@@ -182,11 +182,11 @@ h3.brand {
 }
 
 .hackutd-off-white {
-  color: #ff7059 !important;
+  color: #41ba98 !important;
 }
 
 .hackutd-off-white-bg {
-  background-color: #ff7059 !important;
+  background-color: #41ba98 !important;
 }
 
 .hackutd-baby-blue-bg {
@@ -285,7 +285,7 @@ h3.brand {
   left: 0;
   bottom: 0;
   z-index: 999;
-  background-color: #ff7059 !important;
+  background-color: #41ba98 !important;
 }
 
 /* #particles-live-js {
