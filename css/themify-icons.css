@@ -977,6 +977,10 @@
 .ti-instagram:before {
 	content: "\e73d";
 }
+.ti-instagram-alt:before {
+	content: "\e73d";
+	color: #8f2e3e;
+}
 .ti-google:before {
 	content: "\e73e";
 }
