@@ -429,3 +429,12 @@ h3.brand {
     font-size: 14px !important;
   }
 }
+}
+
+.zoom {
+  transition: .3s;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
