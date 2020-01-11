@@ -1,5 +1,0 @@
-
-User-agent: *
-Disallow: /staging/
-Disallow: /15/
-

@@ -1,0 +1,329 @@
+/*
+
+	custom-styles.css
+
+	01. SuperSlides custom styles
+	02. bxSlider custom styles
+	03. owlCarousel custom styles
+
+*/
+
+
+/* ========== 01. SuperSlides custom styles ========== */
+
+/* Slides general */
+.slides {
+position: relative;
+}
+
+.slides .slides-container {
+display: none;
+}
+
+.slides .scrollable {
+*zoom: 1;
+position: relative;
+top: 0;
+left: 0;
+overflow-y: auto;
+-webkit-overflow-scrolling: touch;
+height: 100%;
+}
+
+.slides .scrollable:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Slides navigation */
+.slides-navigation {
+margin: 0 auto;
+position: absolute;
+z-index: 99;
+top: auto;
+bottom: 50px;
+width: 100%;
+}
+
+.slides-navigation a {
+position: absolute;
+display: block;
+width: 40px;
+height: 20px;
+line-height: 20px;
+text-align: center;
+font-family: 'FontAwesome', sans-serif;
+font-size: 36px;
+color: #ffffff;
+opacity: 0.5;
+}
+
+.no-touch .slides-navigation a:hover {
+color: #ffffff;
+opacity: 1;
+}
+
+.slides-navigation a.prev {
+left: 20px;
+}
+
+.slides-navigation a.next {
+right: 20px;
+}
+
+/* Slides pagination */
+.slides-pagination {
+position: absolute;
+z-index: 98;
+bottom: 25px;
+text-align: center;
+width: 100%;
+}
+
+.slides-pagination a {
+border: 0;
+border-radius: 0;
+width: 32px;
+height: 5px;
+display: -moz-inline-stack;
+display: inline-block;
+vertical-align: middle;
+*vertical-align: auto;
+zoom: 1;
+*display: inline;
+background-image: none;
+background: #ffffff;
+margin: 10px 2px 0;
+overflow: hidden;
+text-indent: -100%;
+opacity: 0.5;
+}
+
+.slides-pagination a.current {
+background: #ffffff;
+opacity: 1;
+}
+
+
+/* ========== 02. bxSlider custom styles ========== */
+
+/* Reset and layout */
+.bx-wrapper {
+margin: 0 auto;
+}
+
+.bx-wrapper img {
+display: block;
+max-width: 100%;
+width: auto;
+height: auto;
+min-width: 2px;
+min-height: 2px;
+}
+
+/* Theme */
+.bx-wrapper .bx-viewport {
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+border: none;
+left: 0;
+background: none;
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+position: absolute;
+bottom: -22px;
+width: 100%;
+}
+
+/* Loader */
+.bx-wrapper .bx-loading {
+min-height: 50px;
+background: url('../../images/loader.gif') center center no-repeat #fff;
+height: 100%;
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 100;
+}
+
+/* Pager */
+.bx-wrapper .bx-pager {
+text-align: center;
+font-size: .85em;
+font-family: Arial;
+font-weight: bold;
+color: #ccc;
+padding-top: 20px;
+line-height: 0;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+display: inline-block;
+*zoom: 1;
+*display: inline;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+background: #ccc;
+text-indent: -9999px;
+display: block;
+width: 24px;
+height: 4px;
+margin: 0 2px;
+outline: 0;
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+border-radius: 0;
+}
+
+.no-touch .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+background: #222;
+}
+
+/* Direction controls (prev next) */
+.bx-wrapper .bx-prev {
+left: 0;
+background: none;
+}
+
+.bx-wrapper .bx-next {
+right: 0;
+background: none;
+}
+
+.no-touch .bx-wrapper .bx-prev:hover {
+background-position: 0;
+color: #222;
+}
+
+.no-touch .bx-wrapper .bx-next:hover {
+background-position: 0;
+color: #222;
+}
+
+.bx-wrapper .bx-controls-direction a {
+position: absolute;
+top: auto;
+bottom: -40px;
+margin-top: 0;
+outline: 0;
+width: 40px;
+height: 40px;
+text-indent: 0;
+z-index: 101;
+line-height: 40px;
+color: #ccc;
+font-size: 28px;
+text-align: center;
+}
+
+.bx-wrapper .bx-controls-direction a.disabled {
+display: none;
+}
+
+
+/* ========== 03. owlCarousel custom styles ========== */
+
+/* Custom owlCarousel previous and next buttons styling */
+.oc-prev,
+.oc-next {
+position: absolute;
+bottom: 0;
+display: inline-block;
+height: 40px;
+line-height: 40px;
+font-size: 28px;
+color: #cccccc;
+}
+
+.oc-prev {
+left: 30px;
+}
+
+.oc-next {
+right: 30px;
+}
+
+/* owlCarousel demo theme */
+.owl-theme .owl-controls{
+margin-top: 10px;
+text-align: center;
+}
+
+/* Styling next and prev buttons */
+.owl-theme .owl-controls .owl-buttons div {
+color: #cccccc;
+display: inline-block;
+zoom: 1;
+*display: inline; /*IE7 life-saver */
+margin: 0;
+padding: 0;
+font-size: 14px;
+-webkit-border-radius: 0;
+-moz-border-radius: 0;
+border-radius: 0;
+background: none;
+filter: Alpha(Opacity=100); /*IE7 fix*/
+opacity: 1;
+}
+
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.no-touch .owl-theme .owl-controls.clickable .owl-buttons div:hover{
+filter: Alpha(Opacity=100); /*IE7 fix*/
+opacity: 1;
+text-decoration: none;
+}
+
+/* Styling pagination */
+.owl-theme .owl-controls .owl-page {
+display: inline-block;
+zoom: 1;
+*display: inline; /* IE7 life-saver */
+}
+
+.owl-theme .owl-controls .owl-page span {
+display: block;
+width: 24px;
+height: 4px;
+margin: 0 2px;
+filter: Alpha(Opacity=100); /* IE7 fix */
+opacity: 1;
+-webkit-border-radius: 0;
+-moz-border-radius: 0;
+border-radius: 0;
+background: #cccccc;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.no-touch .owl-theme .owl-controls.clickable .owl-page:hover span {
+background: #222222;
+filter: Alpha(Opacity=100); /* IE7 fix */
+opacity: 1;
+}
+
+/* If paginationnumbers is true */
+.owl-theme .owl-controls .owl-page span.owl-numbers {
+height: 30px;
+width: 30px;
+color: #ffffff;
+padding: auto;
+font-size: 12px;
+-webkit-border-radius: 30px;
+-moz-border-radius: 30px;
+border-radius: 30px;
+line-height: 30px;
+}
+
+/* Preloading images */
+.owl-item.loading {
+min-height: 150px;
+background: url('../../images/loader.gif') no-repeat center center;
+}
