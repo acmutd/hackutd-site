@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+$body-background-color: #5e4858;
+$navbar-background-color: $body-background-color;
+$footer-background-color: #16745e;
+$primary: #41b898;
+$text: #ffffff;
+$title-color: #ffffff;
+$footer-padding: 3rem 3rem 3rem;
+
+.columns.is-vertical {
+    flex-direction: column;
+}
+
+#sponsor-box {
+    background-color: #463541;
+}
+
+@import "../bulma-0.8.0/bulma.sass";
