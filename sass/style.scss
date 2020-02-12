@@ -1,19 +1,143 @@
 @charset "utf-8";
 
-$body-background-color: #5e4858;
-$navbar-background-color: $body-background-color;
-$footer-background-color: #16745e;
-$primary: #41b898;
-$text: #ffffff;
-$title-color: #ffffff;
-$footer-padding: 3rem 3rem 3rem;
+@import "https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat&display=swap";
 
-.columns.is-vertical {
+body {
+    position: relative;
+    background-color: #d5eeff;
+}
+
+#main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.section {
+    height: 33%;
+}
+
+#board-grid-container {
+    display: grid;
+    grid-template-columns: 25% auto 19%;
+    grid-template-rows: 15% auto 36%;
+    grid-gap: 10px;
+    height: 100%;
+}
+
+#board {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+#test {
+    display: grid;
+    height: 100%;
+    text-align: center;
+}
+
+#test > * {
+    grid-area: 1 / 1;
+}
+
+#logo {
+    position: relative;
+    left: 12vw;
+    transform: translateY(-13vw);
+}
+
+#hero-titles {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#sponsor-box {
-    background-color: #463541;
+#hero-title {
+    font-family: "Bebas Neue";
+    font-size: 9vw;
+    line-height: 1.1em;
+    font-weight: normal;
+    margin: 0;   
 }
 
-@import "../bulma-0.8.0/bulma.sass";
+#hero-subtitle {
+    font-family: "Montserrat";
+    font-size: 2vw;
+    line-height: 1.1em;
+    font-weight: normal;
+    margin: 0;
+}
+
+#about-grid-container {
+    display: grid;
+    grid-template-columns: 13% auto 29%;
+    grid-template-rows: 21% auto 35%;
+    grid-gap: 10px;
+    height: 100%;
+}
+
+#about {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    
+    padding: 2vw;
+}
+
+#about-title {
+    font-family: "Bebas Neue";
+    font-size: 6vw;
+    line-height: 1.1em;
+    font-weight: normal;
+    margin: 0;   
+}
+
+.about-text {
+    font-family: "Montserrat";
+    font-size: 2vw;
+    line-height: 1.1em;
+    font-weight: normal;
+    margin: 0 0 3vw 0;
+}
+
+#faq-grid-container {
+    display: grid;
+    grid-template-columns: 6% auto 40%;
+    grid-template-rows: 6% auto 7%;
+    grid-gap: 10px;
+    height: 100%;
+    transform: rotate(-1deg)
+}
+
+#faq {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    
+    padding: 2vw;
+}
+
+#faq-title {
+    font-family: "Bebas Neue";
+    font-size: 6vw;
+    line-height: 1.1em;
+    font-weight: normal;
+    margin: 0;   
+}
+
+.faq-text {
+    font-family: "Montserrat";
+    font-size: 2vw;
+    line-height: 1.1em;
+    font-weight: normal;
+    margin: 0 0 3vw 0;
+}
+
+@import "../node_modules/normalize.css/normalize.css"
