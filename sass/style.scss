@@ -5,6 +5,7 @@
 body {
     position: relative;
     background-color: #d5eeff;
+    overflow-x: hidden;
 }
 
 #main {
@@ -76,7 +77,7 @@ body {
 #about-grid-container {
     display: grid;
     grid-template-columns: 13% auto 29%;
-    grid-template-rows: 21% auto 35%;
+    grid-template-rows: 19% auto 35%;
     grid-gap: 10px;
     height: 100%;
 }
@@ -96,6 +97,12 @@ body {
     line-height: 1.1em;
     font-weight: normal;
     margin: 0;   
+}
+
+@media only screen and (max-width: 600px) {
+    #about-title {
+        font-size: 5vw;
+    }
 }
 
 .about-text {
