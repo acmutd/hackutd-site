@@ -115,7 +115,7 @@ body {
 
 #faq-grid-container {
     display: grid;
-    grid-template-columns: 6% auto 40%;
+    grid-template-columns: 4% auto 38%;
     grid-template-rows: 6% auto 7%;
     grid-gap: 10px;
     height: 100%;
@@ -123,28 +123,78 @@ body {
 }
 
 #faq {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 2;
-    
+    grid-row: 2;
+    grid-column: 2;
     padding: 2vw;
 }
 
 #faq-title {
     font-family: "Bebas Neue";
-    font-size: 6vw;
+    font-size: 5vw;
     line-height: 1.1em;
     font-weight: normal;
-    margin: 0;   
+    margin: 0;
 }
 
-.faq-text {
+#qa-grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "q1 q2"
+        "q3 q4"
+        "q5 q6"
+        "q7 q8";
+    grid-gap: 10px;
+    height: 100%;
+}
+
+.faq-q {
     font-family: "Montserrat";
     font-size: 2vw;
     line-height: 1.1em;
+    font-weight: bold;
+    margin: 0 0 1vw 0;
+}
+
+.faq-a {
+    font-family: "Montserrat";
+    font-size: 1.5vw;
+    line-height: 1.1em;
     font-weight: normal;
-    margin: 0 0 3vw 0;
+    margin: 0;
+}
+
+.q1 {
+    grid-area: q1;
+}
+
+.q2 {
+    grid-area: q2;
+}
+
+.q3 {
+    grid-area: q3;
+}
+
+.q4 {
+    grid-area: q4;
+}
+
+.q5 {
+    grid-area: q5;
+}
+
+.q6 {
+    grid-area: q6;
+}
+
+.q7 {
+    grid-area: q7;
+}
+
+.q8 {
+    grid-area: q8;
 }
 
 @import "../node_modules/normalize.css/normalize.css"
