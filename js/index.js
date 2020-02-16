@@ -18,6 +18,21 @@
 
         breakpoints.on('>=large',function() {
 			document.getElementById("background").src="img/desktop.svg";
+			document.getElementById("board-grid-container").style.gridTemplateRows="15% auto 36%";
+			document.getElementById("logo").style.width="50%";
+			document.getElementById("logo").style.left="12vw";
+			document.getElementById("qa-grid-container").style.gridTemplateRows="auto auto auto auto";
+			let questions = document.getElementsByClassName("faq-q");
+			for(i=0;i<questions.length;i++) {
+				questions[i].style.fontSize="2vw";
+			}
+			let answers = document.getElementsByClassName("faq-a");
+			for(i=0;i<answers.length;i++) {
+				answers[i].style.fontSize="1.5vw";
+			}
+			document.getElementById("faq-grid-container").style.gridTemplateRows="6% auto 7%";
+			document.getElementById("faq-grid-container").style.left="1vw";
+			document.getElementById("faq-grid-container").style.marginLeft="0";
         });
         breakpoints.on('<=medium',function() {
 			document.getElementById("background").src="img/mobile.svg";
@@ -34,6 +49,7 @@
 				answers[i].style.fontSize="3vw";
 			}
 			document.getElementById("faq-grid-container").style.gridTemplateRows="0% auto 0%";
+			document.getElementById("faq-grid-container").style.marginLeft="2vw";
         });
 			
 })(jQuery);
