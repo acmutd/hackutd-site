@@ -1,0 +1,15 @@
+{
+  "name": "hackutd.github.io",
+  "version": "1.0.0",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/style.scss css/style.css",
+    "css-watch": "npm run css-build -- --watch",
+    "serve": "npx serve",
+    "start": "npm run css-watch & npm run serve"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.1",
+    "normalize.css": "^8.0.1",
+    "serve": "^11.3.0"
+  }
+}
