@@ -1,5 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat&display=swap";
-@import "../node_modules/normalize.css/normalize.css";
+@import "/css/normalize.css";
 body {
   position: relative;
   background-color: #d5eeff;
