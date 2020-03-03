@@ -125,8 +125,8 @@ body * {
 #qa-grid-container {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas: "q1 q2" "q3 q4" "q5 q6" "q7 q8";
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas: "q1 q2" "q3 q4" "q5 q6" "q7 q8" "q9 q10" "q11 q12";
   grid-gap: 10px;
   height: 100%;
 }
@@ -172,6 +172,22 @@ body * {
 
 .q8 {
   grid-area: q8;
+}
+
+.q9 {
+  grid-area: q9;
+}
+
+.q10 {
+  grid-area: q10;
+}
+
+.q11 {
+  grid-area: q11;
+}
+
+.q12 {
+  grid-area: q12;
 }
 
 /*# sourceMappingURL=style.css.map */
