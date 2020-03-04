@@ -65,9 +65,6 @@
 			}
 			document.getElementById("faq-grid-container").style.gridTemplateRows="0% auto 15%";
 			document.getElementById("faq-grid-container").style.marginLeft="2vw";
-			document.getElementById("abouttxt").style.fontSize="150%";
-			document.getElementById("abouttxt2").style.fontSize="150%";
-			document.getElementById("about-title").style.fontSize="150%";
 
         });
 			
