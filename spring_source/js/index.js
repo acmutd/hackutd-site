@@ -21,7 +21,7 @@
 			document.getElementById("board-grid-container").style.gridTemplateRows="15% auto 36%";
 			document.getElementById("logo").style.width="50%";
 			document.getElementById("logo").style.left="12vw";
-			document.getElementById("qa-grid-container").style.gridTemplateRows="auto auto auto auto";
+			document.getElementById("qa-grid-container").style.gridTemplateRows="auto auto auto auto auto";
 			let questions = document.getElementsByClassName("faq-q");
 			for(i=0;i<questions.length;i++) {
 				questions[i].style.fontSize="2vw";
