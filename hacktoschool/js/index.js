@@ -18,9 +18,7 @@
 
         breakpoints.on('>=large',function() {
 			document.getElementById("background").src="./svg/desktop.svg";
-			document.getElementById("board-grid-container").style.gridTemplateRows="15% auto 36%";
-			document.getElementById("logo").style.width="50%";
-			document.getElementById("logo").style.left="12vw";
+			document.getElementById("board-grid-container").style.gridTemplateRows="10% auto 36%";
 			document.getElementById("qa-grid-container").style.gridTemplateRows="auto auto auto auto";
 			let questions = document.getElementsByClassName("faq-q");
 			for(i=0;i<questions.length;i++) {
@@ -37,12 +35,21 @@
 			document.getElementById("abouttxt").style.fontSize="2vw";
 			document.getElementById("abouttxt2").style.fontSize="2vw";
 			document.getElementById("about-title").style.fontSize="6vw";
+
+			document.getElementById("portal").classList.remove("mt-2");
+			document.getElementById("portal").classList.add("mt-4");
+			document.getElementById("portal").classList.remove("btn-sm");
+			document.getElementById("portal").classList.add("btn-lg");
+
+			document.getElementById("abouttxt").style.fontSize="2vw";
+			document.getElementById("abouttxt2").style.fontSize="2vw";
+
+			document.getElementById("social-media-links").style.display="none";
         });
         breakpoints.on('<=medium',function() {
 			document.getElementById("background").src="./svg/mobile.svg";
-			document.getElementById("board-grid-container").style.gridTemplateRows="auto auto 55%";
-			document.getElementById("logo").style.width="90%";
-			document.getElementById("logo").style.left="2vw";
+			document.getElementById("board-grid-container").style.gridTemplateRows="10% auto 55%";
+
 			document.getElementById("qa-grid-container").style.gridTemplateRows="auto auto auto auto auto auto auto auto auto auto 10vw";
 			let questions = document.getElementsByClassName("faq-q");
 			for(i=0;i<questions.length;i++) {
@@ -66,6 +73,13 @@
 			document.getElementById("faq-grid-container").style.gridTemplateRows="0% auto 15%";
 			document.getElementById("faq-grid-container").style.marginLeft="2vw";
 
+			document.getElementById("portal").classList.remove("mt-4");
+			document.getElementById("portal").classList.add("mt-2");
+			document.getElementById("portal").classList.remove("btn-lg");
+			document.getElementById("portal").classList.add("btn-sm");
+
+			document.getElementById("abouttxt").style.fontSize="4vw";
+			document.getElementById("abouttxt2").style.fontSize="4vw";
         });
 			
 })(jQuery);
