@@ -38,8 +38,15 @@
 
 			document.getElementById("portal").classList.remove("mt-2");
 			document.getElementById("portal").classList.add("mt-4");
+			document.getElementById("portal").classList.add("mr-3");
 			document.getElementById("portal").classList.remove("btn-sm");
 			document.getElementById("portal").classList.add("btn-lg");
+
+			document.getElementById("btn").classList.remove("mt-2");
+			document.getElementById("btn").classList.add("mt-4");
+			document.getElementById("btn").classList.add("ml-3");
+			document.getElementById("btn").classList.remove("btn-sm");
+			document.getElementById("btn").classList.add("btn-lg");
 
 			document.getElementById("abouttxt").style.fontSize="2vw";
 			document.getElementById("abouttxt2").style.fontSize="2vw";
@@ -74,9 +81,16 @@
 			document.getElementById("faq-grid-container").style.marginLeft="2vw";
 
 			document.getElementById("portal").classList.remove("mt-4");
+			document.getElementById("portal").classList.remove("mr-3");
 			document.getElementById("portal").classList.add("mt-2");
 			document.getElementById("portal").classList.remove("btn-lg");
 			document.getElementById("portal").classList.add("btn-sm");
+
+			document.getElementById("btn").classList.remove("mt-4");
+			document.getElementById("btn").classList.remove("ml-3");
+			document.getElementById("btn").classList.add("mt-2");
+			document.getElementById("btn").classList.remove("btn-lg");
+			document.getElementById("btn").classList.add("btn-sm");
 
 			document.getElementById("abouttxt").style.fontSize="4vw";
 			document.getElementById("abouttxt2").style.fontSize="4vw";
