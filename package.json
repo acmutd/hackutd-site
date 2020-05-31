@@ -7,11 +7,13 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "gridsome": "^0.7.0",
-    "tailwindcss": "^1.2.0"
+    "@gridsome/plugin-sitemap": "^0.2.3",
+    "gridsome": "^0.7.14",
+    "tailwindcss": "^1.4.6",
+    "xlsx": "^0.16.0"
   },
   "devDependencies": {
-    "gridsome-plugin-tailwindcss": "^2.2.43",
+    "gridsome-plugin-tailwindcss": "^2.2.48",
     "vue-cli-plugin-tailwind": "~1.2.0"
   }
 }
