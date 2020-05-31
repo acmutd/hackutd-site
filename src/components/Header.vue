@@ -1,25 +1,43 @@
 <template>
-  <header class="header flex p-8">
-    <div class="logo-container">
+  <header class="dark:header-dark block p-4 md:flex md:h-16">
+    <div class="logo-container block md:inline-block">
       <!-- <div class="logo">
         <g-image src="~/assets/hackutd-horizontal-logo.svg"></g-image>
       </div> -->
-      <div class="site-title text-3xl">HackUTD</div>
+      <div class="site-title block md:inline-block text-3xl">
+        <g-link to="/">HackUTD</g-link>
+        </div>
     </div>
     <!-- <g-link to="/">{{ $static.metadata.siteName }}</g-link> -->
     <!-- <nav class="nav overflow-scroll"> -->
     <nav class="nav">
-      <g-link class="nav__link" to="/">Home</g-link>
-      <g-link class="nav__link" to="/history">History</g-link>
-      <g-link class="nav__link" to="/events">Events</g-link>
-      <g-link class="nav__link" to="/team">Team</g-link>
-      <g-link class="nav__link" to="/contact">Contact</g-link>
+      <g-link class="nav-item block md:inline-block px-4 h-full" to="/">Home</g-link>
+      <g-link class="nav-item block md:inline-block px-4 h-full" to="/history">History</g-link>
+      <g-link class="nav-item block md:inline-block px-4 h-full" to="/events">Events</g-link>
+      <g-link class="nav-item block md:inline-block px-4 h-full" to="/team">Team</g-link>
+      <g-link class="nav-item block md:inline-block px-4 h-full" to="/contact">Contact</g-link>
     </nav>
   </header>
 </template>
 
-<style scoped>
+<style lang="postcss" scoped>
+.header-dark {
+  @apply bg-white;
+  @apply text-black;
+}
+
+.nav-item {
+  @apply font-bold text-lg;
+  @apply px-4;
+}
+
 header {
-  color: white;
+  @apply shadow-lg;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  @apply text-white;
+  @apply bg-black;
 }
 </style>
