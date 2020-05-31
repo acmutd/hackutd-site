@@ -7,4 +7,10 @@ import GeneralLayout from '~/layouts/GeneralLayout.vue';
 export default function (Vue, { router, head, isClient }) {
   Vue.component('home-layout', HomeLayout);
   Vue.component('Layout', GeneralLayout);
+  if (isClient) {
+    head.style.push({
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/icon?family=Material+Icons',
+    });
+  }
 }
