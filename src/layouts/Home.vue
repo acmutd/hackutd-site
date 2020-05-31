@@ -1,7 +1,14 @@
 <template>
-  <div class="layout">
-    <site-header></site-header>
-    <slot></slot>
+  <div>
+    <div class="flex flex-col h-screen">
+      <site-header></site-header>
+      <div class="flex justify-center flex-grow h-full">
+        <slot name="header"></slot>
+      </div>
+    </div>
+    <main class="flex-grow h-full">
+      <slot></slot>
+    </main>
     <site-footer></site-footer>
   </div>
 </template>
@@ -21,8 +28,8 @@ import Footer from "../components/Footer.vue";
 export default {
   components: {
     "site-header": Header,
-    "site-footer": Footer
-  }
+    "site-footer": Footer,
+  },
 };
 </script>
 
@@ -37,14 +44,6 @@ body {
 
 .layout {
   margin: 0 auto;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
 }
 
 .nav__link {
