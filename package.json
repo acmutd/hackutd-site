@@ -2,9 +2,9 @@
   "name": "hackutd-site",
   "private": true,
   "scripts": {
-    "build": "gridsome build",
-    "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "build": "./node_modules/.bin/gridsome build",
+    "develop": "./node_modules/.bin/gridsome develop",
+    "explore": "./node_modules/.bin/gridsome explore"
   },
   "dependencies": {
     "@gridsome/plugin-sitemap": "^0.2.3",
