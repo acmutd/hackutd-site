@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-.sass-cache/
-node_modules/
-=======
 *.log
 .cache
 .DS_Store
@@ -10,4 +6,3 @@ node_modules
 dist
 .env
 .env.*
->>>>>>> Begin HackUTD organization site redesign

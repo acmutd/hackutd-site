@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# hackutd.github.io
-HackUTD's site.
-=======
 # HackUTD Organization Site
 
 Code for the website that keeps track of all past HackUTD-organized events
@@ -21,4 +17,3 @@ Prerequisites:
 2. `cd my-gridsome-site` to open the folder
 3. `gridsome develop` to start a local dev server at `http://localhost:8080`
 4. Happy coding 🎉🙌
->>>>>>> Begin HackUTD organization site redesign
