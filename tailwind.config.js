@@ -10,6 +10,13 @@ module.exports = {
     colors: {
       black: '#444444',
       white: '#FAFAFA',
+      primary: '#FFC386',
+      surface: '#292F36',
+      orange: '#FFC386',
+    },
+    fontFamily: {
+      display: ['Raleway', 'sans-serif'],
+      sans: ['Roboto', 'sans-serif'],
     },
   },
   variants: {},
