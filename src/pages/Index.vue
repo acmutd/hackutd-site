@@ -85,7 +85,8 @@ body {
 }
 
 .hero {
-  background: #666;
+  background: url('../assets/starsbg-blue.svg');
+  background-size: contain;
 }
 
 h1 {
