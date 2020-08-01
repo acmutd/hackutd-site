@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <div class="min-h-screen">
+    <div class="min-h-screen flex flex-col">
       <site-header></site-header>
-      <main class="min-h-full">
+      <main class="min-h-full flex-grow">
         <slot></slot>
       </main>
     </div>
@@ -33,5 +33,20 @@ export default {
 <style>
 .nav__link {
   margin-left: 20px;
+}
+
+body {
+  background: #454545;
+}
+
+#app {
+  background: url('../assets/starsbg-blue.svg');
+  object-fit: cover;
+}
+
+@screen light {
+  body {
+    /* background: #fafafa; */
+  }
 }
 </style>
