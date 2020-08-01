@@ -1,19 +1,20 @@
 <template>
   <Layout>
-    <section class="px-4 text-left md:text-center xl:text-left max-w-2xl md:max-w-6xl mx-auto">
-      <h1 class="text-2xl">Current Team</h1>
+    <section class="page px-4 text-left md:text-center xl:text-left max-w-2xl md:max-w-6xl mx-auto">
+      <h1 class="text-5xl text-center text-white font-display font-bold my-4">The Current HackUTD Team</h1>
       <div class="team-members md:grid md:gap-4 md:grid-cols-2">
-        <team-member
-          v-for="edge in $page.events.edges"
-          :name="edge.node.name"
-          :position="edge.node.position"
-          :bio="edge.node.bio"
-          :image-url="imageName"
-          :github="edge.node.github"
-          :website="edge.node.website"
-          :linkedin="edge.node.linkedin"
-          :key="edge.node.id"
-        ></team-member>
+        <g-link v-for="edge in $page.officers.edges" :key="edge.node.slug" :to="'/team/#'">
+          <team-member
+            :name="edge.node.name"
+            :position="edge.node.position"
+            :bio="edge.node.bio"
+            :image-url="edge.node.imageName"
+            :github="edge.node.github"
+            :website="edge.node.website"
+            :linkedin="edge.node.linkedin"
+            :key="edge.node.id"
+          ></team-member>
+        </g-link>
       </div>
     </section>
     <!-- <section class="px-6 text-left md:text-center xl:text-left max-w-2xl md:max-w-3xl mx-auto">
@@ -24,10 +25,10 @@
 
 <page-query>
 query {
-  events: allOrganizers {
+  officers: allOrganizer {
     edges {
       node {
-        id
+        slug
         name
         position
         bio
@@ -45,11 +46,16 @@ query {
 import OrganizerInfo from "../components/OrganizerInfo.vue";
 
 export default {
+  metaInfo: {
+    title: 'Team',
+    description: 'All the officers on the HackUTD team.',
+  },
   components: {
     "team-member": OrganizerInfo
   },
   computed: {
     pastTeam() {
+      // TODO: Filter by current term
       return [];
     },
   },
@@ -58,9 +64,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.layout {
-  height: 100vh;
-}
-</style>
