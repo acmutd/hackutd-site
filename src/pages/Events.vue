@@ -7,7 +7,7 @@
           <div class="bg-white w-64 m-4 rounded-lg p-4 flex-1">
             <img
               class="h-16 w-16 md:h-48 md:w-48 rounded-full mx-auto md:mx-auto"
-              src="../assets/logosquareorange.svg"
+              src="../assets/logo-square-orange.svg"
             />
             <div class="event-card">
               <h2 class="text-3xl text-gray-900 font-bold font-display">HackUTD</h2>
