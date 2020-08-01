@@ -26,7 +26,7 @@
 
 <page-query>
 query HackUTDHistory {
-  events: allHackathonEvents {
+  events: allEvent {
     edges {
       node {
         title
@@ -35,7 +35,7 @@ query HackUTDHistory {
         imageName
         venue
         attendees
-        layout  
+        layout
       }
     }
   }
