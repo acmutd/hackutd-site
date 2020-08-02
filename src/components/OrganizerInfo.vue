@@ -92,6 +92,7 @@ export default {
 
 .organizer-card--name {
   @apply text-xl text-left text-black;
+  @apply font-display font-semibold;
 }
 
 .organizer-card--position {

@@ -2,7 +2,7 @@
   <Layout>
     <section>
       <div class="fancy-background">
-        <h1 class="text-5xl text-center text-white font-bold pt-8">Our Flagship Events</h1>
+        <h1 class="page-title">Our Flagship Events</h1>
         <div class="md:flex justify-center p-5 max-w-3xl m-auto">
           <div class="bg-white w-64 m-4 rounded-lg p-4 flex-1">
             <img

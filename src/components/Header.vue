@@ -65,6 +65,7 @@ header {
 
 @screen md {
   .logo {
+    @apply mb-0;
     width: 240px;
   }
 }
