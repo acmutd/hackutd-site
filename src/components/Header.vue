@@ -9,8 +9,8 @@
         </div>
       </div>
       <nav class="nav block md:justify-center md:inline-block md:my-auto">
-        <g-link class="nav-item px-4 h-full" to="/">Home</g-link>
-        <g-link class="nav-item px-4 h-full" to="/history">History</g-link>
+        <g-link class="nav-item px-4 h-full" to="/" exact>Home</g-link>
+        <!-- <g-link class="nav-item px-4 h-full" to="/history">History</g-link> -->
         <g-link class="nav-item px-4 h-full" to="/events">Events</g-link>
         <g-link class="nav-item px-4 h-full" to="/team">Team</g-link>
         <g-link class="nav-item px-4 h-full" to="/contact">Contact</g-link>
@@ -41,6 +41,12 @@
   @apply font-bold text-lg;
   @apply px-4;
   @apply font-display;
+  @apply text-white;
+  transition: background-color 0.75s;
+}
+
+.nav-item:hover {
+  @apply text-primary;
 }
 
 header {
@@ -55,5 +61,9 @@ header {
 .logo {
   @apply h-12;
   width: 240px;
+}
+
+.router-link-exact-active, .active--exact {
+  @apply text-primary;
 }
 </style>
