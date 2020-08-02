@@ -1,20 +1,19 @@
 <template>
   <Layout>
-    <section class="flex flex-col items-center justify-center h-full">
-      <div class="flex flex-col">
-        <div class="flex flex-row mb-20">
-          <div class="flex flex-col justify-evenly mr-20 text-4xl font-display font-bold">
+    <section class="background-scrim flex flex-col items-center justify-center h-full">
+      <div class="md:flex md:flex-col">
+        <div class="md:flex md:flex-row">
+          <div class="flex flex-col justify-evenly mx-8 text-4xl font-display font-bold">
             <img src="../assets/logo-square-orange.svg" alt="HackUTD logo" width="100%"/>
-            <span>HackUTD</span>
+            <div class="text-center mt-4">HackUTD</div>
           </div>
-          <div class="flex flex-col text-6xl font-display font-bold">
-            <span>Hack.</span>
-            <span>Build.</span>
-            <span>Learn.</span>
+          <div class="inline-block font-display font-bold text-3xl mt-4 md:flex md:flex-col md:text-6xl">
+            <span class="mx-2">Hack.</span>
+            <span class="mx-2">Build.</span>
+            <span class="mx-2">Learn.</span>
           </div>
         </div>
-
-        <div class="flex flex-row items-center justify-center">
+        <div class="flex flex-row items-center justify-center mt-8">
           <a
             class="rounded-md shadow-md font-sans font-normal text-lg bg-orange p-4 text-black focus:shadow-lg hover:shadow-lg"
             href="/"
@@ -22,32 +21,21 @@
         </div>
       </div>
     </section>
-    <!-- <section class="flex items-center justify-center h-full">
-      <div class="logo">
-        <img src="../assets/logo-square-white.svg" alt="HackUTD logo" width="100%"/>
-      </div>
-      <div class="flex flex-col text-6xl font-display font-bold px-4">
-        <span>Hack.</span>
-        <span>Build.</span>
-        <span>Learn.</span>
-        <a
-          class="rounded-md shadow-md font-sans font-normal text-lg bg-orange p-4 text-black focus:shadow-lg hover:shadow-lg"
-          href="/"
-        >Sign up for our newsletter</a>
-      </div>
-    </section>-->
   </Layout>
 </template>
 
 <script>
 export default {
   metaInfo: {
-    title: "Home",
+    title: 'Home',
   },
 };
 </script>
 
 <style lang="postcss">
+.background-scrim {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(255,255,255,0.25) 100%);
+}
 /* .logo {
   margin-right: 5%;
 }
