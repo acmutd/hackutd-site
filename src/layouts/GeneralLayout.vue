@@ -1,52 +1,29 @@
 <template>
   <div id="app">
-    <div class="min-h-screen flex flex-col">
+    <div class="flex flex-col h-full">
       <site-header></site-header>
-      <main class="min-h-full flex-grow">
+      <main class="h-full">
         <slot></slot>
       </main>
     </div>
-    <site-footer></site-footer>
   </div>
 </template>
 
-<static-query>
-query {
-  metadata {
-    siteName
-  }
-}
-</static-query>
-
 <script>
 import Header from '../components/Header.vue';
-import Footer from '../components/Footer.vue';
 
 export default {
   components: {
     'site-header': Header,
-    'site-footer': Footer,
   },
 };
 </script>
 
-<style>
-.nav__link {
-  margin-left: 20px;
-}
-
-body {
-  background: #454545;
-}
-
+<style lang="postcss">
 #app {
-  background: url('../assets/starsbg-blue.svg');
-  object-fit: cover;
-}
+  @apply h-full;
+  background: url('../assets/starsbg-blue.svg') center center no-repeat;
 
-@screen light {
-  body {
-    /* background: #fafafa; */
-  }
+  
 }
 </style>
