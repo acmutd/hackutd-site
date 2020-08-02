@@ -23,7 +23,11 @@ export default {
 #app {
   @apply h-full;
   background: url('../assets/starsbg-blue.svg') center center no-repeat;
+}
 
-  
+.page-title {
+  @apply text-5xl text-center;
+  @apply text-white font-display font-bold;
+  @apply my-4;
 }
 </style>
