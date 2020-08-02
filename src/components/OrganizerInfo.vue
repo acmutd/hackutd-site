@@ -1,13 +1,13 @@
 <template>
   <article class="organizer-card">
     <g-image
-      class="h-16 w-16 md:h-32 md:w-32 rounded-full md:block md:mx-auto md:"
+      class="organizer-card--image"
       :src="imageName"
     />
-    <div class="text-left ml-4">
-      <h1 class="text-xl text-left text-black dark:text-white md:text-center md:text-2xl md:mt-2">{{ name }}</h1>
-      <div class="text-lg text-black md:text-center mb-2 dark:text-white">{{ position }}</div>
-      <div class="text-black dark:text-white">{{ bio }}</div>
+    <div class="organizer-card--contents">
+      <h1 class="organizer-card--name">{{ name }}</h1>
+      <div class="organizer-card--position">{{ position }}</div>
+      <div class="organizer-card--bio">{{ bio }}</div>
       <div class="social-links">
         <span v-if="github" class="social-link">
           <picture>
@@ -70,10 +70,6 @@ export default {
      */
     website: String,
   },
-  mounted() {
-    const all = document.querySelector('.social-link');
-    console.log(all);
-  },
 };
 </script>
 
@@ -85,9 +81,50 @@ export default {
   @apply rounded-lg shadow-md;
 }
 
+.organizer-card--image {
+  @apply h-16 w-16;
+  @apply rounded-full;
+}
+
+.organizer-card--contents {
+  @apply text-left ml-4;
+}
+
+.organizer-card--name {
+  @apply text-xl text-left text-black;
+}
+
+.organizer-card--position {
+  @apply text-lg text-black mb-2;
+}
+
+.organizer-card--bio {
+  @apply text-black;
+}
+
 @screen md {
   .organizer-card {
     @apply block;
+  }
+
+  .organizer-card--image {
+    @apply block;
+    @apply h-32 w-32;
+    @apply mx-auto;
+  }
+
+  .organizer-card--name {
+    @apply text-center;
+    @apply text-2xl;
+    @apply mt-2;
+  }
+
+  .organizer-card--position {
+    @apply text-center;
+  }
+
+  .social-links {
+    @apply text-center;
   }
 }
 
@@ -108,11 +145,17 @@ export default {
   .organizer-card {
     @apply bg-black;
   }
-}
+  
+  .organizer-card--name {
+    @apply text-white;
+  }
 
-@screen md {
-  .social-links {
-    @apply text-center;
+  .organizer-card--position {
+    @apply text-white;
+  }
+
+  .organizer-card--bio {
+    @apply text-white;
   }
 }
 </style>
