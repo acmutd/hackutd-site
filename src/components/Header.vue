@@ -60,7 +60,13 @@ header {
 
 .logo {
   @apply h-12;
-  width: 240px;
+  @apply mb-2;
+}
+
+@screen md {
+  .logo {
+    width: 240px;
+  }
 }
 
 .router-link-exact-active, .active--exact {
