@@ -1,5 +1,7 @@
 module.exports = {
-  purge: process.env.NODE_ENV === 'production',
+  // TODO: Figure out why marking this true causes error in build.
+  // https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
+  purge: false,
   theme: {
     screens: {
       md: '768px',
