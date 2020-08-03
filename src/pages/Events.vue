@@ -1,28 +1,32 @@
 <template>
   <Layout>
-    <section class="background-scrim flex flex-col items-center justify-center h-full">
+    <section class="events-page background-scrim">
       <h1 class="page-title">Our Flagship Events</h1>
       <div class="md:flex">
-        <div class="bg-white rounded-lg p-4 mb-10 md:mb-0 md:mr-10 flex-1">
-          <img
-            class="h-16 w-16 md:h-48 md:w-48 rounded-full mx-auto md:mx-auto"
-            src="../assets/logo-square-orange.svg"
-          />
-          <div class="event-card">
-            <h2 class="text-3xl text-gray-900 font-bold font-display text-center">HackUTD</h2>
-            <div class="text-orage-500 text-md mt-1">Our hackathon for everyone.</div>
-            <div class="text-gray-600 text-lg mt-3">Spring 2021</div>
+        <div class="event-card">
+          <picture>
+            <source srcset="../assets/logo-square-dark.svg" media="(prefers-color-scheme: light)">
+            <source srcset="../assets/logo-square-white.svg" media="(prefers-color-scheme: dark)">
+            <img 
+              src="../assets/logo-square-dark.svg" 
+              class="event-card--image"
+              />
+          </picture>
+          <div class="">
+            <h2 class="event-card--title">HackUTD Game Jam</h2>
+            <div class="event-card--description">An experimental online experience.</div>
+            <div class="event-card--cta">Fall 2020</div>
           </div>
         </div>
-        <div class="bg-white rounded-lg p-4 flex-1">
+        <div class="event-card">
           <img
-            class="h-16 w-16 md:h-48 md:w-48 rounded-full mx-auto md:mx-auto"
-            src="../assets/logo-square-dark.svg"
+            src="../assets/logo-square-orange.svg"
+            class="h-16 w-16 md:h-48 md:w-48 mx-auto"
           />
-          <div class="event-card">
-            <h2 class="text-3xl text-gray-900 font-bold font-display text-center">Secret Project</h2>
-            <div class="text-orange-500 text-md mt-1">An experimental online experience.</div>
-            <div class="text-gray-600 text-lg mt-3">Fall 2020</div>
+          <div class="">
+            <h2 class="event-card--title">HackUTD</h2>
+            <div class="event-card--description">Our hackathon for everyone.</div>
+            <div class="event-card--cta">Spring 2021</div>
           </div>
         </div>
       </div>
@@ -31,11 +35,11 @@
 </template>
 
 <script>
-import WorkshopInfo from "../components/WorkshopInfo.vue";
+import WorkshopInfo from '../components/WorkshopInfo.vue';
 
 export default {
   components: {
-    "hack-workshop": WorkshopInfo,
+    'hack-workshop': WorkshopInfo,
   },
   methods: {
     prettifyDate(date) {
@@ -46,13 +50,59 @@ export default {
 </script>
 
 <style lang="postcss">
+.events-page {
+  @apply h-full pb-8;
+  @apply flex flex-col items-center justify-center;
+  @apply flex-1;
+}
+
 .event-card {
-  @apply text-black text-left mt-4;
+  @apply text-black text-left mt-4 bg-white;
+  @apply rounded-lg;
+  @apply text-center;
+  @apply p-4 mx-4;
+}
+
+.event-card--image {
+  @apply h-16 w-16 mx-auto;
+}
+
+.event-card--title {
+  @apply text-3xl font-bold font-display text-center;
+  @apply my-2;
+}
+
+.event-card--description {
+  @apply text-gray-800 mt-1;
+}
+
+.event-card--cta {
+  @apply font-display font-bold text-gray-600 text-lg;
+  @apply mt-3;
 }
 
 @screen md {
   .event-card {
-    @apply text-center;
+    width: 368px;
+  }
+}
+
+@screen dark {
+  .event-card {
+    @apply bg-black;
+    @apply text-white;
+  }
+
+  .event-card--description {
+    @apply text-gray-300;
+  }
+
+  .event-card--image {
+    @apply h-48 w-48;
+  }
+
+  .event-card--cta {
+    @apply text-gray-200;
   }
 }
 </style>
