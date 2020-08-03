@@ -1,0 +1,22 @@
+{
+  "name": "hackutd-site",
+  "private": true,
+  "scripts": {
+    "build": "./node_modules/.bin/gridsome build",
+    "develop": "./node_modules/.bin/gridsome develop",
+    "explore": "./node_modules/.bin/gridsome explore",
+    "predeploy": "./node_modules/.bin/gridsome build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@gridsome/plugin-sitemap": "^0.2.3",
+    "gridsome": "^0.7.14",
+    "tailwindcss": "^1.4.6",
+    "xlsx": "^0.16.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "gridsome-plugin-tailwindcss": "^2.2.48",
+    "vue-cli-plugin-tailwind": "~1.2.0"
+  }
+}
