@@ -22,7 +22,8 @@ export default {
 <style lang="postcss">
 #app {
   @apply h-full;
-  background: url('../assets/starsbg-blue.svg') center center no-repeat;
+  background: url('../assets/starsbg-blue.svg') no-repeat fixed 100%;
+  overflow: auto;
 }
 
 .page-title {
