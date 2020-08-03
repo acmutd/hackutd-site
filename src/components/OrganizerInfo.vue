@@ -2,7 +2,7 @@
   <article class="organizer-card">
     <g-image
       class="organizer-card--image"
-      :src="imageName"
+      :src="require(`!!assets-loader!@officers/${imageName}`)"
     />
     <div class="organizer-card--contents">
       <h1 class="organizer-card--name">{{ name }}</h1>
@@ -69,7 +69,7 @@ export default {
      * A URL to this officer's personal website, if any.
      */
     website: String,
-  },
+  }
 };
 </script>
 

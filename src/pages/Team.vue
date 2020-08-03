@@ -8,7 +8,7 @@
             :name="edge.node.name"
             :position="edge.node.position"
             :bio="edge.node.bio"
-            :image-name="'https://www.acmutd.co/png/team-hackutd-camden.jpg'"
+            :imageName="edge.node.imageName"
             :github="edge.node.github"
             :website="edge.node.website"
             :linkedin="edge.node.linkedin"
@@ -55,6 +55,9 @@ export default {
       // TODO: Filter by current term
       return [];
     },
+    image(name) {
+      return `../../data/images/${name}`
+    }
   },
   data() {
     return {};
