@@ -21,7 +21,7 @@
         <div class="event-card">
           <img
             src="../assets/logo-square-orange.svg"
-            class="h-16 w-16 md:h-48 md:w-48 mx-auto"
+            class="event-card--image"
           />
           <div class="">
             <h2 class="event-card--title">HackUTD</h2>
@@ -85,6 +85,10 @@ export default {
   .event-card {
     width: 368px;
   }
+
+  .event-card--image {
+    @apply h-48 w-48;
+  }
 }
 
 @screen dark {
@@ -95,10 +99,6 @@ export default {
 
   .event-card--description {
     @apply text-gray-300;
-  }
-
-  .event-card--image {
-    @apply h-48 w-48;
   }
 
   .event-card--cta {
