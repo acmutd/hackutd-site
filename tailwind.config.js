@@ -1,18 +1,23 @@
 module.exports = {
-  purge: false,
+  purge: process.env.NODE_ENV === 'production',
   theme: {
+    screens: {
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+    },
     extend: {
       screens: {
-        light: { raw: "(prefers-color-scheme: light)" },
-        dark: { raw: "(prefers-color-scheme: dark)" }
+        light: { raw: '(prefers-color-scheme: light)' },
+        dark: { raw: '(prefers-color-scheme: dark)' }
       },
-    },
-    colors: {
-      black: '#444444',
-      white: '#FAFAFA',
-      primary: '#FFC386',
-      surface: '#292F36',
-      orange: '#FFC386',
+      colors: {
+        black: '#444444',
+        white: '#FAFAFA',
+        primary: '#FFC386',
+        surface: '#292F36',
+        orange: '#FFC386',
+      },
     },
     fontFamily: {
       display: ['Raleway', 'sans-serif'],
@@ -24,13 +29,13 @@ module.exports = {
     function darkModePlugin({ addBase, config }) {
       addBase({
         body: {
-          color: config("theme.colors.black"),
-          backgroundColor: config("theme.colors.white"),
+          color: config('theme.colors.black'),
+          backgroundColor: config('theme.colors.white'),
         },
-        "@screen dark": {
+        '@screen dark': {
           body: {
-            color: config("theme.colors.white"),
-            backgroundColor: config("theme.colors.black"),
+            color: config('theme.colors.white'),
+            backgroundColor: config('theme.colors.black'),
           },
         },
       });

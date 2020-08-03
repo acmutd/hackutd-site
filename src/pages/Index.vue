@@ -36,28 +36,4 @@ export default {
 .background-scrim {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(255,255,255,0.25) 100%);
 }
-/* .logo {
-  margin-right: 5%;
-}
-
-img {
-  height: 100% !important;
-} */
-
-/*
-.home-links a {
-  margin-right: 1rem;
-}
-
-.hero {
-  background: url('../assets/starsbg-blue.svg');
-  background-size: contain;
-}
-
-h1 {
-  font-family: Raleway;
-  font-weight: 600;
-  text-transform: uppercase;
-  @apply text-2xl;
-} */
 </style>

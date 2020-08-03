@@ -4,7 +4,7 @@
       <div class="logo-container text-center block md:inline-block md:flex-grow-0">
         <div class="site-title md:inline text-3xl">
           <g-link to="/">
-            <g-image src="../assets/logo-horizontal-white.svg" class="logo"></g-image>
+            <img src="../assets/logo-horizontal-white.svg" class="logo" />
           </g-link>
         </div>
       </div>
