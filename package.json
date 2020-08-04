@@ -9,6 +9,7 @@
   "dependencies": {
     "@gridsome/plugin-sitemap": "^0.2.3",
     "gridsome": "^0.7.14",
+    "particles.vue": "^2.0.5",
     "tailwindcss": "^1.4.6",
     "xlsx": "^0.16.0"
   },

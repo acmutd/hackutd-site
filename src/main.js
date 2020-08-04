@@ -1,6 +1,7 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 import GeneralLayout from '~/layouts/GeneralLayout.vue';
+import Particles from "particles.vue";
 
 export default function (Vue, { router, head, isClient }) {
   head.htmlAttrs = { style: 'height:100vh;' }
@@ -10,7 +11,7 @@ export default function (Vue, { router, head, isClient }) {
       background-color: #292929;
       color: white;
       `
-      
   }
   Vue.component('Layout', GeneralLayout);
+  Vue.use(Particles);
 }
