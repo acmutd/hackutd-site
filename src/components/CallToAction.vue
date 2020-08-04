@@ -3,7 +3,7 @@
     <a
       id="button"
       :style="cssVars"
-      class="rounded-md shadow-md font-sans font-normal text-lg bg-orange p-4 text-black focus:shadow-lg hover:shadow-lg w-full text-center"
+      class="rounded-md shadow-md font-sans font-normal text-lg bg-orange p-4 text-black focus:shadow-lg hover:shadow-lg text-center"
       :href="href"
     >{{ text }}</a>
   </div>

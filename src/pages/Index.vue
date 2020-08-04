@@ -13,7 +13,7 @@
             <span class="mx-2">Learn.</span>
           </div>
         </div>
-        <div class="call-to-actions">
+        <div :class="actionsStyle">
           <div v-for="(edge, index) in $page.ctas.edges" :key="edge.node.text">
             <CallToAction :text="edge.node.text" :href="edge.node.link" :animationDelay="index" />
           </div>
@@ -46,6 +46,11 @@ export default {
   components: {
     CallToAction,
   },
+  computed: {
+    actionsStyle() {
+      return this.$page.ctas.edges.length > 1 ? "grid" : "";
+    }
+  }
 };
 </script>
 
@@ -58,7 +63,12 @@ export default {
   );
 }
 
-.call-to-actions {
+.grid {
   @apply grid gap-4 grid-cols-2;
+}
+
+/* TODO make this better */
+.grid > div > div > a {
+  @apply w-full;
 }
 </style>
