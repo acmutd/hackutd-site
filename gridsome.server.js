@@ -45,4 +45,12 @@ module.exports = function (api) {
       });
     });
   });
+
+  api.loadSource(async actions => {
+    const callToAction = require('./data/callToAction.json');
+    const collection = actions.addCollection({ typeName: 'CallToAction' });
+    for (const o of callToAction) {
+      collection.addNode(o);
+    }
+  })
 };
