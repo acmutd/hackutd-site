@@ -2,7 +2,7 @@
   <Layout>
     <section class="background-scrim flex flex-col items-center justify-center h-full">
       <div class="md:flex md:flex-col">
-        <div class="md:flex md:flex-row">
+        <div class="md:flex md:flex-row justify-evenly">
           <div class="flex flex-col justify-evenly mx-8 text-4xl font-display font-bold">
             <img src="../assets/logo-square-orange.svg" alt="HackUTD logo" width="100%" />
             <div class="text-center mt-4">HackUTD</div>
@@ -14,9 +14,11 @@
           </div>
         </div>
         <div :class="actionsStyle">
-          <div v-for="(edge, index) in $page.ctas.edges" :key="edge.node.text">
-            <CallToAction :text="edge.node.text" :href="edge.node.link" :animationDelay="index" />
-          </div>
+            <CallToAction 
+              v-for="(edge, index) in $page.ctas.edges" :key="edge.node.text"
+              :text="edge.node.text"
+              :href="edge.node.link"
+              :animationDelay="index" />
         </div>
       </div>
     </section>
@@ -48,27 +50,36 @@ export default {
   },
   computed: {
     actionsStyle() {
-      return this.$page.ctas.edges.length > 1 ? "grid" : "";
+      return this.$page.ctas.edges.length == 1 ? "actions-single": "actions-multiple";
     }
   }
 };
 </script>
 
 <style lang="postcss">
-.background-scrim {
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.1) 0%,
-    rgba(255, 255, 255, 0.25) 100%
-  );
+  .background-scrim {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(255, 255, 255, 0.25) 100%
+    );
+  }
+
+.actions-single {
+  @apply flex flex-col;
 }
 
-.grid {
-  @apply grid gap-4 grid-cols-2;
+.actions-multiple {
+  @apply flex flex-col;
 }
 
-/* TODO make this better */
-.grid > div > div > a {
-  @apply w-full;
+@screen md {
+  .actions-multiple {
+    @apply grid gap-4 grid-cols-2;
+  }
+
+  .actions-multiple > * {
+    width: 100%;
+  }
 }
 </style>

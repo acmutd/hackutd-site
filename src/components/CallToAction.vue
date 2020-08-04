@@ -1,12 +1,10 @@
 <template>
-  <div class="flex flex-row items-center justify-center mt-8">
-    <a
-      id="button"
-      :style="cssVars"
-      class="rounded-md shadow-md font-sans font-normal text-lg bg-orange p-4 text-black focus:shadow-lg hover:shadow-lg text-center"
-      :href="href"
-    >{{ text }}</a>
-  </div>
+  <a
+    id="button"
+    :style="cssVars"
+    class="rounded-md shadow-md font-sans font-normal text-lg bg-orange p-4 text-black focus:shadow-lg hover:shadow-lg text-center mt-8"
+    :href="href"
+  >{{ text }}</a>
 </template>
 
 <script>
@@ -18,7 +16,6 @@ export default {
   },
   computed: {
       cssVars() {
-          console.log(this.animationDelay);
           return {
               '--delay': (this.animationDelay / 10) + 's'
           }
