@@ -26,6 +26,14 @@
   </Layout>
 </template>
 
+<script>
+export default {
+  metaInfo: {
+    title: 'Contact'
+  }
+}
+</script>
+
 <style lang="postcss">
 .prospectus-container {
   width: 100vw;

@@ -38,6 +38,9 @@
 import WorkshopInfo from '../components/WorkshopInfo.vue';
 
 export default {
+  metaInfo: {
+    title: 'Events'
+  },
   components: {
     'hack-workshop': WorkshopInfo,
   },
