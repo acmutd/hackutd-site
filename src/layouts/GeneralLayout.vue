@@ -46,4 +46,30 @@ export default {
   top:0;
   left:0;
 }
+
+/* scrollbar width */
+::-webkit-scrollbar {
+  background-color:#292F362c;
+  width:8px;
+}
+
+/* scrollbar track */
+::-webkit-scrollbar-track {
+  background-color:#292f362c;
+}
+ 
+/* scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background-color:#ffc286;
+  border-radius:8px;
+}
+
+/* scrollbar handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ce9d6d; 
+}
+
+::-webkit-scrollbar-button {
+  display:none
+}
 </style>
