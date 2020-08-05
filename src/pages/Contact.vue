@@ -3,7 +3,7 @@
     <section id="contact" class="md:max-w-3xl my-4 p-2 mx-auto">
       <h1 class="text-4xl text-center">Contact Us</h1>
       <p class="text-center text-xl">
-        Have any concerns or complaints? Find us at
+        Have any questions or want to say hello? Find us at
         <a
           href="mailto:hello@hackutd.co"
         >hello@hackutd.co</a>.
