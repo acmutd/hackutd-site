@@ -47,7 +47,7 @@ export default {
   left:0;
 }
 
-@media screen and (min-width: 600px) {
+@screen md {
   /* scrollbar width */
   ::-webkit-scrollbar {
     background-color:#292F362c;
