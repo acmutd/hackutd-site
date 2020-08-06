@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section class="background-scrim flex flex-col items-center justify-center h-full">
+    <section class="flex flex-col items-center justify-center h-full">
       <div class="md:flex md:flex-col">
         <div class="md:flex md:flex-row justify-evenly">
           <div class="flex flex-col justify-evenly mx-8 text-4xl font-display font-bold">
@@ -57,14 +57,6 @@ export default {
 </script>
 
 <style lang="postcss">
-  .background-scrim {
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.1) 0%,
-      rgba(255, 255, 255, 0.25) 100%
-    );
-  }
-
 .actions-single {
   @apply flex flex-col;
 }
