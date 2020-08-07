@@ -41,12 +41,21 @@
   @apply font-bold text-lg;
   @apply px-4;
   @apply font-display;
-  @apply text-white;
-  transition: background-color 0.75s;
+
+  background-size: 200%;
+  background-image: linear-gradient(to right, #FFC386 50%, #FAFAFA 50%);
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: 100% top;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  transition: background-position .8s;
+  color: transparent;
 }
 
 .nav-item:hover {
-  @apply text-primary;
+  background-position: 0% top;
 }
 
 header {
