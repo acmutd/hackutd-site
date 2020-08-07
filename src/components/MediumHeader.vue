@@ -20,7 +20,7 @@ export default {
 
 <style lang="postcss" scoped>
 .logo {
-  height: 10vh;
+  height: 8vh;
 }
 
 header {
@@ -42,6 +42,7 @@ nav > * {
   @apply font-display;
   @apply text-white;
   @apply px-8;
+  @apply pt-4;
   transition: color 0.25s;
 }
 
