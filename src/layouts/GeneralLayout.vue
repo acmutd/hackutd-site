@@ -2,9 +2,11 @@
   <div id="app">
     <div class="flex flex-col h-full">
       <site-header></site-header>
+      <transition name="fade" appear>
       <main class="h-full">
         <slot></slot>
       </main>
+      </transition>
     </div>
     <Particles
       id="tsparticles"
@@ -45,5 +47,13 @@ export default {
   z-index:-10;
   top:0;
   left:0;
+}
+
+.fade-enter-active {
+  transition: opacity .5s;
+}
+
+.fade-enter {
+  opacity: 0;
 }
 </style>
