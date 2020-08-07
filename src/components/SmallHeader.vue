@@ -1,45 +1,41 @@
 <template>
-  <div>
-    <header>
-      <div id="header">
-        <div class="hamburger" @click="toggleMenu">
-          <div class="bar1" />
-          <div class="bar2" />
-          <div class="bar3" />
-        </div>
-        <div id="menu" class="hidden w-full">
-          <nav class="text-xl">
-            <g-link to="/" exact>HOME</g-link>
-            <g-link to="/events">EVENTS</g-link>
-            <g-link to="/team">TEAM</g-link>
-            <g-link to="/contact">CONTACT</g-link>
-          </nav>
-        </div>
+  <header>
+    <div id="header">
+      <div class="hamburger" @click="toggleMenu">
+        <div class="bar1" />
+        <div class="bar2" />
+        <div class="bar3" />
       </div>
-    </header>
-    <div id="dark-overlay" class="hidden" @click="toggleMenu" />
-  </div>
+      <div id="menu" class="hidden w-full">
+        <nav class="text-xl">
+          <g-link to="/" exact>HOME</g-link>
+          <g-link to="/events">EVENTS</g-link>
+          <g-link to="/team">TEAM</g-link>
+          <g-link to="/contact">CONTACT</g-link>
+        </nav>
+      </div>
+    </div>
+  </header>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      menuVisible: false,
+    };
+  },
   methods: {
     toggleMenu() {
-      document.getElementById("header").classList.toggle("header-background"); // toggle the grey background
-      document.getElementById("menu").classList.toggle("hidden"); // toggle the actual nav menu
-      document.getElementById("dark-overlay").classList.toggle("hidden"); // toggle the semi-transparent overlay
+      this.menuVisible = !this.menuVisible;
+      document.getElementById("header").classList.toggle("header-background");
+      document.getElementById("menu").classList.toggle("hidden");
     },
   },
 };
 </script>
 
 <style lang="postcss" scoped>
-#dark-overlay {
-  @apply absolute;
-  @apply w-full h-full;
-  background-color: rgba(105, 105, 105, 0.5);
-}
-
 #menu {
   @apply mt-5;
 }
@@ -54,7 +50,6 @@ export default {
   @apply absolute;
   @apply w-full;
   @apply p-5;
-  @apply z-50;
 }
 
 .header-background {
