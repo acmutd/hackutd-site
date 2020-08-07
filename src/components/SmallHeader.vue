@@ -7,7 +7,7 @@
         <div class="bar3" />
       </div>
       <div id="menu" class="hidden w-full">
-        <nav class="flex-grow grid gap-4 grid-cols-2 pl-10 text-xl">
+        <nav class="text-xl">
           <g-link to="/" exact>HOME</g-link>
           <g-link to="/events">EVENTS</g-link>
           <g-link to="/team">TEAM</g-link>
@@ -28,7 +28,7 @@ export default {
   methods: {
     toggleMenu() {
       this.menuVisible = !this.menuVisible;
-      document.getElementById("header").classList.toggle("foo");
+      document.getElementById("header").classList.toggle("header-background");
       document.getElementById("menu").classList.toggle("hidden");
     },
   },
@@ -36,18 +36,23 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+#menu {
+  @apply mt-5;
+}
+
 .hamburger {
   @apply cursor-pointer;
+  @apply flex flex-col items-start;
 }
 
 #header {
-  @apply flex flex-row;
+  @apply flex flex-col items-start;
   @apply absolute;
   @apply w-full;
   @apply p-5;
 }
 
-.foo {
+.header-background {
   background-color: #292929;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
@@ -64,7 +69,19 @@ export default {
   @apply my-2;
 }
 
+nav {
+  @apply flex flex-col;
+}
+
 nav > .active {
   @apply text-primary;
+}
+
+nav > * {
+  @apply my-2;
+}
+
+nav > *:not(:last-child) {
+  border-bottom: 1px solid white;
 }
 </style>
