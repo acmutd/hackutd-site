@@ -66,6 +66,11 @@ export default {
   @apply p-4 mx-4;
 }
 
+.event-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 10px;
+  transform: translate3d(-1px, -1px, 0px);
+}
+
 .event-card--image {
   @apply h-16 w-16 mx-auto;
 }
