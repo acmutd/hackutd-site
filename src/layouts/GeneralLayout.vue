@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div class="flex flex-col h-full">
+      <comet-background />
       <site-header></site-header>
       <transition name="fade" appear>
       <main class="h-full">
@@ -18,10 +19,12 @@
 <script>
 import config from '~/assets/particlesjs-config.json';
 import Header from '../components/Header.vue';
+import CometBackground from "../components/CometBackground";
 
 export default {
   components: {
     'site-header': Header,
+    'comet-background': CometBackground
   },
   config: config
 };
