@@ -1,6 +1,6 @@
 <template>
   <div id="container" class="star_container">
-    <div v-for="i in 15" :key="i" class="shooting_star" />
+    <div v-for="i in 6" :key="i" class="shooting_star" />
   </div>
 </template>
 
@@ -45,21 +45,73 @@ $shooting-time: 3000ms;
     @extend .shooting_star::before;
     transform: translateX(50%) rotateZ(-45deg);
   }
-  
-  @for $i from 1 through 15 {
-    &:nth-child(#{$i}) {
-      $delay: random(9999) + 0ms;
 
-      top: 92% - percentage(random(92) / 100);
-      left: 72% - percentage(random(49) / 100);
-      
+  &:nth-child(1) {
+    $delay: 5000ms;
+    top: 58%;
+    left: 46%;
+    
+    animation-delay: $delay;
+    &::before,
+    &::after {
       animation-delay: $delay;
-      opacity: random(50) / 100 + 0.5;
-      
-      &::before,
-      &::after {
-        animation-delay: $delay;
-      }
+    }
+  }
+  &:nth-child(2) {
+    $delay: 4000ms;
+    top: 23%;
+    left: 59%;
+    
+    animation-delay: $delay;
+    &::before,
+    &::after {
+      animation-delay: $delay;
+    }
+  }
+  &:nth-child(3) {
+    $delay: 5500ms;
+    top: 76%;
+    left: 33%;
+    
+    animation-delay: $delay;
+    &::before,
+    &::after {
+      animation-delay: $delay;
+    }
+  }
+  &:nth-child(4) {
+    $delay: 2000ms;
+    top: 50%;
+    left: 35%;
+    
+    animation-delay: $delay;
+    &::before,
+    &::after {
+      animation-delay: $delay;
+    }
+  }
+  &:nth-child(5) {
+    $delay: 4500ms;
+    top: 45%;
+    left: 60%;
+    
+    animation-delay: $delay;
+    opacity: .5;
+    &::before,
+    &::after {
+      animation-delay: $delay;
+    }
+  }
+  &:nth-child(6) {
+    $delay: 3000ms;
+    top: 86%;
+    left: 40%;
+    
+    animation-delay: $delay;
+    opacity: .5;
+    &::before,
+    &::after {
+      animation-delay: $delay;
     }
   }
 }
