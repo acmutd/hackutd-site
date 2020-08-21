@@ -18,10 +18,6 @@
         Want to sponsor HackUTD? Contact us at
         <a href="mailto:sponsor@hackutd.co">sponsor@hackutd.co</a>.
       </p>
-      <h2 class="text-2xl text-center my-4">Prospectus</h2>
-      <object data="/sponsorship-packet.pdf" type="application/pdf" class="prospectus-container mx-auto">
-        <embed src="/sponsorship-packet.pdf" type="application/pdf" />
-      </object>
     </section>
   </Layout>
 </template>
