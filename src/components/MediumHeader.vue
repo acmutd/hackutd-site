@@ -34,19 +34,26 @@ nav {
   @apply flex flex-row items-center justify-end;
 }
 
-nav > .active {
-  @apply text-primary;
-}
-
 nav > * {
+  @apply font-bold text-lg;
   @apply font-display;
   @apply text-white;
   @apply px-8;
   @apply pt-4;
-  transition: color 0.25s;
+
+  background-size: 200%;
+  background-image: linear-gradient(to right, #ffc386 50%, #fafafa 50%);
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: 100% top;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  transition: background-position 0.8s;
+  color: transparent;
 }
 
 nav > *:hover {
-  @apply text-primary;
+  background-position: 0% top;
 }
 </style>

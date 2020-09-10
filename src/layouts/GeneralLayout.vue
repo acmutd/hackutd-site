@@ -1,10 +1,13 @@
 <template>
   <div id="app">
     <div class="flex flex-col h-full">
+      <comet-background />
       <site-header></site-header>
+      <transition name="fade" appear>
       <main class="h-full">
         <slot></slot>
       </main>
+      </transition>
     </div>
     <Particles
       id="tsparticles"
@@ -16,10 +19,12 @@
 <script>
 import config from '~/assets/particlesjs-config.json';
 import Header from '../components/Header.vue';
+import CometBackground from "../components/CometBackground";
 
 export default {
   components: {
     'site-header': Header,
+    'comet-background': CometBackground
   },
   config: config
 };
@@ -45,6 +50,14 @@ export default {
   z-index:-10;
   top:0;
   left:0;
+}
+
+.fade-enter-active {
+  transition: opacity .5s;
+}
+
+.fade-enter {
+  opacity: 0;
 }
 
 @screen md {
