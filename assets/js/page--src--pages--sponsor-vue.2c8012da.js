@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{370:function(t,e,n){"use strict";n.r(e);var r={metaInfo:function(){return{meta:[{"http-equiv":"refresh",content:"0; URL=/sponsorship-packet.pdf"}]}}},s=n(22),i=Object(s.a)(r,(function(){var t=this.$createElement;return(this._self._c||t)("p",[this._v("Redirecting...")])}),[],!1,null,null,null);e.default=i.exports}}]);
