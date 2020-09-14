@@ -23,11 +23,23 @@ module.exports = function (api) {
 
   api.loadSource(({ addCollection }) => {
     const organizerCollection = addCollection('Organizer');
-    organizers.forEach((organizer, index) => {
-      organizerCollection.addNode({
-        id: index,
-        slug: convertToSlug(organizer.name),
-        ...organizer,
+    let committeeOrganizerMap = new Map();
+    organizers.forEach((organizer) => {
+      const position = organizer.position;
+      if (!committeeOrganizerMap.has(position)) {
+        committeeOrganizerMap.set(position, []);
+      }
+      committeeOrganizerMap.get(position).push(organizer);
+    });
+    let currId = 0;
+    committeeOrganizerMap.forEach((organizers) => {
+      console.log(organizers);
+      organizers.forEach((organizer) => {
+        organizerCollection.addNode({
+          id: currId++,
+          slug: convertToSlug(organizer.name),
+          ...organizer
+        });
       });
     });
     const eventsCollection = addCollection('Event');
