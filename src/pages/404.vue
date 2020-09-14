@@ -8,19 +8,3 @@
     </div>
   </Layout>
 </template>
-
-<style lang="postcss">
-.prospectus-container {
-  width: 100vw;
-  height: 60vh;
-  padding: 8px;
-}
-
-@media screen and (min-width: 600px) {
-  .prospectus-container {
-    width: 768px;
-    padding: 8px;
-    height: 1024px;
-  }
-}
-</style>
