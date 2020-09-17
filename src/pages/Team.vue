@@ -5,8 +5,9 @@
       <div v-for="edge in $page.officers.edges" :key="edge.node.committeeName">
         <h2 class="committee-title">{{ edge.node.committeeName }}</h2>
         <div class="team-page--content">
-          <g-link v-for="organizer in edge.node.organizers" :key="organizer.slug" :to="'/team'">
-            <team-member 
+          <g-link :class="edge.node.organizers.length == 1 ? 'team-page--single-card' : 'team-page--multi-card'"
+            v-for="organizer in edge.node.organizers" :key="organizer.slug" :to="'/team'">
+            <team-member
               :name="organizer.name"
               :position="organizer.position"
               :bio="organizer.bio"
@@ -80,7 +81,15 @@ export default {
   .team-page--content {
     @apply max-w-5xl;
     @apply mx-auto;
-    @apply grid gap-4 grid-cols-2;
+    @apply grid gap-4 grid-cols-4;
+  }
+
+  .team-page--single-card {
+    @apply col-span-2 col-start-2;
+  }
+
+  .team-page--multi-card {
+    @apply col-span-2;
   }
 }
 </style>
