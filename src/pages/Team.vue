@@ -9,7 +9,6 @@
             v-for="organizer in edge.node.organizers" :key="organizer.slug" :to="'/team'">
             <team-member
               :name="organizer.name"
-              :position="organizer.position"
               :bio="organizer.bio"
               :imageName="organizer.imageName"
               :github="organizer.github"
@@ -33,7 +32,6 @@ query {
         organizers {
           slug
           name
-          position
           bio
           imageName
           github
