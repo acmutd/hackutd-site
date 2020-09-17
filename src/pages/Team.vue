@@ -2,19 +2,22 @@
   <Layout>
     <section class="team-page">
       <h1 class="page-title">The Team</h1>
-      <div class="team-page--content">
-        <g-link v-for="edge in $page.officers.edges" :key="edge.node.slug" :to="'/team'">
-          <team-member
-            :name="edge.node.name"
-            :position="edge.node.position"
-            :bio="edge.node.bio"
-            :imageName="edge.node.imageName"
-            :github="edge.node.github"
-            :website="edge.node.website"
-            :linkedin="edge.node.linkedin"
-            :key="edge.node.id"
-          ></team-member>
-        </g-link>
+      <div v-for="edge in $page.officers.edges" :key="edge.node.committeeName">
+        <h2 class="committee-title">{{ edge.node.committeeName }}</h2>
+        <div class="team-page--content">
+          <g-link v-for="organizer in edge.node.organizers" :key="organizer.slug" :to="'/team'">
+            <team-member 
+              :name="organizer.name"
+              :position="organizer.position"
+              :bio="organizer.bio"
+              :imageName="organizer.imageName"
+              :github="organizer.github"
+              :website="organizer.website"
+              :linkedin="organizer.linkedin"
+              :key="organizer.slug"
+            ></team-member>
+          </g-link>
+        </div>
       </div>
     </section>
   </Layout>
@@ -25,14 +28,17 @@ query {
   officers: allOrganizer {
     edges {
       node {
-        slug
-        name
-        position
-        bio
-        imageName
-        github
-        website
-        linkedin
+        committeeName
+        organizers {
+          slug
+          name
+          position
+          bio
+          imageName
+          github
+          website
+          linkedin
+        }
       }
     }
   }

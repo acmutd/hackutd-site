@@ -26,20 +26,18 @@ module.exports = function (api) {
     let committeeOrganizerMap = new Map();
     organizers.forEach((organizer) => {
       const position = organizer.position;
+      organizer.slug = convertToSlug(organizer.name);
       if (!committeeOrganizerMap.has(position)) {
         committeeOrganizerMap.set(position, []);
       }
       committeeOrganizerMap.get(position).push(organizer);
     });
-    let currId = 0;
-    committeeOrganizerMap.forEach((organizers) => {
-      console.log(organizers);
-      organizers.forEach((organizer) => {
-        organizerCollection.addNode({
-          id: currId++,
-          slug: convertToSlug(organizer.name),
-          ...organizer
-        });
+    let id = 0;
+    committeeOrganizerMap.forEach((organizers, committee) => {
+      organizerCollection.addNode({
+        id: id++,
+        committeeName: committee,
+        organizers: organizers,
       });
     });
     const eventsCollection = addCollection('Event');
