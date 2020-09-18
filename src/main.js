@@ -12,13 +12,6 @@ export default function (Vue, { router, head, isClient }) {
       color: white;
       `
   }
-  router.beforeEach((to, from, next) => {
-    if (to.name === '*') {
-      router.push('/404');
-    } else {
-      next();
-    }
-  });
   Vue.component('Layout', GeneralLayout);
   Vue.use(Particles);
 }
