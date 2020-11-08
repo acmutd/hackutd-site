@@ -33,7 +33,7 @@ export default {
 <style lang="postcss">
 #app {
   @apply h-full;
-  background: url('../assets/starsbg-blue.svg') no-repeat fixed 100%;
+  background: url('../assets/starsbg-blue.svg') no-repeat fixed;
   background-size: 100%;
   overflow: auto;
 }
