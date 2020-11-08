@@ -3,32 +3,36 @@
     <section class="events-page background-scrim">
       <h1 class="page-title">Our Flagship Events</h1>
       <div class="md:flex">
-        <div class="event-card" @click="redirectGameJam">
-          <picture>
-            <source srcset="../assets/logo-square-dark.svg" media="(prefers-color-scheme: light)">
-            <source srcset="../assets/logo-square-white.svg" media="(prefers-color-scheme: dark)">
-            <img 
-              src="../assets/logo-square-dark.svg" 
+        <a href="https://gamejam.hackutd.co/">
+          <div class="event-card">
+            <picture>
+              <source srcset="../assets/logo-square-dark.svg" media="(prefers-color-scheme: light)">
+              <source srcset="../assets/logo-square-white.svg" media="(prefers-color-scheme: dark)">
+              <img 
+                src="../assets/logo-square-dark.svg" 
+                class="event-card--image"
+                />
+            </picture>
+            <div class="">
+              <h2 class="event-card--title">HackUTD Game Jam</h2>
+              <div class="event-card--description">An experimental online experience.</div>
+              <div class="event-card--cta">October 25th-31st 2020</div>
+            </div>
+          </div>
+        </a>
+        <a href="https://2021.hackutd.co/">
+          <div class="event-card">
+            <img
+              src="../assets/logo-square-orange.svg"
               class="event-card--image"
-              />
-          </picture>
-          <div class="">
-            <h2 class="event-card--title">HackUTD Game Jam</h2>
-            <div class="event-card--description">An experimental online experience.</div>
-            <div class="event-card--cta">October 25th-31st 2020</div>
+            />
+            <div class="">
+              <h2 class="event-card--title">HackUTD</h2>
+              <div class="event-card--description">Our hackathon for everyone.</div>
+              <div class="event-card--cta">February 27-28th 2021</div>
+            </div>
           </div>
-        </div>
-        <div class="event-card">
-          <img
-            src="../assets/logo-square-orange.svg"
-            class="event-card--image"
-          />
-          <div class="">
-            <h2 class="event-card--title">HackUTD</h2>
-            <div class="event-card--description">Our hackathon for everyone.</div>
-            <div class="event-card--cta">February 27-28th 2021</div>
-          </div>
-        </div>
+        </a>
       </div>
     </section>
   </Layout>
@@ -47,9 +51,6 @@ export default {
   methods: {
     prettifyDate(date) {
       return new Date(date).toString();
-    },
-    redirectGameJam() {
-      window.location.href = "https://gamejam.hackutd.co/";
     }
   },
 };
