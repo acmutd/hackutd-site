@@ -18,7 +18,7 @@
             <div class="event-card--cta">October 25th-31st 2020</div>
           </div>
         </div>
-        <div class="event-card">
+        <div class="event-card" @click="redirectHackUTD">
           <img
             src="../assets/logo-square-orange.svg"
             class="event-card--image"
@@ -50,6 +50,9 @@ export default {
     },
     redirectGameJam() {
       window.location.href = "https://gamejam.hackutd.co/";
+    },
+    redirectHackUTD() {
+      window.location.href = "https://2021.hackutd.co/";
     }
   },
 };
