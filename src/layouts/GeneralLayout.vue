@@ -34,6 +34,7 @@ export default {
 #app {
   @apply h-full;
   background: url('../assets/starsbg-blue.svg') no-repeat fixed 100%;
+  background-size: 100%;
   overflow: auto;
 }
 
