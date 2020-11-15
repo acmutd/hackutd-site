@@ -2,19 +2,22 @@
   <Layout>
     <section class="team-page">
       <h1 class="page-title">The Team</h1>
-      <div class="team-page--content">
-        <g-link v-for="edge in $page.officers.edges" :key="edge.node.slug" :to="'/team'">
-          <team-member
-            :name="edge.node.name"
-            :position="edge.node.position"
-            :bio="edge.node.bio"
-            :imageName="edge.node.imageName"
-            :github="edge.node.github"
-            :website="edge.node.website"
-            :linkedin="edge.node.linkedin"
-            :key="edge.node.id"
-          ></team-member>
-        </g-link>
+      <div v-for="edge in $page.officers.edges" :key="edge.node.committeeName">
+        <h2 class="committee-title">{{ edge.node.committeeName }}</h2>
+        <div class="team-page--content">
+          <g-link :class="edge.node.organizers.length == 1 ? 'team-page--single-card' : 'team-page--multi-card'"
+            v-for="organizer in edge.node.organizers" :key="organizer.slug" :to="'/team'">
+            <team-member
+              :name="organizer.name"
+              :bio="organizer.bio"
+              :imageName="organizer.imageName"
+              :github="organizer.github"
+              :website="organizer.website"
+              :linkedin="organizer.linkedin"
+              :key="organizer.slug"
+            ></team-member>
+          </g-link>
+        </div>
       </div>
     </section>
   </Layout>
@@ -25,14 +28,16 @@ query {
   officers: allOrganizer {
     edges {
       node {
-        slug
-        name
-        position
-        bio
-        imageName
-        github
-        website
-        linkedin
+        committeeName
+        organizers {
+          slug
+          name
+          bio
+          imageName
+          github
+          website
+          linkedin
+        }
       }
     }
   }
@@ -74,7 +79,15 @@ export default {
   .team-page--content {
     @apply max-w-5xl;
     @apply mx-auto;
-    @apply grid gap-4 grid-cols-2;
+    @apply grid gap-4 grid-cols-4;
+  }
+
+  .team-page--single-card {
+    @apply col-span-2 col-start-2;
+  }
+
+  .team-page--multi-card {
+    @apply col-span-2;
   }
 }
 </style>

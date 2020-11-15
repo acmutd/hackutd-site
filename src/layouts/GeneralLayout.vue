@@ -44,6 +44,12 @@ export default {
   @apply my-4;
 }
 
+.committee-title {
+  @apply text-3xl text-center;
+  @apply text-white font-display font-bold underline;
+  @apply my-4;
+}
+
 #tsparticles {
   width:100%;
   height:100%;

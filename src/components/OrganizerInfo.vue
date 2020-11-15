@@ -6,7 +6,6 @@
     />
     <div class="organizer-card--contents">
       <h1 class="organizer-card--name">{{ name }}</h1>
-      <div class="organizer-card--position">{{ position }}</div>
       <div class="organizer-card--bio">{{ bio }}</div>
       <div class="social-links">
         <span v-if="github" class="social-link">
@@ -42,13 +41,6 @@ export default {
      * A brief description of this officer.
      */
     bio: String,
-
-    /**
-     * The name of this officer's office.
-     * 
-     * Example: "Technical Coordinator"
-     */
-    position: String,
 
     /**
      * The filename of this officer's profile image.
@@ -98,10 +90,6 @@ export default {
 .organizer-card--name {
   @apply text-xl text-left text-black;
   @apply font-display font-semibold;
-}
-
-.organizer-card--position {
-  @apply text-lg text-black mb-2;
 }
 
 .organizer-card--bio {
