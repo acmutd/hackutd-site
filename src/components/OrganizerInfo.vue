@@ -77,18 +77,24 @@ export default {
 .organizer-card {
   @apply flex;
   @apply mt-2 p-5;
-  @apply bg-white;
-  @apply rounded-lg shadow-md;
+  @apply rounded-lg shadow-xl border-4 border-white;
 }
+
+/*
+ // Under organizer-card{} (^)
+ // @apply rounded-lg shadow-md;
 
 .organizer-card:hover {
   box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 10px;
   transform: translate3d(-1px, -1px, 0px);
 }
+*/
 
 .organizer-card--image {
-  @apply h-16 w-16;
+  @apply h-20 w-20;
   @apply rounded-full;
+  @apply border-2;
+  @apply border-white;
 }
 
 .organizer-card--contents {
@@ -115,7 +121,7 @@ export default {
 
   .organizer-card--image {
     @apply block;
-    @apply h-32 w-32;
+    @apply h-56 w-56;
     @apply mx-auto;
   }
 
@@ -149,7 +155,7 @@ export default {
   }
 
   .organizer-card {
-    @apply bg-black;
+    @apply bg-transparent;
   }
   
   .organizer-card--name {
