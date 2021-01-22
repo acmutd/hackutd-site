@@ -2,6 +2,7 @@
   <article class="organizer-card">
     <g-image
       class="organizer-card--image"
+      v-bind:class="profilePicBorder"
       :src="require(`!!assets-loader!@officers/${imageName}`)"
     />
     <div class="organizer-card--contents">
@@ -69,6 +70,11 @@ export default {
      * A URL to this officer's personal website, if any.
      */
     website: String,
+  },
+  computed: {
+    profilePicBorder: function() {
+      return this.imageName.includes('officer_default') ? '' : 'profile-pic-border';
+    }
   }
 };
 </script>
@@ -77,7 +83,6 @@ export default {
 .organizer-card {
   @apply flex;
   @apply mt-2 p-5;
-  @apply rounded-lg shadow-xl border-4 border-white;
 }
 
 /*
@@ -90,11 +95,14 @@ export default {
 }
 */
 
+.profile-pic-border {
+  @apply border-2;
+  @apply border-white;
+}
+
 .organizer-card--image {
   @apply h-20 w-20;
   @apply rounded-full;
-  @apply border-2;
-  @apply border-white;
 }
 
 .organizer-card--contents {
@@ -102,16 +110,16 @@ export default {
 }
 
 .organizer-card--name {
-  @apply text-xl text-left text-black;
+  @apply text-xl text-left text-white;
   @apply font-display font-semibold;
 }
 
 .organizer-card--position {
-  @apply text-lg text-black mb-2;
+  @apply text-lg text-white mb-2;
 }
 
 .organizer-card--bio {
-  @apply text-black;
+  @apply text-white;
 }
 
 @screen md {
