@@ -18,7 +18,9 @@
               v-for="(edge, index) in $page.ctas.edges" :key="edge.node.text"
               :text="edge.node.text"
               :href="edge.node.link"
-              :animationDelay="index" />
+              :idx="index"
+              :numButtons="$page.ctas.edges.length"
+              />
         </div>
       </div>
     </section>
