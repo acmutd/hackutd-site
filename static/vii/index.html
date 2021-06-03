@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HackUTD VII Seas</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+    <link href="./css/animations.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <script src="./js/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/fbbb8018cc.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X1KYG2L7BC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-X1KYG2L7BC');
+    </script>
+</head>
+<a id="mlh-trust-badge"
+    style="display:block;max-width:100px;min-width:60px;position:fixed;left:50px;top:0;width:10%;z-index:10000"
+    href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white"
+    target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg"
+        alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a>
+
+<body>
+    <main>
+        <div class="hero-container">
+            <!--The island png image is no longer used-->
+            <img src="./assets/islandtophalfbutbigger.png" class="island">
+            <img src="./assets/islandtophalfbutbigger_mobile.png" class="island-mobile">
+            <div class="boat">
+                <img src="assets/ship.svg" width="87.5%">
+            </div>
+            <div class="hero">
+                <img src="assets/CenteredTitle.svg" width="60%" class="main-title">
+
+                <div class="right">
+
+                    <div class="icons">
+                        <div>
+                            <a href="https://www.instagram.com/hackutd/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/hackutd"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://twitter.com/HackUTD"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/company/hackutd/"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <img src="assets/hackathondatespaths.svg" width="40%">
+                <div class="register tile mainTitle">
+                    <span>Thank you for coming! We hope to see you next HackUTD!&nbsp;&nbsp;</span>
+                    <img src="assets/anchor.svg" class="anchor">
+                </div>
+                <!-- <a href="https://event.hackutd.co/discord" title="event.hackutd.co/discord" class="eventbttn">
+                    Join the Event Discord
+                </a>
+                <a href="https://event.hackutd.co/livestream" title="event.hackutd.co/livestream" class="eventbttn">
+                    Event Livestream
+                </a> -->
+                <a href="https://hackutd.us17.list-manage.com/subscribe?u=eebd0b6bd088b3c447e566987&id=45553c1054" title="https://hackutd.us17.list-manage.com/subscribe?u=eebd0b6bd088b3c447e566987&id=45553c1054" class="eventbttn">
+                    Sign up for our newsletter
+                </a>
+                <a href="https://hackutd-vii.devpost.com" title="https://hackutd-vii.devpost.com" class="eventbttn">
+                    Devpost
+                </a>
+
+                <!-- <div class="date"></div>
+
+                <div class="timer">
+                    <span style="
+                            color: #ffffff;
+                            font-size: 3rem;
+                            -webkit-text-stroke-width: 1px;
+                            justify-content: center;
+                            align-items: center;">
+                        <p id="timer" style="text-align: center; font-size: 1.75rem;">
+                            <script src="js/timer.js"></script>
+                        </p>
+                    </span>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="sea-container">
+            <img src="assets/sea.png" class="sea-bg">
+            <img src="assets/sea_mobile.png" class="sea-bg-mobile">
+            <div class="whale">
+                <img style="max-height: 100%; max-width: 100%;" src="assets/whale.gif">
+            </div>
+            <div class="submarine">
+                <img src="assets/submarine.svg">
+            </div>
+            <div class="fish" id="f1"></div>
+            <div class="fish" id="f2"></div>
+            <div class="fish" id="f3"></div>
+            <div class="sea-content">
+                <div class="about">
+                    <div class="about-content tile">
+                        <h1 class="about-title">What is HackUTD?</h1>
+
+                        <div class="about-content-body">
+                            <div class="about-text">
+                                <p>HackUTD, the largest university hackathon in North Texas, is a weekend long event
+                                    where
+                                    students
+                                    build apps, hardware, and more. HackUTD provides a venue for self-expression and
+                                    creativity
+                                    through technology. People with varying technical backgrounds come together, form
+                                    teams
+                                    around a
+                                    problem or idea, and collaboratively code a unique solution from scratch. Whether
+                                    you're
+                                    a
+                                    frequent hackathon attendee or just getting started, we'd love to see what you can
+                                    make.
+                                </p>
+                            </div>
+                            <div class="iframe-container">
+                                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/orGmdt-Bv5A"
+                                    frameborder="0"
+                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h1 class="title">SCHEDULE</h1>
+                <div class="schedule">
+                    <div class="schedule-day tile">
+                        <div class="day-title">Day 1</div>
+                        <div class="schedule-body">
+                            <!-- Coming -->
+                            <img src="assets/schedule1.png" width="100%">
+                        </div>
+                    </div>
+                    <div class="schedule-day tile">
+                        <div class="day-title">Day 2</div>
+                        <div class="schedule-body">
+                            <!-- Soon -->
+                            <img src="assets/schedule2.png" width="100%">
+                        </div>
+                    </div>
+                </div>
+
+                <h1 class="title">THE SPEAKERS</h1>
+                <div class="schedule">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="assets/Arjun Dugal.jpeg" alt="Avatar" style="width:22rem;height:22rem;border-radius:5rem;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>Arjun Dugal</h1>
+                                <p style="margin:2rem;">As the Chief Technology Officer for Capital One’s FinancialServices division,
+                                    Arjun’s responsibilities include technology, data, the Garage, Capital One’s DFW innovation center,
+                                    and DataLabs, Capital One’s India office focused on building cutting-edge data products. Arjun’s
+                                    organization is reimagining the auto finance business by leveraging machine learning, artificial
+                                    intelligence (AI) and next-generation data to develop breakthrough innovations and
+                                    deliver transformative customer experiences.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="assets/chander-dhall.jpg" alt="Avatar"
+                                    style="width:22rem;height:22rem;border-radius:5rem;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>Chander Dhall</h1>
+                                <p style="margin:2rem;">Chander Dhall, CEO of Cazton, is a ten-time awarded Microsoft
+                                    MVP, Google Developer Expert and
+                                    world-renowned technology leader in architecting and implementing solutions.
+                                    <br>
+                                    He's also a voracious and highly-respected speaker. He has keynoted and
+                                    delivered hands-on
+                                    workshops at top conferences including Microsoft TechEd, Google DevFest, Azure Dev
+                                    Days, NDC London,
+                                    DevSum Sweden, BuildStuff, Lithuania, MVP Mix.
+                                    <br>
+                                    <br>
+                                    <a href="https://rd.microsoft.com/en-us/chander-dhall">Learn More</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="assets/dewayne.jpeg" alt="Avatar"
+                                    style="width:22rem;height:22rem;border-radius:5rem;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>DeWayne Griffin</h1>
+                                <p style="margin:2rem;">DeWayne Griffin is the current Vice President and Chief Data
+                                    Officer at State Farm.
+                                    Through a myriad of leadership roles, he has taken the company to new heights
+                                    through innovations in data
+                                    management, people
+                                    and process improvement, complex project life-cycle oversight, and strategic
+                                    marketing and research.
+                                    <br>
+                                    <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h1 class="title">Challenges</h1>
+
+                <div class="schedule">
+                    <div class="flipc-card" id="challengemargin">
+                        <div class="flipc-card-inner">
+                            <div class="flipc-card-front">
+                                <img src="assets/challenges/GenFront.png" alt="Avatar" >
+                            </div>
+                            <div class="flipc-card-back">
+                                <img src="assets/challenges/GenBack.png" alt="Avatar" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flipc-card" id="challengemargin">
+                        <div class="flipc-card-inner">
+                            <div class="flipc-card-front">
+                                <img src="assets/challenges/SGFront.png" alt="Avatar" >
+                            </div>
+                            <div class="flipc-card-back">
+                                <img src="assets/challenges/SGBack.png" alt="Avatar" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flipc-card" id="challengemargin">
+                        <div class="flipc-card-inner">
+                            <div class="flipc-card-front">
+                                <img src="assets/challenges/UTDOfficeSustainFront.png" alt="Avatar" >
+                            </div>
+                            <div class="flipc-card-back">
+                                <img src="assets/challenges/UTDOfficeSustainBack.png" alt="Avatar" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="schedule" >
+                    <div class="flipc-card" id="challengemargin">
+                        <div class="flipc-card-inner">
+                            <div class="flipc-card-front">
+                                <img src="assets/challenges/CapOneFront.png" alt="Avatar" >
+                            </div>
+                            <div class="flipc-card-back">
+                                <img src="assets/challenges/CapOneBack.png" alt="Avatar" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flipc-card" id="challengemargin">
+                        <div class="flipc-card-inner">
+                            <div class="flipc-card-front">
+                                <img src="assets/challenges/EBAYFront.png" alt="Avatar" >
+                            </div>
+                            <div class="flipc-card-back">
+                                <img src="assets/challenges/EBAYBack.png" alt="Avatar" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flipc-card" id="challengemargin">
+                        <div class="flipc-card-inner">
+                            <div class="flipc-card-front">
+                                <img src="assets/challenges/SFFront.png" alt="Avatar" >
+                            </div>
+                            <div class="flipc-card-back">
+                                <img src="assets/challenges/SFBack.png" alt="Avatar" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flipc-card" id="challengemargin">
+                        <div class="flipc-card-inner">
+                            <div class="flipc-card-front">
+                                <img src="assets/challenges/SignaFront.png" alt="Avatar" >
+                            </div>
+                            <div class="flipc-card-back">
+                                <img src="assets/challenges/SignaBack.png" alt="Avatar" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule" >
+                    <div class="flipc-card" id="challengemargin">
+                        <div class="flipc-card-inner">
+                            <div class="flipc-card-front">
+                                <img src="assets/challenges/MLHDomainFront.png" alt="Avatar" >
+                            </div>
+                            <div class="flipc-card-back">
+                                <img src="assets/challenges/MLHDomainBack.png" alt="Avatar"  >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flipc-card" id="challengemargin">
+                        <div class="flipc-card-inner">
+                            <div class="flipc-card-front">
+                                <img src="assets/challenges/MLHCloudFront.png" alt="Avatar" >
+                            </div>
+                            <div class="flipc-card-back">
+                                <img src="assets/challenges/MLHCloudBack.png" alt="Avatar" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flipc-card" id="challengemargin">
+                        <div class="flipc-card-inner">
+                            <div class="flipc-card-front">
+                                <img src="assets/challenges/MLHHardwareFront.png" alt="Avatar" >
+                            </div>
+                            <div class="flipc-card-back">
+                                <img src="assets/challenges/MLHHardwareBack.png" alt="Avatar" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flipc-card" id="challengemargin">
+                        <div class="flipc-card-inner">
+                            <div class="flipc-card-front">
+                                <img src="assets/challenges/MLHCockroachFront.png" alt="Avatar" >
+                            </div>
+                            <div class="flipc-card-back">
+                                <img src="assets/challenges/MLHCockroachBack.png" alt="Avatar" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="title">FAQ</h1>
+                <div id="questions-container" class="tile">
+                    <div id="questions">
+                        <div>
+                            <div class="question">What is a hackathon?</div>
+                            <div class="answer">
+                                A hackathon is a 24-hour competition where you and up to 3 of teammates can build a
+                                software project from scratch and submit it for prizes. Sponsors will be providing
+                                workshops, events, and a bunch of activities throughout the weekend for you to learn and
+                                innovate!
+                            </div>
+                        </div>
+                        <div>
+                            <div class="question">I have never hacked before, can I still participate?</div>
+                            <div class="answer">
+                                That’s totally okay! No experience is required to attend a hackathon. We will be hosting
+                                a series of workshops to get hackers introduced to new programs and technology. And
+                                you’ll be able to find a team at the event!
+                            </div>
+                        </div>
+                        <div>
+                            <div class="question">What if I don’t have a team?</div>
+                            <div class="answer">
+                                We’ll be having a teambuilding session at the start of the event to help those who
+                                don’t have teams! If you want your team to consist of just you, that's ok too!
+                            </div>
+                        </div>
+                        <div>
+                            <div class="question">Do I need any materials?</div>
+                            <div class="answer">
+                                You’ll just need a laptop and internet to participate! A compiler, packages, or any
+                                large packaging tools are also recommended to have ready beforehand too!
+                            </div>
+                        </div>
+                        <div>
+                            <div class="question">When is HackUTD VII Seas?</div>
+                            <div class="answer">
+                                February 27th-28th, 2021
+                            </div>
+                        </div>
+                        <div>
+                            <div class="question">When is registration?</div>
+                            <div class="answer">
+                                Registration opened on November 6th, 2020 and ends February 18th, 2021
+                            </div>
+                        </div>
+                        <div>
+                            <div class="question">What’s the cost?</div>
+                            <div class="answer">
+                                There is no cost! Completely free to hackers!
+                            </div>
+                        </div>
+                        <div>
+                            <div class="question">Virtual hackathon? How does that work?</div>
+                            <div class="answer">
+                                The HackUTD Team has been hard at work to bring you the best possible hackathon
+                                experience virtually! We will be using a virtual platform to bring as much of the fun of
+                                an in-person hackathon as possible to your homes!
+                            </div>
+                        </div>
+                        <div>
+                            <div class="question">What are the general rules?</div>
+                            <div class="answer">
+                                The whole project must be built over the course of the weekend, you can’t demo anything
+                                you didn’t build, and everyone that attends the event (participants, mentors,
+                                volunteers, etc) must abide to the <a
+                                    href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH code of conduct</a>.
+                            </div>
+                        </div>
+                        <div>
+                            <div class="question">Can I use past projects?</div>
+                            <div class="answer">
+                                It wouldn’t be a hackathon if it wasn’t new! You may not submit a project that you’ve
+                                used for other hackathons and you cannot submit your project from HackUTD VII to other
+                                hackathons.
+                            </div>
+                        </div>
+                        <div>
+                            <div class="question">But what should I build?</div>
+                            <div class="answer">
+                                You can build anything you want! Sponsors will be providing challenges for you to solve
+                                or you can submit something for the HackUTD awards. You can do both as well!
+                            </div>
+                        </div>
+                        <!-- <div>
+                            <div class="question">What are the prizes?</div>
+                            <div class="answer">
+                                More information coming soon!
+                            </div>
+                        </div> -->
+                        <div>
+                            <div class="question">What about Hardware Projects?</div>
+                            <div class="answer">
+                                Unfortunately we cannot provide hardware this year. If you have the hardware and
+                                materials you are more than welcome to still submit hardware projects!
+                            </div>
+                        </div>
+                        <div>
+                            <div class="question">What about volunteering?</div>
+                            <div class="answer">
+                                Mentor and volunteer applications are closed.
+                            </div>
+                        </div>
+                        <div>
+                            <div class="question">Will there still be swag?</div>
+                            <div class="answer">
+                                Swag will be given out to participants by mail to those that submit a project and live
+                                in the continental USA.
+                            </div>
+                        </div>
+                        <div>
+                            <div class="question">Questions? Contact us!</div>
+                            <div class="answer">
+                                Contact us at <a href="mailto:hello@hackutd.co">hello@hackutd.co</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="bottom-container">
+            <img src="assets/trenchfloor.png" width="100%">
+            <div class="bottom-content">
+                <h1 class="title">SPONSORS</h1>
+                <div class="sponsors">
+                    <div>
+                        <img src="assets/sponsor/utdcs.png" width="100%">
+                    </div>
+
+                    <div>
+                        <img src="assets/sponsor/state-farm.png" width="100%">
+                    </div>
+
+                    <div>
+                        <img src="assets/sponsor/match.png" width="100%">
+                    </div>
+                    <a href="https://www.stickermule.com/unlock?ref_id=0539570701&utm_source=sponsorship&utm_campaign=mlh-sponsorship-2019&utm_medium=referral"
+                        target="_blank">
+                        <div>
+                            <img src="assets/sponsor/sticker-mule.png" width="100%">
+                        </div>
+                    </a>
+                    <div>
+                        <img src="assets/sponsor/cap1.png" width="100%">
+                    </div>
+                    <div>
+                        <img src="assets/sponsor/signapay.png" width="100%">
+                    </div>
+                    <div>
+                        <img src="assets/sponsor/mlh-logo-black.png" width="100%">
+                    </div>
+                    <div>
+                        <img src="assets/sponsor/ebayLogo.png" width="100%">
+                    </div>
+                    <a href="https://pinnacle.us.org" target="_blank">
+                        <div>
+                            <img src="assets/sponsor/Pinnacle_GoldLogo_WithText.png" width="100%">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>
+                Made with &#128032; by <a href="https://hackutd.co">HackUTD</a>.
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

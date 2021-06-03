@@ -1,0 +1,71 @@
+.boat {
+  width: 50%;
+  position: absolute;
+  top: 34.5%;
+  left: 55%;
+  -webkit-animation: rock-boat 6s ease-in-out infinite;
+}
+
+@-webkit-keyframes rock-boat {
+  50% {
+    -webkit-transform: rotate(4.1deg) translateY(7.7px);
+  }
+}
+
+.submarine {
+  width: 30%;
+  position: absolute;
+  top: 31.5%;
+  right: 5%;
+  -webkit-animation: moveSub 0.5s steps(5) infinite alternate;
+}
+
+@-webkit-keyframes moveSub {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.whale {
+  width: 90%;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+
+.fish {
+  width: 119px;
+  height: 65px;
+  position: absolute;
+  background-image: url("../assets/fish_sprite_sheet.png");
+}
+
+#f1.fish {
+  top: 60%;
+  left: 5%;
+  -webkit-animation: moveX 0.5s steps(5) infinite alternate;
+}
+
+#f2.fish {
+  top: 65%;
+  left: 8%;
+  -webkit-animation: moveX 0.7s steps(5) infinite alternate;
+}
+
+#f3.fish {
+  top: 70%;
+  left: 5%;
+  -webkit-animation: moveX 0.6s steps(5) infinite alternate;
+}
+
+@-webkit-keyframes moveX {
+  from {
+    background-position-x: 0px;
+  }
+  to {
+    background-position-x: -595px;
+  }
+}

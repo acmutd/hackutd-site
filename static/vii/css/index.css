@@ -1,0 +1,721 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  color: white;
+  background-color: #5699ba;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f1e8b8;
+}
+
+i {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: xx-large;
+}
+
+.hero-container {
+  position: relative;
+  justify-self: left;
+}
+
+img {
+  display: block;
+}
+
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+
+  max-height: 100%;
+}
+
+.main-title {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: "Righteous", cursive;
+}
+
+.date {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.register-notice {
+  margin-top: 20rem;
+  font-size: 3rem;
+}
+
+.register {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-top: 5rem;
+  position: relative;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+/* For safari visibility */
+.mainTitle {
+  background-color: rgba(148, 148, 148, 0.3) !important;
+  -webkit-backdrop-filter: blur(5px);
+}
+.eventbttn {
+  margin-top: 1rem;
+  background-color: rgba(110, 112, 245, 0.75);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /*normal tile color*/
+  /* background-color: rgba(255, 255, 255, 0.15); */
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  width: 25%;
+}
+
+.timer {
+  margin-bottom: 50rem;
+  background-color: rgba(148, 148, 148, 0.15);
+  /* background-color: rgba(110, 112, 245, 0.15); */
+  backdrop-filter: blur(3px) !important;
+  border-radius: 15px;
+  padding: 0rem 2rem;
+  display: none;
+}
+
+.mentor {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-top: 1.1rem;
+  margin-bottom: 1.1rem;
+  position: relative;
+}
+
+.anchor {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 2.5rem;
+}
+
+.iframe-container {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  width: 25vw;
+  height: calc(25vw * (3 / 4));
+  margin: auto 0;
+  margin-left: 2vw;
+}
+
+.about-text {
+  flex-shrink: 0;
+  width: 25vw;
+  font-size: 1.5vw;
+  line-height: 1.75;
+  text-indent: 10%;
+}
+
+.responsive-iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.island {
+  width: 100%;
+}
+
+.island-mobile {
+  display: none;
+}
+
+.sea-bg {
+  width: 100%;
+}
+
+.sea-bg-mobile {
+  display: none;
+}
+
+.sea-container {
+  position: relative;
+  transition: height 0.2s ease-out;
+}
+
+.spacing {
+  margin-top: 30px;
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+
+.sea-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about2 {
+  padding-top: 5%;
+  width: 75%;
+  margin-bottom: 3rem;
+}
+
+.about {
+  padding-top: 7.5%;
+  width: 60%;
+  margin-bottom: 3rem;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Righteous", cursive;
+  text-align: center;
+}
+
+.about-content {
+  font-size: 1.7rem;
+}
+
+.about-content-body {
+  display: flex;
+}
+
+.about-content-body2 {
+  display: flex;
+}
+
+.schedule {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  justify-content: space-between;
+  flex-grow: 1;
+  text-align: center;
+  width: 78%;
+
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.schedulec {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  text-align: center;
+  width: 78%;
+
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  background-color: red;
+}
+
+.timer-align {
+  min-width: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.schedule-day {
+  min-width: 40%;
+  min-height: 30rem;
+  margin: 0rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.day-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.schedule-body {
+  color: transparent;
+  font-size: 5rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-container {
+  position: relative;
+}
+
+.bottom-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  padding-top: 7rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  font-size: large;
+
+  width: 100%;
+  padding: 1rem;
+
+  background-color: #002135;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+.flip-card {
+  background-color: transparent;
+  width: 22rem;
+  height: 22rem;
+  padding-bottom: 5rem;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flipc-card {
+  background-color: transparent;
+  width: 22rem;
+  height: 22rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* This container is needed to position the front and back side */
+.flipc-card-inner {
+  position: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flipc-card:hover .flipc-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flipc-card-front,
+.flipc-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flipc-card-front img,
+.flipc-card-back img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flipc-card-front {
+  color: black;
+}
+
+/* Style the back side */
+.flipc-card-back {
+  transform: rotateY(180deg);
+}
+
+.icons {
+  align-self: flex-end;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.faq {
+  width: 60%;
+}
+
+#questions-container {
+  text-align: left;
+  line-height: 2rem;
+  width: 60%;
+}
+
+#questions {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem;
+}
+
+#questions > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.question {
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.question:after {
+  content: "\002B";
+  color: #f6c35b;
+  font-weight: bold;
+  font-size: 2rem;
+  float: right;
+  margin-right: 1rem;
+}
+
+.question-active:after {
+  content: "\2212";
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.sponsors {
+  width: 70%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.sponsors > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.keynote-pic {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border-radius: 500px;
+}
+
+.tile {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: 1rem 2rem;
+}
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(105, 193, 228);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f1e8b8;
+}
+@media only screen and (max-width: 1000px) {
+  .eventbttn {
+    font-size: 0.9rem;
+  }
+  .timer {
+    display: none;
+  }
+
+  #challengemargin {
+    margin-bottom: 3rem;
+  }
+  .sponsors img {
+    width: 60%;
+  }
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hero {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .iframe-container {
+    margin-top: 0.5rem;
+    width: 100%;
+    height: auto;
+    order: 2;
+  }
+
+  .iframe-container2 {
+    width: 100%;
+    height: auto;
+    order: 1;
+  }
+
+  .about-content-body {
+    flex-direction: column;
+  }
+
+  .about-content-body2 {
+    flex-direction: row;
+  }
+  .about-text {
+    order: 1;
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    height: auto;
+    position: relative;
+  }
+
+  .about-text2 {
+    order: 2;
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+  }
+  .island {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  .island-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .register {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .tile {
+    padding: 0.5rem 1rem;
+  }
+
+  .register img {
+    width: 5%;
+  }
+
+  .icons {
+    margin-bottom: 0.5rem;
+  }
+
+  .icons i {
+    font-size: 20px;
+  }
+
+  .eventbttn {
+    margin-top: 0.6rem;
+    font-size: 0.7rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+  }
+
+  .mentor {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    padding: 1rem;
+  }
+
+  .main-title {
+    margin-bottom: 1rem;
+  }
+  #mlh-trust-badge {
+    left: 15px !important;
+  }
+  #mlh-trust-badge img[src^="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg"]
+  {
+    width: 75% !important;
+  }
+
+  #hp {
+    float: left;
+    margin: 5px 15px 0 0;
+  }
+
+  .anchor {
+    width: 1.4rem;
+  }
+
+  .sea-bg {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  .sea-bg-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .whale {
+    top: 5%;
+    height: 15%;
+  }
+
+  .about {
+    width: 90%;
+  }
+
+  .schedule {
+    width: 90%;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .faq {
+    width: 90%;
+  }
+
+  #questions-container {
+    width: 90%;
+  }
+
+  .sponsors {
+    width: 90%;
+    gap: 0.5rem;
+  }
+
+  .sponsors img {
+    width: 50%;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .date {
+    font-size: 1.5rem;
+  }
+
+  .timer {
+    display: none;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-content {
+    font-size: 1.3rem;
+  }
+
+  .schedule-day {
+    min-width: 10rem;
+    min-height: 20rem;
+    margin-bottom: 2rem;
+  }
+
+  .bottom-container {
+    margin-top: 3rem;
+    height: 25rem;
+  }
+
+  .bottom-container > img {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .bottom-content {
+    padding-top: 0;
+  }
+}

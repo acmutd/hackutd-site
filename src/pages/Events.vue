@@ -3,7 +3,8 @@
     <section class="events-page background-scrim">
       <h1 class="page-title">Our Flagship Events</h1>
       <div class="md:flex">
-        <a href="https://gamejam.hackutd.co/">
+        <!-- <a href="https://gamejam.hackutd.co/"> -->
+        <a href="GameJam2019">
           <div class="event-card">
             <picture>
               <source srcset="../assets/logo-square-dark.svg" media="(prefers-color-scheme: light)">
@@ -20,14 +21,15 @@
             </div>
           </div>
         </a>
-        <a href="https://2021.hackutd.co/">
+        <!--<a href="https://2021.hackutd.co/">-->
+        <a href="vii">
           <div class="event-card">
             <img
               src="../assets/logo-square-orange.svg"
               class="event-card--image"
             />
             <div class="">
-              <h2 class="event-card--title">HackUTD</h2>
+              <h2 class="event-card--title">HackUTD VII</h2>
               <div class="event-card--description">Our hackathon for everyone.</div>
               <div class="event-card--cta">February 27-28th 2021</div>
             </div>
@@ -53,6 +55,11 @@ export default {
       return new Date(date).toString();
     }
   },
+  data () {
+    return {
+      publicPath: process.env.BASE_URL
+    }
+  }
 };
 </script>
 
