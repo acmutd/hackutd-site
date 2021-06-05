@@ -1,0 +1,1935 @@
+/*
+	Author: Lumberjacks
+	Template: Beard (Landing Page)
+	Version: 1.0
+	URL: http://themeforest.net/user/Lumberjacks/
+*/
+
+
+
+/* TABLE OF CONTENTS
+
+	1. Import section
+	2. Basic styles
+	3. Typography
+	4. Header
+  5. Product showcase
+  6. Icon and features
+  7. Product showcase center
+  8. Pricing table
+  9. Parallax with texts
+  10. Customer satisfaction
+  11. Clients
+  12. News
+  13. Video
+  14. App stores
+  15. FAQ
+  16. Team
+  17. Testimonials
+  18. Twitter
+  19. Contact
+  20. Footer
+  21. Sidebar menu
+  22. Breakpoints for other resolutions
+
+*/
+
+
+/* 1. IMPORT SECTION */
+
+	@import url("bootstrap.css");
+	@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,300,300italic&subset=latin,latin-ext");
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin,latin-ext");
+	@import url("ionicons.min.css");
+  @import url("slick.css");
+
+
+/* 1a. JS CSS */
+
+  #particles-js{
+    width: 100%;
+    background-position: 50% 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+  }
+
+  .typed-cursor{
+      opacity: 1;
+      -webkit-animation: blink 0.7s infinite;
+      -moz-animation: blink 0.7s infinite;
+      animation: blink 0.7s infinite;
+      text-align: left;
+  }
+  @keyframes blink{
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+  }
+  @-webkit-keyframes blink{
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+  }
+  @-moz-keyframes blink{
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+  }
+
+
+/* 2. BASIC STYLES */
+
+	body {
+		font: 16px/1.5 Roboto, "Century Gothic", "Trebuchet MS", Helvetica, sans-serif;
+		background-color: #fff;
+		color: #222222;
+		font-weight: 300;
+		-webkit-font-smoothing: antialiased;
+		text-rendering: optimizeLegibility;
+	}
+
+	a { 
+		color: #f56c0a;
+		transition: all 0.125s ease-in-out 0s;
+		-moz-transition: all 0.125s ease-in-out 0s;
+		-webkit-transition: all 0.125s ease-in-out 0s;
+		-o-transition: all 0.125s ease-in-out 0s;
+		-ms-transition: all 0.125s ease-in-out 0s;
+	}
+
+	a:hover {
+		color: #f56c0a;
+	}
+
+	a, a:hover, a:active, a:focus {
+		outline: 0;
+		border: 0;
+		text-decoration: none;
+	}
+
+	.lj-float-left {
+		float: left;
+	}
+
+	.lj-float-right {
+		float: right;
+	}
+	
+	.lj-block-center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.lj-show {
+		display: block !important;
+	}
+	
+	.lj-hide {
+		display: none !important;
+		visibility: hidden !important;
+	}
+
+	.lj-preloader {
+		background: #fff url('../img/preloader.svg') no-repeat center center;
+		bottom: 0;
+		height: 100%;
+		left: 0;
+		overflow: hidden;
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 100%;
+		z-index: 99999;
+	}
+
+/* 3. TYPOGRAPHY */
+
+	p {
+		line-height: 1.5;
+	}
+    
+	.lj-text-uppercase {
+		text-transform: uppercase;
+	}
+
+	.lj-text-center {
+		text-align: center;
+	}
+
+	.lj-text-left {
+		text-align: left;
+	}
+
+	.lj-text-right {
+		text-align: right;
+	}
+
+	.lj-text-justify {
+		text-align: justify;
+	}
+
+	.lj-text-underline {
+		text-decoration: underline;
+	}
+
+
+
+/* 4. HEADER */
+
+	header {
+		width: 100%;
+		position: relative;
+		background-color: #212649 !important;
+	}
+	
+	header > .container {
+		height: 100%;
+		padding: 50px 20px 300px;
+		position: relative;
+		z-index: 1;
+	}
+
+	header > canvas {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	
+	.lj-overlay {
+		width: 100%;
+		height: 100%;		
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	
+	.lj-background-repeat {
+	    background-repeat: repeat;
+	}
+	
+	.lj-background-no-repeat {
+		background-repeat: no-repeat;
+	}
+	
+	.lj-overlay-none {
+		display: none;
+		visibility: hidden;
+	}
+	
+	.lj-overlay-color {
+	    background: linear-gradient(rgba(250, 217, 97, 0.9), rgba(247, 107, 28, 0.9));
+	}
+
+  .lj-overlay-image {
+      background-image: url('../img/dots.png');
+      background-repeat: repeat;
+  }
+	
+	.lj-overlay-gradient {
+		background: -moz-linear-gradient(215deg,  rgba(0,204,255,0.8) 0%, rgba(196,255,0,0.8) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(0,204,255,0.8)), color-stop(100%,rgba(196,255,0,0.8))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(215deg,  rgba(0,204,255,0.8) 0%,rgba(196,255,0,0.8) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(215deg,  rgba(0,204,255,0.8) 0%,rgba(196,255,0,0.8) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(215deg,  rgba(0,204,255,0.8) 0%,rgba(196,255,0,0.8) 100%); /* IE10+ */
+		background: linear-gradient(215deg,  rgba(0,204,255,0.8) 0%,rgba(196,255,0,0.8) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ccff', endColorstr='#c4ff00',GradientType=1 ) progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/1x1.png'); /* IE6-9 fallback on horizontal gradient */
+		pointer-events:none;
+	}
+
+	.mobile .mbYTP_wrapper,
+	.tablet .mbYTP_wrapper {
+		z-index: -1 !important;
+	}
+
+	.lj-menu-name h3 {		
+  	font-family: 'Slabo 13px';
+		color: #fff;
+		line-height: 50px;
+		font-size: 1.5em;
+		margin: 0;
+	}
+
+	.lj-menu {
+		text-align: right;
+	}
+
+	.lj-menu ul {
+		margin-top: 25px;
+		margin-bottom: 0;
+		padding-left: 0;
+		list-style-type: none;
+	}
+
+	.lj-menu li {
+		display: inline-block;
+		margin-right: 40px;
+    font-family: 'Montserrat', sans-serif;
+	}
+
+	.lj-menu li:last-child {
+		margin-right: 0;
+	}
+
+	.lj-menu li a {
+		display: inline-block;
+		color: #fff;
+	}
+
+	.lj-menu li a:hover {
+		color: #f56c0a;		
+	}
+  
+  .lj-menu span {
+    font-size: 2em;
+    color: #fff;
+    display: none;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all 0.125s ease-in-out 0s;
+    -moz-transition: all 0.125s ease-in-out 0s;
+    -webkit-transition: all 0.125s ease-in-out 0s;
+    -o-transition: all 0.125s ease-in-out 0s;
+    -ms-transition: all 0.125s ease-in-out 0s;
+  }
+
+  .lj-menu span:hover {
+    color: #f56c0a;
+  }
+	
+	.lj-logo a,
+	.lj-logo img {
+		width: 160px;
+		height: 85px;
+	}
+	
+	.lj-logo a {
+		display: inline-block;
+	}
+	
+	.lj-logo img {
+		vertical-align: bottom;
+	}
+
+	.lj-texts {
+		margin-top: 200px;
+  }
+    
+  .lj-texts h2 {
+  	font-size: 2.5em;
+    color: #fff;
+    margin: 0;
+    word-wrap: break-word;
+    font-weight: 300;
+  }
+  
+  .lj-texts h2 span {
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .lj-texts p {
+    color: rgba(255,255,255,0.8);
+    margin: 25px 0 0;
+  }
+
+  .lj-buttons {
+    margin-top: 25px;
+  }
+
+  .lj-buttons a {
+    height: 50px;
+    line-height: 48px;
+    padding: 0 25px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .lj-buttons a:first-child {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid rgba(255,255,255,0.6);
+    color: #fff;
+    background-color: transparent;
+    margin-right: 25px;
+  }
+
+  .lj-buttons a:last-child {
+    border: 0;
+    color: rgba(255,255,255,0.6);
+  }
+
+  .lj-buttons a:first-child:hover {
+    border: 1px solid #f56c0a;
+    color: #fff;
+    background-color: #f56c0a;
+  }
+
+  .lj-buttons a:last-child:hover {
+    color: #fff;
+  }
+
+  .lj-social {
+    margin-top: 25px;
+  }
+
+  .lj-social a {
+    height: 50px;
+    line-height: 48px;
+    padding: 0 25px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    border: 0;
+    color: rgba(255,255,255,0.6);
+  }
+
+  .lj-social a:hover {
+    color: #fff;
+  }
+
+  .lj-trialform {
+    width: 650px;
+    height: 310px;
+    position: absolute;
+    bottom: -110px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #f6f8fa;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 25px;
+    box-shadow: 0 15px 12px 0 rgba(161,170,180,.05),0 19px 38px 0 rgba(161,170,180,.35);
+    text-align: center;
+  }
+
+  .lj-trialform input[type=text] {
+    width: 200px;
+    background-color: #fff;
+    color: #1B2432;
+    padding: 0 20px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd; 
+    border-right: 0;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  .lj-trialform input[type=text].lj-trial-text-two {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+
+  .lj-trialform input:focus {
+    outline: 0;
+  }
+  
+  .lj-trialform input[type=submit] {    
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    background-color: #f56c0a;
+    color: #fff;
+    padding: 0 25px;
+    border: 0;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    vertical-align: top;
+  }
+
+  .lj-trialform input[type=text],
+  .lj-trialform input[type=submit] {
+    height: 50px;
+    line-height: 46px;
+    display: inline-block;
+    font-size: 0.9em;
+    transition: all 0.125s ease-in-out 0s;
+    -moz-transition: all 0.125s ease-in-out 0s;
+    -webkit-transition: all 0.125s ease-in-out 0s;
+    -o-transition: all 0.125s ease-in-out 0s;
+    -ms-transition: all 0.125s ease-in-out 0s;
+  }
+
+  .lj-trialform input[type=submit]:hover {
+    color: #fff;
+    background-color: #d25d09;
+  }
+
+  .lj-trial-message {
+    height: 1em;
+    padding: 0;
+    color: #222;
+    font-size: 0.9em;
+    display: block;
+    margin: 10px 0 0;
+  }
+
+  .lj-trial-message i {
+    margin-right: 5px;
+  }
+
+  .lj-trial-message .ion-alert-circled {
+    color: #ff5c5c;
+  }
+
+  .lj-trial-message .ion-checkmark {
+    color: #2ecc71;
+  }
+
+  .lj-trialform p {
+    color: #888;
+    font-size: 1em;
+  }
+
+  .lj-trialform h3 {
+    font-size: 2em;
+    font-weight: 300;
+  }
+
+
+
+/* 5. PRODUCT SHOWCASE */
+
+  .product-showcase {
+    padding: 150px 0 0px;
+  }
+
+  .product-showcase .row {
+    padding-bottom: 150px;
+  }
+
+  .lj-product-showcase-r h3,
+  .lj-product-showcase-l h3 {
+    font-size: 2em;
+    font-weight: 300;
+    margin: 50px 0 25px;
+  }
+
+  .lj-product-showcase-r p,
+  .lj-product-showcase-l p {
+    color: #888;
+    margin: 0 0 25px;
+  }
+
+  .lj-product-showcase-r a,
+  .lj-product-showcase-l a {
+    height: 50px;
+    line-height: 48px;
+    padding: 0 25px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #222;
+    color: #222;
+    background-color: transparent;
+  }
+
+  .lj-product-showcase-r a:hover,
+  .lj-product-showcase-l a:hover {
+    border: 1px solid #f56c0a;
+    color: #fff;
+    background-color: #f56c0a;
+  }
+
+  .lj-product-showcase-r-image img,
+  .lj-product-showcase-l-image img {
+    max-width: 100%;
+  }
+
+
+
+/* 6. ICON & FEATURES */
+
+  .icon-features {
+    padding: 40px 0 80px;
+    background-color: #f6f8fa;
+  }
+
+  .lj-icon-features-title h3 {    
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0 0 50px;
+    text-align: center;
+  }
+
+  .lj-icon-features-box {
+    text-align: center;
+  }
+
+  .lj-icon-features-box span {
+    font-size: 6em;
+    color: #f56c0a;
+  }
+
+  .lj-icon-features-box h4 {    
+    font-size: 1.15em;
+    font-weight: 400;
+    margin: 0 0 15px;
+  }
+
+  .lj-icon-features-box p {
+    margin: 0 0 10px;
+  }
+
+  .lj-icon-features-box a {
+    font-weight: 400;
+  }
+
+  .lj-icon-features-box a i {
+    vertical-align: middle;
+    -moz-transition: padding-left 0.125s ease-in-out 0s;
+    -o-transition: padding-left 0.125s ease-in-out 0s;
+    -webkit-transition: padding-left 0.125s ease-in-out 0s;
+    transition: padding-left 0.125s ease-in-out 0s;
+  }
+
+  .lj-icon-features-box a:hover i {
+    padding-left: 5px;
+  }
+
+  .lj-icon-features-item {
+    margin-top: 150px;
+  }
+
+  .lj-icon-features-item h3 {
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0 0 25px;
+  }
+
+  .lj-icon-features-item p {
+    color: #888;
+    margin: 0 0 25px;
+  }
+
+  .lj-icon-features-item-icons {
+    margin-top: 150px;    
+  }
+
+  .lj-icon-features-item-icons h4 {    
+    font-size: 1.15em;
+    font-weight: 400;
+    margin: 0 0 15px;
+  }
+
+  .lj-icon-features-item-icons h4 i {
+    font-size: 1.5em;
+    vertical-align: middle;
+    margin-right: 10px;   
+    color: #f56c0a;
+  }
+
+  .lj-icon-features-item-icons p {
+    color: #888;
+    margin: 0 0 50px;
+  }
+
+  .lj-icon-features-item-icons p:last-child {
+    margin: 0;
+  }
+
+
+
+/* 7. PRODUCT SHOWCASE CENTER */
+
+  .product-showcase-center {
+    padding: 150px 0;
+    background-color: #f56c0a;
+  }
+
+  .lj-product-showcase-center h3 {
+    font-size: 3em;
+    font-weight: 300;
+    margin: 0 0 25px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .lj-product-showcase-center h3 span {
+    font-weight: 700;
+  }
+
+  .lj-product-showcase-center p {
+    color: #fff;
+    margin: 0 0 100px;
+    text-align: center;
+  }
+
+  .lj-product-showcase-center a {
+    height: 50px;
+    line-height: 48px;
+    padding: 0 25px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #222;
+    color: #222;
+    background-color: transparent;
+  }
+
+  .lj-product-showcase-center a:hover {
+    border: 1px solid #f56c0a;
+    color: #fff;
+    background-color: #f56c0a;
+  }
+
+  .lj-product-showcase-center-image img {
+    max-width: 100%;
+  }
+
+  .lj-product-showcase-center-btn {
+    text-align: center;
+  }
+
+  .lj-product-showcase-center-btn > a {
+    height: 75px;
+    line-height: 73px;
+    padding: 0 25px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid rgba(255,255,255,0.6);
+    color: #fff;
+    background-color: transparent;
+  }
+
+  .lj-product-showcase-center-btn > a:hover {
+    border: 1px solid #fff;
+    color: #222;
+    background-color: #fff;    
+  }
+
+  .lj-product-showcase-center-btn p {
+    color: #fff;
+    font-size: 0.9em;
+    margin: 25px 0 0;
+  }
+
+  .lj-product-showcase-center-btn p > a {
+    font-weight: 700;
+    color: #fff;
+  }
+
+
+
+/* 8. PRICING TABLE */
+
+  .pricing-table {
+    padding: 150px 0;    
+  }
+
+  .lj-pricing-table-text h3 {
+    font-size: 2em;
+    font-weight: 300;
+    margin: 50px 0 25px;
+  }
+
+  .lj-pricing-table-text p {
+    color: #888;
+    margin: 0 0 25px;
+  }
+
+  .lj-pricing-table-text a {
+    height: 50px;
+    line-height: 48px;
+    padding: 0 25px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #222;
+    color: #222;
+    background-color: transparent;
+  }
+
+  .lj-pricing-table-text a:hover {
+    border: 1px solid #f56c0a;
+    color: #fff;
+    background-color: #f56c0a;
+  }
+
+  .lj-pricing-table div {
+    padding: 25px;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    transition: all 0.125s ease-in-out 0s;
+    -moz-transition: all 0.125s ease-in-out 0s;
+    -webkit-transition: all 0.125s ease-in-out 0s;
+    -o-transition: all 0.125s ease-in-out 0s;
+    -ms-transition: all 0.125s ease-in-out 0s;
+  }
+
+  .lj-pricing-table span {
+    display: block;
+  }
+
+  .lj-pricing-table span.lj-pricing-icon {
+    font-size: 4em;
+    line-height: 1em;
+  }
+
+  .lj-pricing-table span.lj-pricing-user {    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+  }
+
+  .lj-pricing-table span.lj-pricing-price {
+    font-size: 4em;
+    line-height: 1em;
+    margin: 25px 0 5px;
+  }
+
+  .lj-pricing-table span.lj-pricing-time {
+    font-size: 0.9em;
+  }
+
+  .lj-pricing-table ul {
+    padding-left: 0;
+    margin-top: 25px;
+    margin-bottom: 0;
+    list-style-type: none;
+  }
+
+  .lj-pricing-table ul li {
+    margin-bottom: 10px;
+  }
+
+  .lj-pricing-table ul li:last-child {
+    margin-bottom: 25px;
+  }
+
+  .lj-pricing-table a.lj-pricing-button {
+    height: 50px;
+    line-height: 48px;
+    padding: 0 25px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+  .lj-pricing-table-first span.lj-pricing-icon {
+    color: #c1c1c1;
+  }
+
+  .lj-pricing-table-first span.lj-pricing-time {
+    color: #888;    
+  }
+
+  .lj-pricing-table-first a.lj-pricing-button {    
+    border: 1px solid #f56c0a;
+    color: #fff;
+    background-color: #f56c0a;
+  }
+
+  .lj-pricing-table-first a.lj-pricing-button:hover {
+    border: 1px solid #222;
+    color: #222;
+    background-color: transparent;    
+  }
+
+  .lj-pricing-table-second div {
+    background-color: #f56c0a;
+    color: #fff;
+  }
+
+  .lj-pricing-table-second div:hover {
+    background-color: #d25d09;      
+  }
+
+  .lj-pricing-table-second a.lj-pricing-button {    
+    border: 1px solid #fff;
+    color: #222;
+    background-color: #fff;
+  }
+
+  .lj-pricing-table-second a.lj-pricing-button:hover {    
+    border: 1px solid #f56c0a;
+    color: #fff;
+    background-color: #f56c0a;  
+  }
+
+
+
+/* 9. PARALLAX + TEXTS */
+  
+  .parallax-texts {
+    padding: 150px 0;
+  }
+
+  .lj-parallax-texts {
+    text-align: center;
+  }
+
+  .lj-parallax-texts h3 {
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0 0 25px;
+    color: #fff;
+  }
+
+  .lj-parallax-texts p {
+    color: #fff;
+    margin: 0 0 25px;
+  }
+
+  .lj-parallax-texts a {
+    height: 50px;
+    line-height: 48px;
+    padding: 0 25px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+  .lj-parallax-texts a.lj-parallax-texts-btnl {
+    border: 1px solid #f56c0a;
+    color: #fff;
+    background-color: #f56c0a;
+    margin-right: 25px;
+  }
+
+  .lj-parallax-texts a.lj-parallax-texts-btnr {
+    border: 1px solid rgba(255,255,255,0.6);
+    color: #fff;
+    background-color: transparent;
+    margin-right: 25px;
+  }
+
+  .lj-parallax-texts a.lj-parallax-texts-btnl:hover {
+    border: 1px solid #d25d09;
+    color: #fff;
+    background-color: #d25d09;
+  }
+
+  .lj-parallax-texts a.lj-parallax-texts-btnr:hover {
+    border: 1px solid #fff;
+    color: #222;
+    background-color: #fff;
+  }
+
+
+
+/* 10. CUSTOMERS */
+
+  .customers {
+    padding: 150px 0;
+  }
+
+  .lj-customers-img img {
+    max-width: 100%;
+  }
+
+  .lj-customers-texts h3 {
+    font-size: 2em;
+    font-weight: 300;
+    margin: 250px 0 25px;    
+  }
+
+  .lj-customer-box {
+    padding-right: 25px;
+  }
+
+  .lj-customer-box:active,
+  .lj-customer-box:focus {
+    outline: 0;
+    border: 0;    
+  }
+
+  .lj-customer-box p {
+    color: #888;
+    margin: 0 0 25px;
+  }
+
+  .lj-customer-box img {  
+    display: inline-block;  
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+  .lj-customer-box span {
+    display: inline-block;
+    font-weight: 400;
+    color: #888;
+    margin-left: 25px;
+  }
+
+
+
+/* 11. CLIENTS */
+
+  .clients {
+    padding: 80px 0 100px;
+    background-color: #f6f8fa;
+  }
+
+  .clients *:active,
+  .clients *:focus {
+    outline: 0;
+    border: 0;       
+  }
+
+  .lj-clients-item img { 
+    max-width: 100%;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;  
+    transition: all 0.125s ease-in-out 0s;
+    -moz-transition: all 0.125s ease-in-out 0s;
+    -webkit-transition: all 0.125s ease-in-out 0s;
+    -o-transition: all 0.125s ease-in-out 0s;
+    -ms-transition: all 0.125s ease-in-out 0s;
+    margin: 0 auto;
+    -webkit-backface-visibility: hidden;
+    filter: url("data:image/svg+xml;utf8,#grayscale");
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  .lj-clients-item img:hover {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1; 
+    filter: none;
+    -webkit-filter: none;
+  }
+
+  .lj-clients-texts {
+    text-align: center;
+  }
+
+  .lj-clients-texts h3 {
+    font-size: 2em;
+    font-weight: 300;
+    margin: 51px 0 25px;
+  }
+
+  .lj-clients-texts p {
+    margin: 0 0 25px;
+  }
+
+  .lj-clients-texts a {
+    height: 50px;
+    line-height: 48px;
+    padding: 0 25px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+  .lj-clients-texts a.lj-clients-texts-btnl {
+    border: 1px solid #f56c0a;
+    color: #fff;
+    background-color: #f56c0a;
+    margin-right: 25px;
+  }
+
+  .lj-clients-texts a.lj-clients-texts-btnr {
+    border: 1px solid #222;
+    color: #222;
+    background-color: transparent;
+    margin-right: 25px;
+  }
+
+  .lj-clients-texts a.lj-clients-texts-btnl:hover {
+    border: 1px solid #d25d09;
+    color: #fff;
+    background-color: #d25d09;
+  }
+
+  .lj-clients-texts a.lj-clients-texts-btnr:hover {
+    border: 1px solid #222;
+    color: #fff;
+    background-color: #222;
+  }
+
+
+
+/* 12. NEWS */
+
+  .news {
+    padding: 150px 0;
+  }
+
+  .news *:active,
+  .news *:focus {
+    outline: 0;
+    border: 0;       
+  }
+
+  .lj-news-texts h3 {
+    font-size: 2em;
+    font-weight: 300;
+    margin: 50px 0 25px;
+  }
+
+  .lj-news-texts p {
+    margin: 0 0 25px;
+  }
+
+  .lj-news-texts a {
+    font-weight: 400;
+  }
+
+  .lj-news-texts a i {
+    vertical-align: middle;
+    -moz-transition: padding-left 0.125s ease-in-out 0s;
+    -o-transition: padding-left 0.125s ease-in-out 0s;
+    -webkit-transition: padding-left 0.125s ease-in-out 0s;
+    transition: padding-left 0.125s ease-in-out 0s;
+  }
+
+  .lj-news-texts a:hover i {
+    padding-left: 5px;
+  }
+
+  .lj-news-carousel .row .lj-news-item:last-child div {
+    padding-right: 15px;
+  }
+
+  .lj-news-carousel .row .lj-news-item:first-child div {
+    padding-left: 15px;
+  }
+
+  .lj-news-item img {
+    max-width: 100%;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+  .lj-news-item h4 {
+    font-size: 1.15em;
+    font-weight: 400;
+    margin: 25px 0 15px;    
+  }
+
+  .lj-news-item p {
+    margin: 0 0 10px;
+  }
+
+  .lj-news-item a {
+    font-weight: 400;
+  }
+
+  .lj-news-item a i {
+    vertical-align: middle;
+    -moz-transition: padding-left 0.125s ease-in-out 0s;
+    -o-transition: padding-left 0.125s ease-in-out 0s;
+    -webkit-transition: padding-left 0.125s ease-in-out 0s;
+    transition: padding-left 0.125s ease-in-out 0s;
+  }
+
+  .lj-news-item a:hover i {
+    padding-left: 5px;
+  }
+
+
+
+/* 13. VIDEO */
+
+  .video {
+    padding: 150px 0;
+    background-color: #f6f8fa;
+  }
+
+  .lj-video-texts h3 {
+    font-size: 2em;
+    font-weight: 300;
+    margin: 50px 0 25px;
+  }
+
+  .lj-video-texts p {
+    margin: 0 0 25px;
+  }
+
+
+
+/* 14. APP STORES */
+  
+  .app-stores {
+    padding: 150px 0;
+  }
+
+  .lj-app-stores-texts {
+    text-align: center;
+  }
+
+  .lj-app-stores-texts h3 {
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0 0 25px;
+    color: #fff;
+  }
+
+  .lj-app-stores-texts a {
+    display: inline-block;
+    margin: 0 25px;
+    height: 60px;
+    width: 200px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+  .lj-app-stores-texts a img {
+    max-width: 100%;
+  }
+
+  .lj-app-stores-texts a:hover {
+    background-color: rgba(0,0,0,0.5);
+  }
+
+
+
+/* 15. FAQ */
+
+  .faq {
+    padding: 150px 0;
+  }
+
+  .faq .row {
+    margin-top: 50px;
+  }
+
+  .faq .row:first-child {
+    margin-top: 0;
+  }
+
+  .lj-faq-title {
+    text-align: center;
+  }
+
+  .lj-faq-title h3 {
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0;     
+  }
+
+  .lj-faq-item h4 {
+    font-size: 1.15em;
+    font-weight: 400;
+    margin: 0 0 15px;
+  }
+  }
+
+  .lj-faq-item p {
+    margin: 0;
+    color: #888;
+  }
+
+
+
+/* 16. TEAM */
+
+  .team {
+    padding: 150px 0;
+    background-color: #ffffff;
+  }
+
+  .lj-team {
+    margin-bottom: 30px;
+    height: 270px;
+  }
+
+  .lj-team-text h3 {
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0 0 50px;
+    text-align: center;
+  }
+
+  .lj-team-member {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+  .lj-team-member img {
+    width: 100%;
+    max-width: 100%;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+  .lj-team-member-mask {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 200%;
+    left: -100%;
+    overflow: hidden;  
+    -moz-transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s;
+    -webkit-transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s;
+    transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+  .lj-team-member-mask:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  .lj-team-member-mask a {
+    color: #fff;
+    font-size: 1.5em;
+    margin: 0 10px;
+  }
+
+  .lj-team-member-mask a:hover {
+    color: #f56c0a;
+  }
+
+  .lj-team-member:hover .lj-team-member-mask {
+    right: 0;
+    left: 0;
+  }
+
+  .lj-team h4 {
+    font-size: 1.15em;
+    font-weight: 400;
+    margin: 25px 0 0;
+    text-align: center;
+  }
+
+  .lj-team p {
+    margin: 0;
+    color: #888;
+    text-align: center;
+  }
+
+
+
+/* 17. TESTIMONIALS */
+
+  .testimonials {
+    padding: 150px 0;
+  }
+
+  .lj-testimonials-text h3 {
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0 0 50px;
+    text-align: center;
+  }
+
+  .lj-testimonial p {
+    margin: 0 0 25px;
+    color: #888;
+    font-style: italic;
+  }
+
+  .lj-testimonial img {
+    display: inline-block;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #f0f0f0;
+  }
+
+  .lj-testimonial h5 {
+    display: inline-block;
+    font-weight: 400;
+    margin: 0 0 0 15px;
+    font-size: 1em;
+  }
+
+  .lj-testimonial h5 span {
+    color: #888;
+  }
+
+
+
+/* 18. TWITTER */
+
+  .twitter {
+    padding: 150px 0;
+    background-color: #f56c0a;
+  }
+
+  .lj-twitter-text h3 {
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0 0 50px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .lj-twitter-text h3 a {
+    color: #fff;
+    font-weight: 400;
+  }
+
+  .lj-twitter-text h3 i {
+    margin-right: 15px;
+  }
+
+  .lj-twitter > span {
+    display: block;
+    color: #fff;
+    text-align: center;
+  }
+
+  .lj-tweet p {
+    color: #fff;
+    margin: 0;
+  }
+
+  .lj-tweet p a {
+    color: #fff;
+    font-weight: 400;
+  }
+
+  .lj-tweet p span {
+    font-size: 0.9em;
+    font-weight: 400;
+    display: block;
+  }
+
+
+
+/* 19. CONTACT */
+
+  .contact {
+    padding: 150px 0;
+    background-color: #f6f8fa;
+  }
+
+  .lj-contact-text h3 {
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0 0 25px;
+    text-align: center;
+  }
+
+  .lj-contact input[type=text],
+  .lj-contact textarea {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 25px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px; 
+    transition: all 0.125s ease-in-out 0s;
+    -moz-transition: all 0.125s ease-in-out 0s;
+    -webkit-transition: all 0.125s ease-in-out 0s;
+    -o-transition: all 0.125s ease-in-out 0s;
+    -ms-transition: all 0.125s ease-in-out 0s;   
+  }
+
+  .lj-contact input[type=text] {    
+    height: 50px;
+    padding: 0 15px;
+  }
+
+  .lj-contact textarea {
+    height: 200px;
+    padding: 15px;
+    resize: none;
+    overflow: hidden;
+  }
+
+  .lj-contact input[type=text]:focus,
+  .lj-contact textarea:focus {
+    outline: 0;
+    border: 1px solid #f56c0a;
+  }
+
+  .lj-contact input[type=submit] {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    background-color: #f56c0a;
+    color: #fff;
+    padding: 0 25px;
+    border: 0;
+    height: 50px;
+    display: inline-block;
+    font-size: 0.9em;
+    transition: all 0.125s ease-in-out 0s;
+    -moz-transition: all 0.125s ease-in-out 0s;
+    -webkit-transition: all 0.125s ease-in-out 0s;
+    -o-transition: all 0.125s ease-in-out 0s;
+    -ms-transition: all 0.125s ease-in-out 0s;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px; 
+  }
+
+  .lj-contact input[type=submit]:hover {
+    background-color: #d25d09;
+  }
+
+  .lj-contact-submit {
+    text-align: center;
+  }
+
+  .lj-contact-message {
+    min-height: 25px;
+    color: #222;
+    font-size: 0.9em;
+    margin: 0 0 10px;
+    text-align: center;
+  }
+
+  .lj-contact-message i {
+    margin-right: 5px;
+  }
+
+  .lj-contact-message .ion-alert-circled {
+    color: #ff5c5c;
+  }
+
+  .lj-contact-message .ion-checkmark {
+    color: #2ecc71;
+  }
+
+  .lj-contact-info {
+    padding: 0;
+    color: #888;
+    font-size: 0.9em;
+    margin: 10px 0 0;
+    text-align: center;    
+  }
+
+
+
+/* 20. FOOTER */
+
+  .footer {
+    padding: 100px 0;
+    background-color: white;
+  }
+
+  .lj-footer-name h4 {
+    font-size: 1.75em;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .lj-footer-menu ul {
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+  .lj-footer-menu ul li a {
+    color: #888;
+    -moz-transition: padding-left 0.125s ease-in-out 0s;
+    -o-transition: padding-left 0.125s ease-in-out 0s;
+    -webkit-transition: padding-left 0.125s ease-in-out 0s;
+    transition: padding-left 0.125s ease-in-out 0s;
+  }
+
+  .lj-footer-menu ul li a:hover {
+    color: #d25d09;
+    padding-left: 5px;
+  }
+
+
+
+/* 21. SIDEBAR MENU */
+
+  .wrap {
+      position: relative;
+  }
+
+  .panel {
+    background: #222;
+    z-index: -80 !important;
+    position: fixed;
+    right: 0px; /*or width of your navigation panel*/
+    width: 300px; /*should match the above value*/
+    padding: 25px;
+  }
+
+  .panel img {
+    width: 160px;
+    height: 85px;
+    vertical-align: bottom;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .panel ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+  .panel ul li {
+    text-align: center;
+    font-size: 0.9em;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 25px;
+  }
+
+  .panel ul li a {
+    color: #fff;
+  }
+
+  .panel ul li a {
+    -moz-transition: padding-left 0.125s ease-in-out 0s;
+    -o-transition: padding-left 0.125s ease-in-out 0s;
+    -webkit-transition: padding-left 0.125s ease-in-out 0s;
+    transition: padding-left 0.125s ease-in-out 0s;
+  }
+
+  .panel ul li a:hover {
+    padding-left: 5px;
+  }
+
+  .panel p {
+    margin: 25px 0 0;
+    text-align: center;
+  }
+
+  .panel p a {
+    display: inline-block;
+    width: 50px;
+    height: 50px; 
+    color: #fff; 
+    text-align: center;
+    line-height: 50px;
+    margin: 0 5px;
+    font-size: 1.25em;
+  }
+
+  .panel p a:hover {
+    background-color: #d25d09;     
+  }
+
+  .menu-fixed-button {
+    width: 100%;
+    height: 0;
+  }
+
+  .lj-menu-fixed-button {
+    text-align: right;
+    padding-right: 65px;
+  }
+
+  .lj-menu-fixed-button span {
+    display: inline-block;
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.125s ease-in-out 0s;
+    -moz-transition: all 0.125s ease-in-out 0s;
+    -webkit-transition: all 0.125s ease-in-out 0s;
+    -o-transition: all 0.125s ease-in-out 0s;
+    -ms-transition: all 0.125s ease-in-out 0s; 
+    width: 50px;   
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(0,0,0,0.15);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    top: 65px;
+  }
+
+  .lj-menu-fixed-button span:hover {
+    color: #f56c0a;
+  }
+
+.time {
+  font-weight: 600;
+  padding-right: 20px;
+  width: 123px;
+  color: white;
+}
+
+/* SCHEDULE */
+
+.schedule {
+  padding-top: 120px;
+  padding-bottom: 150px;
+  background-color: #f56c0a;
+}
+
+.schedule .row {
+  margin-top: 50px;
+}
+
+.schedule .row:first-child {
+  margin-top: 0;
+}
+
+.schedule-row {
+  vertical-align: baseline;
+}
+
+.schedule-detail {
+
+}
+
+.schedule-title {
+  margin-top: 0px;
+}
+
+.schedule-subtitle {
+  color: #bebebe;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: -25px;
+  margin-bottom: 0px;
+}
+
+.schedule-table {
+  font-size: 24px;
+  padding-left: 20px;
+  color: white;
+}
+
+.lj-schedule-title {
+  text-align: center;
+}
+
+.lj-schedule-title h3 {
+  font-size: 2em;
+  font-weight: 300;
+  color: white;
+  margin: 0;     
+}
+
+/* END SCHEDULE */
+
+#map-box {
+  height: 500px;
+}
+
+/* 22. BREAKPOINTS */
+
+  @media (max-width: 991px) {
+    
+    /* 4. HEADER */
+
+    .lj-menu ul {
+      display: none;
+    }
+
+    .lj-menu span {
+      display: inline-block;
+    }
+
+    /* 5. PRODUCT SHOWCASE */
+
+    .lj-product-showcase-r-image img {
+      margin-top: 50px;
+    }
+
+    /* 6. ICON & FEATURES */
+
+    .lj-icon-features-title h3 {
+      margin: 0;
+    }
+
+    .lj-icon-features-box {
+      margin-top: 50px;
+    }
+
+    .lj-icon-features-box p {
+    }
+
+    .lj-icon-features-item-icons {
+      margin-top: 50px;
+    }
+
+    /* 8. PRICING TABLE */
+
+    .lj-pricing-table-second div {
+      width: 75%;
+      margin: 0 auto;
+    }
+
+    /* 10. CUSTOMERS */
+
+    .lj-customers-texts h3 {
+      margin: 50px 0 25px; 
+    }
+
+    /* 12. NEWS */
+
+    .lj-news-texts {
+      margin: 0 0 50px;
+    }
+
+    /* 15. FAQ */
+
+    .faq .row {
+      margin-top: 0;
+    }
+
+    .lj-faq-item h4 {
+      margin: 50px 0 15px;
+    }
+    
+    /* 16. TEAM */
+
+    .lj-team {
+      margin-bottom: 50px;
+    }
+
+    .team {
+      padding: 150px 0 100px;
+    }
+
+    /* 17. TESTIMONIALS */
+
+    .lj-testimonials-text h3 {
+      margin: 0;
+    }
+
+    .lj-testimonial {
+      margin-top: 50px;
+    }
+
+    /* 18. TWITTER */
+
+    .lj-twitter-text h3 {
+      margin: 0;
+    }
+
+    .lj-tweet {
+      margin-top: 50px;
+    }
+
+    .lj-tweet p {
+      text-align: center;
+    }
+
+    /* 20. FOOTER */
+
+    .lj-footer-menu ul {
+      margin-top: 0;
+    }
+
+    .lj-footer-name h4,
+    .lj-footer-menu ul li {
+      text-align: center;
+    }
+
+  }
+
+  @media (max-width: 767px) {
+
+    /* 4. HEADER */
+
+    .lj-trialform {
+      width: 80%;
+      height: auto;
+      bottom: -75px;
+    }
+
+    .lj-trialform input[type=text],
+    .lj-trialform input[type=submit] {
+      width: 85%;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      border: 1px solid #ddd;
+      margin-bottom: 5px; 
+    }
+
+    /* 14. APP STORES */
+
+    .lj-app-stores-texts a:last-child {
+      margin-top: 25px;
+    }
+    
+    /* 16. TEAM */
+
+    .lj-team-member-mask a {
+      font-size: 2.5em;
+    }
+    
+    .btn-margin {
+      margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .mobile-break {
+      display: initial !important;
+    }
+  
+    /* 7. PRODUCT SHOWCASE CENTER */
+
+    .lj-product-showcase-center-btn > a {
+      font-size: 1em;
+      padding: 0 15px;
+    }
+
+    /* 9. PARALLAX + TEXTS */
+
+    .lj-parallax-texts a.lj-parallax-texts-btnr {
+      margin-top: 25px;
+    }
+
+    /* 11. CLIENTS */
+
+    .lj-clients-texts a.lj-clients-texts-btnr {
+    }
+  
+    .lj-team {
+      height: 220px;
+    }
+
+}
