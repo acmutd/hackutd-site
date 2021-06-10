@@ -8,9 +8,13 @@
           </g-link>
         </div>
       </div>
-      <nav class="nav block md:justify-center md:inline-block md:my-auto">
-        <g-link class="nav-item px-4 h-full" to="/" exact>Home</g-link>
+      <nav class="nav block md:justify-center md:inline-block md:my-auto" style="float:left">
+        
         <!-- <g-link class="nav-item px-4 h-full" to="/history">History</g-link> -->
+        
+      </nav>
+      <nav class="nav block md:justify-center md:inline-block md:my-auto" style="float:right">
+        <g-link class="nav-item px-4 h-full" to="/" exact>Home</g-link>
         <g-link class="nav-item px-4 h-full" to="/events">Events</g-link>
         <g-link class="nav-item px-4 h-full" to="/team">Team</g-link>
         <g-link class="nav-item px-4 h-full" to="/contact">Contact</g-link>

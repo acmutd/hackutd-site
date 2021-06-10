@@ -1,0 +1,537 @@
+:root {
+    --orange-color: hsl(24, 100%, 52%);
+    --purple-color: hsl(263, 90%, 72%);
+    --hover-purple-color: hsl(263, 90%, 65%); 
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    
+    background-image: url("../assets/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+#nav-hero {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-bottom: 20vh;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    color: black;
+    background-color: var(--orange-color);
+    
+    padding: 3vh 0;
+    font-size: 1.1rem;
+
+    flex: 0 1 auto;
+}
+
+nav > a {
+    color: black;
+    margin: 0 2vw;
+}
+
+nav > a:last-child {
+    margin-right: 10vw;
+}
+
+main {
+    flex: 1 1 auto;
+    margin: 0 10vw;
+}
+
+section {
+    margin-bottom: 20vh;    
+}
+
+#banner {
+    background: var(--purple-color);
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    padding: .5rem 0;
+}
+
+#home {
+    flex: 1 1 auto;
+
+    display: grid;
+    grid-template-rows: 0.6fr min-content;
+    grid-template-columns: 1fr 1fr;
+
+    margin: 10vh 10vw 0;
+}
+
+#titles {
+    grid-row: 1;
+    grid-column: 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    line-height: 3rem;
+}
+
+#link-container {
+    grid-row: 2;
+    grid-column: 1;
+
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#link-container > * {
+    width: 60%;
+}
+
+#link-discord {
+    padding: 2vh 3vw;
+    font-size: 1.4rem;
+    margin-bottom: 2vh;
+}
+
+#link-youtube {
+    padding: 2vh 3vw;
+    font-size: 1.4rem;
+    margin-bottom: 2vh;
+}
+
+#link-itch {
+    padding: 2vh 3vw;
+    font-size: 1.4rem;
+}
+
+#about-blurb {
+    grid-row: 2;
+    grid-column: 2;
+
+    margin: 3vh 4vw;
+    padding: 3vh 4vw;
+
+    font-size: 1.3rem;
+    line-height: 2rem;
+
+    position: relative;
+}
+
+#wing-right {
+    position: absolute;
+
+    width: 15vw;
+
+    top: 0;
+    right: 0;
+    margin-top: -12%;
+    margin-right: -40%;
+
+    transform: rotate(-10deg);
+    z-index: -1;
+}
+
+footer {
+    padding: 1vh 1vw;
+    color: black;
+    text-align: center;
+    flex: 0 1 auto;
+    background-color: var(--orange-color);
+}
+
+.tile {
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+}
+
+@font-face {
+    font-family: grooving;
+    src: url("../assets/Grooving.otf");
+}
+
+.title {
+    font-size: 5rem;
+    color: var(--purple-color);
+    font-family: grooving;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 3rem;
+    color: var(--orange-color);
+    font-family: grooving;
+    text-align: center;
+}
+
+.large {
+    font-size: 3rem;
+    color: white;
+    font-family: grooving;
+    line-height: 3rem;
+}
+
+#activities-container {
+    padding: 3vh 3vw;
+    line-height: 2rem;
+    position: relative;
+}
+
+#ear-left {
+    position: absolute;
+
+    width: 10vw;
+
+    top: 0;
+    left: 0;
+    margin-top: -6%;
+    margin-left: -4%;
+
+    transform: rotate(-30deg);
+    z-index: -1;
+}
+
+#ear-right {
+    position: absolute;
+
+    width: 10vw;
+
+    top: 0;
+    right: 0;
+    margin-top: -7%;
+    margin-right: -5%;
+
+    transform: rotate(25deg);
+    z-index: -1;
+}
+
+#activities-header {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 5vh;
+}
+
+#activities {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+#activities > div {
+    flex: 1 1 0;
+}
+
+.activity {
+    padding: 0 3vw;
+}
+
+#schedule-title {
+    position: relative;
+}
+
+#vlad-head {
+    position: absolute;
+
+    width: 15vw;
+
+    top: 0;
+    left: 0;
+
+    margin-top: -10%;
+    margin-left: 65%;
+
+    z-index: -1;
+}
+
+#schedule-container {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10vh;
+    line-height: 2rem;
+
+    overflow-x: scroll;
+    /* Hide scrollbar Firefox */
+    /* scrollbar-width: none;  */
+}
+
+#schedule-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+/* scrollbar handle */
+#schedule-container::-webkit-scrollbar-thumb {
+    background-color: var(--purple-color);
+    border-radius: 8px;
+}
+/* scrollbar handle on hover */
+#schedule-container::-webkit-scrollbar-thumb:hover {
+    background: var(--hover-purple-color);
+}
+
+.day {
+    min-width: 20vw;
+    min-height: 45vh;
+    margin-right: 3vw;
+    margin-bottom: 10vh;
+}
+
+.shift-down {
+    margin-top: 5vh;
+    margin-bottom: 0;
+}
+
+.day > .subtitle {
+    margin-bottom: 1vh;
+}
+
+.schedule-tile {
+    height: 100%;
+    padding: 1rem;
+    text-align: left;
+    
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+
+
+    /* Temp text styling
+    color: black;
+    font-size: 3rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: gray; */
+}
+
+.schedule-tile > .schedule-item:not(:last-child) {
+    border-bottom: 1px solid white;
+}
+
+.schedule-item {
+    line-height: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.schedule-time {
+    color: var(--orange-color);
+    min-width: 20%;
+    margin-right: 1rem;
+}
+
+#questions-container {
+    padding: 3vh 1vw 3vh 3vw;
+    text-align: left;
+    height: 75vh;
+    line-height: 2rem;
+}
+
+#questions {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+#questions::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* scrollbar handle */
+#questions::-webkit-scrollbar-thumb {
+    background-color: var(--purple-color);
+    border-radius: 8px;
+}
+/* scrollbar handle on hover */
+#questions::-webkit-scrollbar-thumb:hover {
+    background: var(--hover-purple-color);
+}
+
+#faq {
+    margin-left: 7vw;
+    margin-right: 7vw;
+}
+
+#faq-title {
+    position: relative;
+}
+
+#vlad {
+    position: absolute;
+
+    width: 30vw;
+
+    top: 0;
+    left: 0;
+
+    margin-top: -10%;
+    margin-left: 10%;
+
+    z-index: -1;
+}
+
+#questions > div:not(:last-child) {
+    margin-bottom: 5vh;
+}
+
+.question {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1vh;
+    cursor: pointer;
+}
+
+.question:after {
+    content: '\002B';
+    color: var(--orange-color);
+    font-weight: bold;
+    font-size: 2rem;
+    float: right;
+    margin-left: 5px;
+    margin-right: 1rem;
+}
+  
+.question-active:after {
+    content: '\2212';
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+#partners-container {
+    padding: 1rem 1rem;
+    line-height: 2rem;
+}
+
+#partners-header {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 5vh;
+}
+
+#partners-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 1rem;
+}
+
+#partners-grid > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner7 {
+    grid-area: 3 / 2 / 3 / 2;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #nav-hero {
+        height: auto;
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #home>:not(:last-child) {
+        margin-bottom: 5vh;
+    }
+
+    #titles {
+        line-height: 3.5rem;
+    }
+
+    #activities {
+        flex-direction: column;
+    }
+
+    #wing-right {
+        display: none; /* temp */
+    }
+
+    #schedule-container {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .shift-down {
+        margin: 0;
+    }
+
+    .day {
+        margin: 0;
+        min-height: fit-content;
+    }
+
+    .day:not(:last-child) {
+        margin-bottom: 5vh;
+    }
+
+    .schedule-tile {
+        /*
+        I spent 30 minutes trying to figure out why these wouldn't take up
+        100% height as was specified. Turns out, it's because of a bug in
+        WebKit that was initially reported over a decade ago.... Fun stuff
+        https://bugs.webkit.org/show_bug.cgi?id=26559 
+        */
+        min-height: inherit;
+    }
+
+    .schedule-item {
+        margin-bottom: 1rem;
+    }
+
+    #faq {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #partners-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #partners-grid > div {
+        margin-bottom: 1rem;
+    }
+
+    .question {
+        font-size: 1.2rem;
+    }
+
+    #questions-container {
+        height: auto;
+    }
+}
