@@ -11,7 +11,7 @@
     "gridsome": "^0.7.21",
     "particles.vue": "^2.1.4",
     "tailwindcss": "^1.8.13",
-    "xlsx": "^0.16.8"
+    "xlsx": "^0.17.0"
   },
   "devDependencies": {
     "gridsome-plugin-tailwindcss": "^2.2.48",
